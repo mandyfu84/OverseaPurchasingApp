@@ -62,7 +62,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="8vI-Sw-BHV" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2755" y="357"/>
+            <point key="canvasLocation" x="2760" y="342"/>
         </scene>
         <!--Add Item-->
         <scene sceneID="PwE-bq-LyS">
@@ -75,16 +75,16 @@
                         <sections>
                             <tableViewSection id="hJj-kw-LDv">
                                 <cells>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="50" id="StS-JL-ATS">
-                                        <rect key="frame" x="0.0" y="64" width="320" height="50"/>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="17" id="StS-JL-ATS">
+                                        <rect key="frame" x="0.0" y="0.0" width="320" height="17"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="StS-JL-ATS" id="OoF-Yo-3ZC">
-                                            <rect key="frame" x="0.0" y="0.0" width="320" height="49"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="320" height="16"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                         </tableViewCellContentView>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="250" id="Vim-Tf-qff">
-                                        <rect key="frame" x="0.0" y="114" width="320" height="250"/>
+                                        <rect key="frame" x="0.0" y="17" width="320" height="250"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Vim-Tf-qff" id="DxX-4S-rld">
                                             <rect key="frame" x="0.0" y="0.0" width="320" height="249"/>
@@ -94,16 +94,11 @@
                                                     <rect key="frame" x="15" y="0.0" width="290" height="249"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 </imageView>
-                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="gwa-mj-Ilf">
-                                                    <rect key="frame" x="188" y="196" width="84" height="30"/>
-                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                    <state key="normal" title="Upload Item"/>
-                                                </button>
                                             </subviews>
                                         </tableViewCellContentView>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="Nl0-PC-oLK">
-                                        <rect key="frame" x="0.0" y="364" width="320" height="40"/>
+                                        <rect key="frame" x="0.0" y="267" width="320" height="40"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Nl0-PC-oLK" id="f98-am-CU3">
                                             <rect key="frame" x="0.0" y="0.0" width="320" height="39"/>
@@ -126,7 +121,7 @@
                                         </tableViewCellContentView>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="2dO-Ab-lBu">
-                                        <rect key="frame" x="0.0" y="404" width="320" height="40"/>
+                                        <rect key="frame" x="0.0" y="307" width="320" height="40"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="2dO-Ab-lBu" id="jE5-az-QHP">
                                             <rect key="frame" x="0.0" y="0.0" width="320" height="39"/>
@@ -149,7 +144,7 @@
                                         </tableViewCellContentView>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="5Uv-OS-4F8">
-                                        <rect key="frame" x="0.0" y="444" width="320" height="40"/>
+                                        <rect key="frame" x="0.0" y="347" width="320" height="40"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="5Uv-OS-4F8" id="oES-UP-n2D">
                                             <rect key="frame" x="0.0" y="0.0" width="320" height="39"/>
@@ -172,7 +167,7 @@
                                         </tableViewCellContentView>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="V7j-uz-C0h">
-                                        <rect key="frame" x="0.0" y="484" width="320" height="40"/>
+                                        <rect key="frame" x="0.0" y="387" width="320" height="40"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="V7j-uz-C0h" id="4oZ-xL-BLO">
                                             <rect key="frame" x="0.0" y="0.0" width="320" height="39"/>
@@ -195,7 +190,7 @@
                                         </tableViewCellContentView>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="50" id="nlK-g4-J7C">
-                                        <rect key="frame" x="0.0" y="524" width="320" height="50"/>
+                                        <rect key="frame" x="0.0" y="427" width="320" height="50"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="nlK-g4-J7C" id="1NA-d1-4gH">
                                             <rect key="frame" x="0.0" y="0.0" width="320" height="49"/>
@@ -218,11 +213,18 @@
                                         </tableViewCellContentView>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="50" id="K0d-37-W4g">
-                                        <rect key="frame" x="0.0" y="574" width="320" height="50"/>
+                                        <rect key="frame" x="0.0" y="477" width="320" height="50"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="K0d-37-W4g" id="MHl-kJ-6k7">
                                             <rect key="frame" x="0.0" y="0.0" width="320" height="49"/>
                                             <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="gwa-mj-Ilf">
+                                                    <rect key="frame" x="218" y="8" width="84" height="30"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <state key="normal" title="Upload Item"/>
+                                                </button>
+                                            </subviews>
                                         </tableViewCellContentView>
                                     </tableViewCell>
                                 </cells>
@@ -236,10 +238,11 @@
                     <tabBarItem key="tabBarItem" title="Add Item" image="folder.png" selectedImage="folder.png" id="3TA-ML-Glg">
                         <offsetWrapper key="titlePositionAdjustment" horizontal="0.0" vertical="-2"/>
                     </tabBarItem>
+                    <simulatedStatusBarMetrics key="simulatedStatusBarMetrics" statusBarStyle="blackOpaque"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Onx-ry-q0r" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1951" y="1101"/>
+            <point key="canvasLocation" x="1735" y="1165"/>
         </scene>
         <!--User-->
         <scene sceneID="RUZ-v9-8iW">
@@ -249,19 +252,26 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="desk.jpg" id="fjk-3r-Unr">
-                                <rect key="frame" x="0.0" y="63" width="320" height="189"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="UserPageBackground.jpg" id="fjk-3r-Unr">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="517"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="UserName" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Fw0-Ss-Ald">
-                                <rect key="frame" x="11" y="208" width="82" height="32"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="UserEmail" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Fw0-Ss-Ald">
+                                <rect key="frame" x="119" y="36" width="82" height="32"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="textColor" red="0.54070465629999998" green="0.61363899150000001" blue="0.77113381410000004" alpha="0.69049030170000003" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="You have ? Bit Coin" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="9Kd-eD-WdC">
+                                <rect key="frame" x="46" y="98" width="229" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="WNI-Yb-WUy">
-                                <rect key="frame" x="96" y="448" width="133" height="33"/>
+                                <rect key="frame" x="94" y="151" width="133" height="33"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.7062080597" green="0.80000001190000003" blue="1" alpha="0.69049030170000003" colorSpace="calibratedRGB"/>
                                 <state key="normal" title="Log Out"/>
@@ -269,23 +279,17 @@
                                     <segue destination="Red-c3-MtZ" kind="modal" id="Tz9-H8-DiE"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Remain Bit Coin" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="9Kd-eD-WdC">
-                                <rect key="frame" x="11" y="273" width="121" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="User" image="user.png" id="9DY-sF-ATz">
                         <offsetWrapper key="titlePositionAdjustment" horizontal="0.0" vertical="-2"/>
                     </tabBarItem>
+                    <simulatedStatusBarMetrics key="simulatedStatusBarMetrics"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="K7E-er-Ncs" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2639" y="1114"/>
+            <point key="canvasLocation" x="2500" y="1118"/>
         </scene>
         <!--Detail-->
         <scene sceneID="gtm-DX-GyB">
@@ -380,10 +384,13 @@
             </objects>
             <point key="canvasLocation" x="3609" y="357"/>
         </scene>
-        <!--Navigation Controller-->
+        <!--Item-->
         <scene sceneID="WjV-yG-e8E">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="J7c-ad-auv" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Item" image="list.png" id="DgZ-kH-XpF">
+                        <offsetWrapper key="titlePositionAdjustment" horizontal="0.0" vertical="-2"/>
+                    </tabBarItem>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" barStyle="blackTranslucent" id="cR2-XB-a7F">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
@@ -396,12 +403,12 @@
                         <autoresizingMask key="autoresizingMask"/>
                     </toolbar>
                     <connections>
-                        <segue destination="Eif-c2-dPJ" kind="relationship" relationship="rootViewController" id="1rj-2J-brt"/>
+                        <segue destination="d02-Ra-V8b" kind="relationship" relationship="rootViewController" id="Qu0-Pq-njR"/>
                     </connections>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ald-kz-6qr" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1691" y="357"/>
+            <point key="canvasLocation" x="2315" y="342"/>
         </scene>
         <!--Sign Up-->
         <scene sceneID="feS-jn-R3s">
@@ -482,20 +489,21 @@
                 <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="Eif-c2-dPJ" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationItem key="navigationItem" id="t5f-TO-4zr"/>
+                    <simulatedStatusBarMetrics key="simulatedStatusBarMetrics" statusBarStyle="lightContent"/>
                     <tabBar key="tabBar" contentMode="scaleToFill" id="0ye-vC-a2y">
                         <rect key="frame" x="0.0" y="0.0" width="0.0" height="49"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                     </tabBar>
                     <connections>
-                        <segue destination="d02-Ra-V8b" kind="relationship" relationship="viewControllers" id="G7Q-Ir-Z12"/>
-                        <segue destination="HIv-1h-b07" kind="relationship" relationship="viewControllers" id="png-wL-PpK"/>
+                        <segue destination="J7c-ad-auv" kind="relationship" relationship="viewControllers" id="yTK-8g-CrF"/>
                         <segue destination="7XW-wn-Ptq" kind="relationship" relationship="viewControllers" id="Ee5-Mk-C1o"/>
+                        <segue destination="HIv-1h-b07" kind="relationship" relationship="viewControllers" id="png-wL-PpK"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="I3P-sD-qZy" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2223" y="357"/>
+            <point key="canvasLocation" x="1735" y="323"/>
         </scene>
         <!--Login-->
         <scene sceneID="3tI-lY-vbw">
@@ -543,7 +551,7 @@
                                 <size key="titleShadowOffset" width="2" height="2"/>
                                 <state key="normal" title="Confirm"/>
                                 <connections>
-                                    <segue destination="J7c-ad-auv" kind="modal" id="wpT-id-RqY"/>
+                                    <segue destination="Eif-c2-dPJ" kind="modal" id="Q8p-2e-wY7"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" reversesTitleShadowWhenHighlighted="YES" lineBreakMode="middleTruncation" id="NVJ-qh-86q">
@@ -594,7 +602,7 @@
         </scene>
     </scenes>
     <resources>
-        <image name="desk.jpg" width="1000" height="665"/>
+        <image name="UserPageBackground.jpg" width="696" height="664"/>
         <image name="folder.png" width="30" height="30"/>
         <image name="list.png" width="30" height="30"/>
         <image name="macbook.jpg" width="1000" height="667"/>
