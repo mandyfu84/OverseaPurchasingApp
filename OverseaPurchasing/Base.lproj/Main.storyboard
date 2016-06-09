@@ -55,7 +55,7 @@
                             <outlet property="delegate" destination="d02-Ra-V8b" id="dzV-61-ubT"/>
                         </connections>
                     </tableView>
-                    <tabBarItem key="tabBarItem" title="Items" selectedImage="IconAllItem.png" id="Qsq-lB-Km4">
+                    <tabBarItem key="tabBarItem" title="Items" image="list.png" id="Qsq-lB-Km4">
                         <offsetWrapper key="titlePositionAdjustment" horizontal="0.0" vertical="0.0"/>
                     </tabBarItem>
                     <navigationItem key="navigationItem" title="All Items" id="WtP-9P-MCs"/>
@@ -233,7 +233,7 @@
                             <outlet property="delegate" destination="7XW-wn-Ptq" id="1kj-1n-8Jm"/>
                         </connections>
                     </tableView>
-                    <tabBarItem key="tabBarItem" title="Add Item" id="3TA-ML-Glg"/>
+                    <tabBarItem key="tabBarItem" title="Add Item" image="folder.png" selectedImage="folder.png" id="3TA-ML-Glg"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Onx-ry-q0r" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -248,7 +248,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="desk.jpg" id="fjk-3r-Unr">
-                                <rect key="frame" x="0.0" y="65" width="320" height="187"/>
+                                <rect key="frame" x="0.0" y="63" width="320" height="189"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="UserName" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Fw0-Ss-Ald">
@@ -277,7 +277,7 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="User" selectedImage="IconUser.png" id="9DY-sF-ATz">
+                    <tabBarItem key="tabBarItem" title="User" image="user.png" id="9DY-sF-ATz">
                         <offsetWrapper key="titlePositionAdjustment" horizontal="0.0" vertical="0.0"/>
                     </tabBarItem>
                 </viewController>
@@ -592,13 +592,14 @@
         </scene>
     </scenes>
     <resources>
-        <image name="IconAllItem.png" width="128" height="128"/>
-        <image name="IconUser.png" width="128" height="128"/>
-        <image name="desk.jpg" width="2938" height="1953"/>
+        <image name="desk.jpg" width="1000" height="665"/>
+        <image name="folder.png" width="32" height="32"/>
+        <image name="list.png" width="32" height="32"/>
         <image name="macbook.jpg" width="5046" height="3364"/>
-        <image name="plane.jpg" width="5760" height="3840"/>
+        <image name="plane.jpg" width="1000" height="667"/>
+        <image name="user.png" width="32" height="32"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="efH-jL-3UO"/>
+        <segue reference="Tz9-H8-DiE"/>
     </inferredMetricsTieBreakers>
 </document>
