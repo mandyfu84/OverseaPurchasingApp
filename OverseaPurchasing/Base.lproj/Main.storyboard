@@ -56,7 +56,7 @@
                         </connections>
                     </tableView>
                     <tabBarItem key="tabBarItem" title="Items" image="list.png" id="Qsq-lB-Km4">
-                        <offsetWrapper key="titlePositionAdjustment" horizontal="0.0" vertical="0.0"/>
+                        <offsetWrapper key="titlePositionAdjustment" horizontal="0.0" vertical="-2"/>
                     </tabBarItem>
                     <navigationItem key="navigationItem" title="All Items" id="WtP-9P-MCs"/>
                 </tableViewController>
@@ -233,7 +233,9 @@
                             <outlet property="delegate" destination="7XW-wn-Ptq" id="1kj-1n-8Jm"/>
                         </connections>
                     </tableView>
-                    <tabBarItem key="tabBarItem" title="Add Item" image="folder.png" selectedImage="folder.png" id="3TA-ML-Glg"/>
+                    <tabBarItem key="tabBarItem" title="Add Item" image="folder.png" selectedImage="folder.png" id="3TA-ML-Glg">
+                        <offsetWrapper key="titlePositionAdjustment" horizontal="0.0" vertical="-2"/>
+                    </tabBarItem>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Onx-ry-q0r" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -278,7 +280,7 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="User" image="user.png" id="9DY-sF-ATz">
-                        <offsetWrapper key="titlePositionAdjustment" horizontal="0.0" vertical="0.0"/>
+                        <offsetWrapper key="titlePositionAdjustment" horizontal="0.0" vertical="-2"/>
                     </tabBarItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="K7E-er-Ncs" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -593,11 +595,11 @@
     </scenes>
     <resources>
         <image name="desk.jpg" width="1000" height="665"/>
-        <image name="folder.png" width="32" height="32"/>
-        <image name="list.png" width="32" height="32"/>
-        <image name="macbook.jpg" width="5046" height="3364"/>
+        <image name="folder.png" width="30" height="30"/>
+        <image name="list.png" width="30" height="30"/>
+        <image name="macbook.jpg" width="1000" height="667"/>
         <image name="plane.jpg" width="1000" height="667"/>
-        <image name="user.png" width="32" height="32"/>
+        <image name="user.png" width="30" height="30"/>
     </resources>
     <inferredMetricsTieBreakers>
         <segue reference="Tz9-H8-DiE"/>
