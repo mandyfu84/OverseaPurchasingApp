@@ -7,6 +7,9 @@
 //
 
 #import "ItemTableViewController.h"
+#import "Items.h"
+#import "ItemObject.h"
+#import "ItemDetailUIViewController.h"
 
 @interface ItemTableViewController ()
 
@@ -22,6 +25,30 @@
     
     // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
     // self.navigationItem.rightBarButtonItem = self.editButtonItem;
+    
+    
+//    NSString *item1 = @"1";
+//    NSString *item2 = @"2";
+//    NSString *item3 = @"3";
+//    NSString *item4 = @"4";
+//    NSString *item5 = @"5";
+//    NSString *item6 = @"6";
+//    NSString *item7 = @"7";
+//    NSString *item8 = @"8";
+//    NSString *item9 = @"9";
+//self.items = [[NSMutableArray alloc] initWithObjects:item1, item2, item3, item4, item5, item6, item7, item8, item9, nil];
+    
+    self.items = [[NSMutableArray alloc] init];
+    
+   for (NSMutableDictionary *itemData in [Items allItems]){
+       NSString *imageName = [NSString stringWithFormat:@"%@.png", itemData[ITEM_TITLE]];
+       ItemObject *item = [[ItemObject alloc] initWithData:itemData andImage:[UIImage imageNamed:imageName]];
+       [self.items addObject:item];
+    }
+    
+
+
+    
 }
 
 - (void)didReceiveMemoryWarning {
@@ -33,23 +60,46 @@
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
 #warning Incomplete implementation, return the number of sections
-    return 0;
+    return 1;
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
 #warning Incomplete implementation, return the number of rows
-    return 0;
+    return [self.items count];
 }
 
-/*
+
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:<#@"reuseIdentifier"#> forIndexPath:indexPath];
+    static NSString *CellIdentifier = @"Cell";
+    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier forIndexPath:indexPath];
     
     // Configure the cell...
     
+    ItemObject *item = [self.items objectAtIndex:indexPath.row];
+    cell.textLabel.text = item.name;
+    cell.detailTextLabel.text =  [NSNumber numberWithFloat:item.price].stringValue;
+    cell.imageView.image = item.image;
+    
+  //  cell.backgroundColor = [UIColor clearColor];
+
     return cell;
 }
-*/
+
+//send itemobject to detail page
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender{
+    if([sender isKindOfClass:[UITableViewCell class]])
+    {
+        if([segue.destinationViewController isKindOfClass:[ItemDetailUIViewController class]])
+        {
+            ItemDetailUIViewController *nextViewController = segue.destinationViewController;
+            NSIndexPath *path = [self.tableView indexPathForCell:sender];
+            ItemObject *selectedObject = self.items[path.row];
+            nextViewController.itemObject = selectedObject;
+            NSLog(@"123: %@", sender);
+        }
+    }
+}
+
 
 /*
 // Override to support conditional editing of the table view.

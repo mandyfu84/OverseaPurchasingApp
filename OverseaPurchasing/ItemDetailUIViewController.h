@@ -7,7 +7,12 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "ItemObject.h"
 
-@interface ItemDetailUIViewController : UIViewController
+@interface ItemDetailUIViewController : UIViewController <UITableViewDelegate, UITableViewDataSource>
+@property (strong, nonatomic) IBOutlet UILabel *itemNameLabel;
+@property (strong, nonatomic) IBOutlet UIImageView *itemImage;
+@property (strong, nonatomic) IBOutlet ItemObject *itemObject;
+@property (strong, nonatomic) IBOutlet UITableView *tabelView;
 
 @end
