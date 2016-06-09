@@ -16,7 +16,8 @@
 @property (strong, nonatomic) NSString *country;
 @property (strong, nonatomic) NSString *catagory;
 @property (strong, nonatomic) NSString *detail;
-@property (strong, nonatomic) NSString *ownermail;
+@property (strong, nonatomic) NSString *img_url;
+@property (strong, nonatomic) NSString *ownermail; //不知道需不需要
 
 @property (strong, nonatomic) UIImage *image;
 
