@@ -11,11 +11,10 @@
 
 @interface UserObject : NSObject
 
+@property (strong, nonatomic) NSString *_id;
 @property (strong, nonatomic) NSString *mail;
 @property (strong, nonatomic) NSString *password;
 @property (strong, nonatomic) NSString *address;
 @property (nonatomic) float money;
-
--(id)initWithData:(NSDictionary *)data;
 
 @end

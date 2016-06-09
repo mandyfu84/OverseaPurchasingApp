@@ -95,7 +95,7 @@
             NSIndexPath *path = [self.tableView indexPathForCell:sender];
             ItemObject *selectedObject = self.items[path.row];
             nextViewController.itemObject = selectedObject;
-            NSLog(@"123: %@", sender);
+            //NSLog(@"123: %@", sender);
         }
     }
 }

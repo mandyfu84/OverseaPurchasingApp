@@ -7,6 +7,8 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "ItemObject.h"
+#import "UserObject.h"
 
 @interface ViewController : UIViewController
 
