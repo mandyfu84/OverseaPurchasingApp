@@ -514,7 +514,7 @@
         <!--Login-->
         <scene sceneID="3tI-lY-vbw">
             <objects>
-                <viewController id="6PZ-G3-dqn" sceneMemberID="viewController">
+                <viewController id="6PZ-G3-dqn" customClass="LogIn" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="By2-Dd-iBs">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -557,6 +557,7 @@
                                 <size key="titleShadowOffset" width="2" height="2"/>
                                 <state key="normal" title="Confirm"/>
                                 <connections>
+                                    <action selector="login:" destination="6PZ-G3-dqn" eventType="touchUpInside" id="o6N-se-Wsw"/>
                                     <segue destination="Eif-c2-dPJ" kind="modal" id="Q8p-2e-wY7"/>
                                 </connections>
                             </button>
@@ -581,6 +582,10 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" title="Login" id="6RK-J7-5dN"/>
+                    <connections>
+                        <outlet property="emailField" destination="Cjw-AB-xHl" id="Knh-li-VLP"/>
+                        <outlet property="password" destination="fur-Wx-cAq" id="BR8-qi-Vpv"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="RDe-II-k0K" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

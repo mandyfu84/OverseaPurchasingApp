@@ -160,51 +160,30 @@ MongoLabSDK *MongoLabSDK_INSTANCE = nil;
     
     NSURLResponse *response = nil;
     NSError *error = nil;
-    
-    //NSString *urlString = [NSString stringWithFormat:@"https://api.mongolab.com/api/1/databases/%@/collections/%@?apiKey=%@", databaseName, collectionName, mongoLabAPIKey];
-    //NSString *urlString = [NSString stringWithFormat:@"https://api.mongolab.com/api/1/databases/%@/collections/%@?q=%@&apiKey=%@", databaseName, collectionName, query,mongoLabAPIKey];
     NSString *queryParams = @"";
     if (query != nil && [query length] > 0) {
         queryParams = [NSString stringWithFormat:@"&q=%@", [query stringByAddingPercentEscapesUsingEncoding:NSUTF8StringEncoding]];
     }else{
         NSLog(@"NIL is here!");
     }
-    
-    
     NSString *urlString = @"";
-    urlString = [NSString stringWithFormat:@"https://api.mongolab.com/api/1/databases/%@/collections/%@?apiKey=%@%@", databaseName, collectionName, mongoLabAPIKey, queryParams];
-    
-    
-    
+    urlString = [NSString stringWithFormat:@"https://api.mongolab.com/api/1/databases/%@/collections/%@?apiKey=%@%@", databaseName, collectionName, APIKEY, queryParams];
     NSLog(@"%@",urlString);
-    
-    //NSLog(@"https://api.mongolab.com/api/1/databases/%@/collections/%@?q=%@&apiKey=%@", databaseName, collectionName, mongoLabAPIKey);
-    
-    
-    
     NSURL *url = [[[NSURL alloc] initWithString:urlString] autorelease];
-    
-    
     NSMutableURLRequest *urlRequest = [NSMutableURLRequest requestWithURL:url];
     [urlRequest addValue: @"application/json;charset=utf-8" forHTTPHeaderField:@"Content-Type"];
     [urlRequest setHTTPMethod:@"GET"];
-    
     NSData *receivedData = [NSURLConnection sendSynchronousRequest:urlRequest
                                                  returningResponse:&response
                                                              error:&error];
     if (receivedData != nil) {
         NSString *responseString = [[NSString alloc] initWithData:receivedData encoding:NSASCIIStringEncoding];
-        
         NSObject *json = [responseString JSONValue];
-        
         if ([json isKindOfClass:[NSArray class]]) {
             return (NSArray*)json;
         }
         
-        
     }
-    
-    
     return nil;
 }
 
