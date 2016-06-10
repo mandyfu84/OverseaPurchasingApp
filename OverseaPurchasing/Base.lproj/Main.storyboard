@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" initialViewController="Red-c3-MtZ">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" initialViewController="Red-c3-MtZ">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
@@ -414,7 +414,7 @@
         <!--Sign Up-->
         <scene sceneID="feS-jn-R3s">
             <objects>
-                <viewController id="iZl-jr-4H8" sceneMemberID="viewController">
+                <viewController id="iZl-jr-4H8" customClass="SignUp" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="wZf-Ph-0LV">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -468,6 +468,7 @@
                                 <size key="titleShadowOffset" width="2" height="2"/>
                                 <state key="normal" title="Confirm"/>
                                 <connections>
+                                    <action selector="confirmPressed:" destination="iZl-jr-4H8" eventType="touchUpInside" id="EDV-0z-3j0"/>
                                     <segue destination="Red-c3-MtZ" kind="modal" id="efH-jL-3UO"/>
                                 </connections>
                             </button>
@@ -479,6 +480,10 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" title="Sign Up" id="I6T-8E-Wjd"/>
+                    <connections>
+                        <outlet property="emailField" destination="4z6-aA-i0R" id="Ej0-eu-0bg"/>
+                        <outlet property="password" destination="wsV-e8-8vL" id="zJR-3r-wnq"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="8VV-m6-dk2" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
