@@ -40,6 +40,7 @@
 		37F916BF1D02874B00C20731 /* pants.png in Resources */ = {isa = PBXBuildFile; fileRef = 37F916B81D02874B00C20731 /* pants.png */; };
 		37F916C01D02874B00C20731 /* shoes.png in Resources */ = {isa = PBXBuildFile; fileRef = 37F916B91D02874B00C20731 /* shoes.png */; };
 		37F916C81D028B0300C20731 /* shirts.png in Resources */ = {isa = PBXBuildFile; fileRef = 37F916C71D028B0300C20731 /* shirts.png */; };
+		37F964621D0BF1DC00D7425B /* AddItemTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 37F964611D0BF1DC00D7425B /* AddItemTableViewController.m */; };
 		A527C5C71D0B03330052EC6F /* SignUp.m in Sources */ = {isa = PBXBuildFile; fileRef = A527C5C61D0B03330052EC6F /* SignUp.m */; };
 		A527C61B1D0B0F1E0052EC6F /* MongoLabSDK.m in Sources */ = {isa = PBXBuildFile; fileRef = A527C60E1D0B0F1E0052EC6F /* MongoLabSDK.m */; };
 		A527C61C1D0B0F1E0052EC6F /* NSObject+SBJSON.m in Sources */ = {isa = PBXBuildFile; fileRef = A527C6101D0B0F1E0052EC6F /* NSObject+SBJSON.m */; };
@@ -94,6 +95,8 @@
 		37F916B81D02874B00C20731 /* pants.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = pants.png; sourceTree = "<group>"; };
 		37F916B91D02874B00C20731 /* shoes.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = shoes.png; sourceTree = "<group>"; };
 		37F916C71D028B0300C20731 /* shirts.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = shirts.png; sourceTree = "<group>"; };
+		37F964601D0BF1DC00D7425B /* AddItemTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AddItemTableViewController.h; sourceTree = "<group>"; };
+		37F964611D0BF1DC00D7425B /* AddItemTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AddItemTableViewController.m; sourceTree = "<group>"; };
 		A527C5C51D0B03330052EC6F /* SignUp.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SignUp.h; sourceTree = "<group>"; };
 		A527C5C61D0B03330052EC6F /* SignUp.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SignUp.m; sourceTree = "<group>"; };
 		A527C60C1D0B0F1E0052EC6F /* JSON.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSON.h; sourceTree = "<group>"; };
@@ -159,6 +162,8 @@
 				37929E3C1D029F2800ED632E /* ItemTableViewController.m */,
 				37929E571D02C22200ED632E /* ItemDetailUIViewController.h */,
 				37929E581D02C22200ED632E /* ItemDetailUIViewController.m */,
+				37F964601D0BF1DC00D7425B /* AddItemTableViewController.h */,
+				37F964611D0BF1DC00D7425B /* AddItemTableViewController.m */,
 				370E45EA1D027B5200887C7F /* Assets.xcassets */,
 				370E45EC1D027B5200887C7F /* LaunchScreen.storyboard */,
 				370E45EF1D027B5200887C7F /* Info.plist */,
@@ -318,6 +323,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				37F964621D0BF1DC00D7425B /* AddItemTableViewController.m in Sources */,
 				370E45E61D027B5200887C7F /* ViewController.m in Sources */,
 				A527C61B1D0B0F1E0052EC6F /* MongoLabSDK.m in Sources */,
 				37929E441D02AD2400ED632E /* ItemObject.m in Sources */,
