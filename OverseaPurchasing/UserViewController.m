@@ -36,6 +36,8 @@
 
 - (void)dealloc {
     [_useremail release];
+    [_useremail release];
     [super dealloc];
 }
 @end
+ 

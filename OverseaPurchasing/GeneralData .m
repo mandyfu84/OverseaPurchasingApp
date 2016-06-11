@@ -46,4 +46,4 @@ static singletonObject *_singletonObject =nil;
 -(void)dealloc{
     [super dealloc];
 }
-@end
+@end 
