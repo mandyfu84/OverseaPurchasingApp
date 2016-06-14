@@ -15,13 +15,13 @@
 {
     NSMutableArray *itemImformation = [@[] mutableCopy];
     
-    NSDictionary *item1Dic = @{ITEM_TITLE : @"Item1", ITEM_CATEGORY : @"Item Category1" ,ITEM_PRICE : @100, ITEM_COUNTRY : @"Item County1", ITEM_DETAIL : @"Item Detail1"};
+    NSDictionary *item1Dic = @{ITEM_TITLE : @"Item1", ITEM_CATEGORY : @"Item Category1" ,ITEM_PRICE : @0.00000001, ITEM_COUNTRY : @"Item County1", ITEM_DETAIL : @"Item Detail1"};
     [itemImformation addObject:item1Dic];
 
-    NSDictionary *item2Dic = @{ITEM_TITLE : @"Item2", ITEM_CATEGORY : @"Item Category2" ,ITEM_PRICE : @200, ITEM_COUNTRY : @"Item County1", ITEM_DETAIL : @"Item Detail1"};
+    NSDictionary *item2Dic = @{ITEM_TITLE : @"Item2", ITEM_CATEGORY : @"Item Category2" ,ITEM_PRICE : @0.00000002, ITEM_COUNTRY : @"Item County1", ITEM_DETAIL : @"Item Detail1"};
     [itemImformation addObject:item2Dic];
     
-    NSDictionary *item3Dic = @{ITEM_TITLE : @"Item3", ITEM_CATEGORY : @"Item Category1" ,ITEM_PRICE : @300, ITEM_COUNTRY : @"Item County1", ITEM_DETAIL : @"Item Detail1"};
+    NSDictionary *item3Dic = @{ITEM_TITLE : @"Item3", ITEM_CATEGORY : @"Item Category1" ,ITEM_PRICE : @0.00000003, ITEM_COUNTRY : @"Item County1", ITEM_DETAIL : @"Item Detail1"};
     [itemImformation addObject:item3Dic];
     
     return [itemImformation copy];

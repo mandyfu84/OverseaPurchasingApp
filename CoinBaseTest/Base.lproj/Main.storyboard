@@ -645,80 +645,23 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="iaE-dB-Stf">
-                                        <rect key="frame" x="8" y="25" width="152" height="30"/>
+                                        <rect key="frame" x="87" y="211" width="157" height="30"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <state key="normal" title="Get Current User"/>
+                                        <state key="normal" title="Go OverseaPurchasing"/>
                                         <connections>
                                             <action selector="currentUserAction:" destination="CIH-pp-SXD" eventType="touchUpInside" id="eaP-zZ-kY5"/>
+                                            <segue destination="Red-c3-MtZ" kind="modal" id="m9a-h5-u75"/>
                                         </connections>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="y2U-J7-Dv6">
-                                        <rect key="frame" x="181" y="25" width="129" height="30"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <state key="normal" title="Get Price"/>
-                                        <connections>
-                                            <action selector="getPrice:" destination="CIH-pp-SXD" eventType="touchUpInside" id="PdV-UG-JEt"/>
-                                        </connections>
-                                    </button>
-                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="e.g. john@zoaks.com" textAlignment="natural" minimumFontSize="17" id="ZEe-2J-5dm">
-                                        <rect key="frame" x="18" y="202" width="285" height="30"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                        <textInputTraits key="textInputTraits"/>
-                                    </textField>
-                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="e.g. 0.00000001" textAlignment="natural" minimumFontSize="17" id="9Re-jb-9zp">
-                                        <rect key="frame" x="18" y="130" width="285" height="30"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                        <textInputTraits key="textInputTraits"/>
-                                    </textField>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="amount(BTC)" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="vPH-W6-ZK6">
-                                        <rect key="frame" x="18" y="101" width="107" height="21"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
-                                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="receiver" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="zoq-Xi-a0A">
-                                        <rect key="frame" x="18" y="173" width="210" height="21"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="vIG-Ps-4cO">
-                                        <rect key="frame" x="188" y="248" width="115" height="30"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <state key="normal" title="Send BTC"/>
-                                        <connections>
-                                            <action selector="createOrder:" destination="CIH-pp-SXD" eventType="touchUpInside" id="Cbe-3h-2Gy"/>
-                                        </connections>
-                                    </button>
-                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="natural" id="Pw5-HF-aPQ">
-                                        <rect key="frame" x="18" y="286" width="285" height="254"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                        <string key="text">備註:
-開始時請先至測試網路
-http://sandbox.coinbase.com 
-註冊帳號，系統會自動發給你0.1個比特幣(BTC)，在測試環境下1 BTC=10000 USD(實際情況1 BTC=440 USD)，BTC計算的最小單位是10的-8次方，也就是0.00000001 BTC</string>
-                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                                        <dataDetectorType key="dataDetectorTypes" link="YES"/>
-                                    </textView>
                                 </subviews>
                             </scrollView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
-                    <connections>
-                        <outlet property="amountField" destination="9Re-jb-9zp" id="0ZB-pm-PDM"/>
-                        <outlet property="receiverField" destination="ZEe-2J-5dm" id="Kxb-Fi-8fY"/>
-                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Pwy-9T-C7P" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2583" y="-1136"/>
+            <point key="canvasLocation" x="2623" y="-1120"/>
         </scene>
     </scenes>
     <resources>
@@ -730,6 +673,6 @@ http://sandbox.coinbase.com
         <image name="user.png" width="30" height="30"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="efH-jL-3UO"/>
+        <segue reference="m9a-h5-u75"/>
     </inferredMetricsTieBreakers>
 </document>

@@ -86,6 +86,7 @@
 
 -(IBAction)currentUserAction:(id)sender
 {
+    /*
     [self.client getCurrentUser:^(CoinbaseUser *user, NSError *error) {
         if ([error.userInfo[@"statusCode"] intValue] == 401) {
             ///[self reAuthorize];
@@ -98,6 +99,7 @@
             currentUser = user;
         }
     }];
+     */
 }
 
 /**
