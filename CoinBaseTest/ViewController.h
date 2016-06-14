@@ -34,6 +34,8 @@
 @property (nonatomic, retain) Coinbase *client;
 //@property (retain, nonatomic) IBOutlet UITextField *email;
 //@property (retain, nonatomic) IBOutlet UITextField *password;
+@property (retain, nonatomic) IBOutlet UILabel *emailField;
+@property (retain, nonatomic) IBOutlet UILabel *moneyField;
 - (IBAction)login:(UIButton *)sender;
 
 @end

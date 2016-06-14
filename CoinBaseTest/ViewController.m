@@ -44,6 +44,19 @@
     }
 }
 
+
+-(void)viewWillAppear:(BOOL)animated{
+    NSLog(@"didWillAppear");
+    [self.client getCurrentUser:^(CoinbaseUser *user, NSError *error) {
+        if (error) {
+            NSLog(@"Could not load user: %@", error);
+        } else {
+            self.emailField.text = user.email;
+            NSLog(@"Signed in as: %@", user.email);
+        }
+    }];
+}
+
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
@@ -105,6 +118,8 @@
             NSLog(@"Could not load user: %@", error);
         } else {
             NSLog(@"Signed in as: %@", user.email);
+            self.emailField.text = user.email;
+            self.moneyField.text = user.balance.amount;
             currentUser = user;
         }
     }];
@@ -178,6 +193,8 @@
 - (void)dealloc {
     //[_email release];
     //[_password release];
+    [_emailField release];
+    [_moneyField release];
     [super dealloc];
 }
 
