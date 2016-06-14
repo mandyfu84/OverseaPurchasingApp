@@ -22,6 +22,19 @@
     
     // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
     // self.navigationItem.rightBarButtonItem = self.editButtonItem;
+    
+    UITapGestureRecognizer *tapRecognizer = [[UITapGestureRecognizer alloc]
+                                             
+                                             initWithTarget:self action:@selector(handleBackgroundTap:)];
+    
+    tapRecognizer.cancelsTouchesInView = NO;
+    
+    [self.view addGestureRecognizer:tapRecognizer];
+    
+    
+    
+    
+    
     if (![UIImagePickerController isSourceTypeAvailable:UIImagePickerControllerSourceTypeCamera]) {
         
         UIAlertView *myAlertView = [[UIAlertView alloc] initWithTitle:@"Error"
@@ -31,7 +44,23 @@
                                                     otherButtonTitles: nil];
         [myAlertView show];
     }
+    
+    
+    
 }
+
+
+- (void) handleBackgroundTap:(UITapGestureRecognizer*)sender
+
+{
+    [_ItemName resignFirstResponder];
+    [_ItemPrice resignFirstResponder];
+    [_ItemCategory resignFirstResponder];
+    [_ItemDetail resignFirstResponder];
+    [_ItemLocation resignFirstResponder];
+}
+
+
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
