@@ -24,17 +24,16 @@
 @interface ViewController : UIViewController
 {
     CoinbaseUser *currentUser;
-    
-    IBOutlet UITextField *amountField;
-    IBOutlet UITextField *receiverField;
+    //IBOutlet UITextField *amountField;
+    //IBOutlet UITextField *receiverField;
 
 }
 - (void)authenticationComplete:(NSDictionary *)response;
 @property (nonatomic, strong) NSString *accessToken;
 @property (strong) NSString *refreshToken;
 @property (nonatomic, retain) Coinbase *client;
-@property (retain, nonatomic) IBOutlet UITextField *email;
-@property (retain, nonatomic) IBOutlet UITextField *password;
+//@property (retain, nonatomic) IBOutlet UITextField *email;
+//@property (retain, nonatomic) IBOutlet UITextField *password;
 - (IBAction)login:(UIButton *)sender;
 
 @end

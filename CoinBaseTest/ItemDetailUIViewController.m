@@ -178,7 +178,7 @@
  */
 -(IBAction)createOrder:(id)sender
 {
-    if (!amountField.text.length) {
+/*    if (!amountField.text.length) {
         [[[UIAlertView alloc] initWithTitle:@"send error" message:@"Please enter amount" delegate:nil cancelButtonTitle:@"Ok" otherButtonTitles:nil] show];
         return;
     }
@@ -186,7 +186,7 @@
         [[[UIAlertView alloc] initWithTitle:@"send error" message:@"Please enter receiver" delegate:nil cancelButtonTitle:@"Ok" otherButtonTitles:nil] show];
         return;
     }
-    
+*/
     [self.client getPrimaryAccount:^(CoinbaseAccount *acc, NSError *error) {
         if ([error.userInfo[@"statusCode"] intValue] == 401) {
             ///[self reAuthorize];
@@ -204,7 +204,7 @@
         //            NSLog(@"bal:%@",bal);
         //
         //        }];
-        [acc sendAmount:amountField.text to:receiverField.text completion:^(CoinbaseTransaction *transaction, NSError *sendError) {
+        [acc sendAmount:@"0.00000002" to:@"40347905S@gmail.com" completion:^(CoinbaseTransaction *transaction, NSError *sendError) {
             NSLog(@"error:%@",sendError);
             NSLog(@"transaction:%@",transaction);
             NSLog(@"receiverField's text = %@",receiverField.text);

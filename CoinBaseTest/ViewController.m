@@ -31,6 +31,7 @@
  */
 -(void)viewDidAppear:(BOOL)animated
 {
+    NSLog(@"didappear");
     [super viewDidAppear:animated];
     if ([[NSUserDefaults standardUserDefaults] objectForKey:@"access_token"]) {
         self.accessToken = [[NSUserDefaults standardUserDefaults] objectForKey:@"access_token"];
@@ -48,10 +49,11 @@
     // Dispose of any resources that can be recreated.
 }
 
-
+/*
 - (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event{
     [self.view endEditing:YES];
 }
+*/
 
 -(void)reAuthorize
 {
@@ -94,7 +96,6 @@
 
 -(IBAction)currentUserAction:(id)sender
 {
-    /*
     [self.client getCurrentUser:^(CoinbaseUser *user, NSError *error) {
         if ([error.userInfo[@"statusCode"] intValue] == 401) {
             ///[self reAuthorize];
@@ -107,14 +108,16 @@
             currentUser = user;
         }
     }];
-     */
 }
+
+
 
 /**
  *  getPrice
  *
  *  取得比特幣對美金匯率
  */
+/*
 -(IBAction)getPrice:(id)sender
 {
     [self.client getBuyPrice:^(CoinbaseBalance *btc, NSArray *fees, CoinbaseBalance *subtotal, CoinbaseBalance *total, NSError *error) {
@@ -122,12 +125,13 @@
         [[[UIAlertView alloc] initWithTitle:@"price" message:priceString delegate:nil cancelButtonTitle:@"Ok" otherButtonTitles:nil] show];
     }];
 }
-
+*/
 /**
  *  createOrder
  *
  *  指定對方的email與比特幣金額，轉帳指定的比特幣數量給對方
  */
+/*
 -(IBAction)createOrder:(id)sender
 {
     if (!amountField.text.length) {
@@ -169,13 +173,16 @@
     }];
     
 }
+*/
 
 - (void)dealloc {
-    [_email release];
-    [_password release];
+    //[_email release];
+    //[_password release];
     [super dealloc];
 }
+
 - (IBAction)login:(UIButton *)sender {
+    /*
     NSString *MY_COLLECTION = @"User";
     // get input from textField
     NSString *email = self.email.text;
@@ -203,8 +210,11 @@
                                    }];
         [alert addAction:errormsg];
         [self presentViewController:alert animated:YES completion:nil];
-    }
+     */
+    NSLog(@"Confirm");
 }
+
+
 @end
 
 

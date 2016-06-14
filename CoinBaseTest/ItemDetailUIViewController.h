@@ -22,8 +22,8 @@
 @property (strong, nonatomic) IBOutlet ItemObject *itemObject;
 @property (strong, nonatomic) IBOutlet UITableView *tabelView;
 
-
-
+#define receiverAccount @"40347905S@gmail.com"
+#define itemprice @"0.00000001"
 
 // John's account
 #define kCoinbaseDemoClientID @"e27225ec83d04ae824534ca72b8837efdf3a07ca4ec3be907c3b52d2e07fba13"
