@@ -27,27 +27,27 @@
     // self.navigationItem.rightBarButtonItem = self.editButtonItem;
     
     
-//    NSString *item1 = @"1";
-//    NSString *item2 = @"2";
-//    NSString *item3 = @"3";
-//    NSString *item4 = @"4";
-//    NSString *item5 = @"5";
-//    NSString *item6 = @"6";
-//    NSString *item7 = @"7";
-//    NSString *item8 = @"8";
-//    NSString *item9 = @"9";
-//self.items = [[NSMutableArray alloc] initWithObjects:item1, item2, item3, item4, item5, item6, item7, item8, item9, nil];
+    //    NSString *item1 = @"1";
+    //    NSString *item2 = @"2";
+    //    NSString *item3 = @"3";
+    //    NSString *item4 = @"4";
+    //    NSString *item5 = @"5";
+    //    NSString *item6 = @"6";
+    //    NSString *item7 = @"7";
+    //    NSString *item8 = @"8";
+    //    NSString *item9 = @"9";
+    //self.items = [[NSMutableArray alloc] initWithObjects:item1, item2, item3, item4, item5, item6, item7, item8, item9, nil];
     
     self.items = [[NSMutableArray alloc] init];
     
-   for (NSMutableDictionary *itemData in [Items allItems]){
-       NSString *imageName = [NSString stringWithFormat:@"%@.png", itemData[ITEM_TITLE]];
-       ItemObject *item = [[ItemObject alloc] initWithData:itemData andImage:[UIImage imageNamed:imageName]];
-       [self.items addObject:item];
+    for (NSMutableDictionary *itemData in [Items allItems]){
+        NSString *imageName = [NSString stringWithFormat:@"%@.png", itemData[ITEM_TITLE]];
+        ItemObject *item = [[ItemObject alloc] initWithData:itemData andImage:[UIImage imageNamed:imageName]];
+        [self.items addObject:item];
     }
     
-
-
+    
+    
     
 }
 
@@ -80,8 +80,8 @@
     cell.detailTextLabel.text =  [NSNumber numberWithFloat:item.price].stringValue;
     cell.imageView.image = item.image;
     
-  //  cell.backgroundColor = [UIColor clearColor];
-
+    //  cell.backgroundColor = [UIColor clearColor];
+    
     return cell;
 }
 
@@ -102,47 +102,47 @@
 
 
 /*
-// Override to support conditional editing of the table view.
-- (BOOL)tableView:(UITableView *)tableView canEditRowAtIndexPath:(NSIndexPath *)indexPath {
-    // Return NO if you do not want the specified item to be editable.
-    return YES;
-}
-*/
+ // Override to support conditional editing of the table view.
+ - (BOOL)tableView:(UITableView *)tableView canEditRowAtIndexPath:(NSIndexPath *)indexPath {
+ // Return NO if you do not want the specified item to be editable.
+ return YES;
+ }
+ */
 
 /*
-// Override to support editing the table view.
-- (void)tableView:(UITableView *)tableView commitEditingStyle:(UITableViewCellEditingStyle)editingStyle forRowAtIndexPath:(NSIndexPath *)indexPath {
-    if (editingStyle == UITableViewCellEditingStyleDelete) {
-        // Delete the row from the data source
-        [tableView deleteRowsAtIndexPaths:@[indexPath] withRowAnimation:UITableViewRowAnimationFade];
-    } else if (editingStyle == UITableViewCellEditingStyleInsert) {
-        // Create a new instance of the appropriate class, insert it into the array, and add a new row to the table view
-    }   
-}
-*/
+ // Override to support editing the table view.
+ - (void)tableView:(UITableView *)tableView commitEditingStyle:(UITableViewCellEditingStyle)editingStyle forRowAtIndexPath:(NSIndexPath *)indexPath {
+ if (editingStyle == UITableViewCellEditingStyleDelete) {
+ // Delete the row from the data source
+ [tableView deleteRowsAtIndexPaths:@[indexPath] withRowAnimation:UITableViewRowAnimationFade];
+ } else if (editingStyle == UITableViewCellEditingStyleInsert) {
+ // Create a new instance of the appropriate class, insert it into the array, and add a new row to the table view
+ }
+ }
+ */
 
 /*
-// Override to support rearranging the table view.
-- (void)tableView:(UITableView *)tableView moveRowAtIndexPath:(NSIndexPath *)fromIndexPath toIndexPath:(NSIndexPath *)toIndexPath {
-}
-*/
+ // Override to support rearranging the table view.
+ - (void)tableView:(UITableView *)tableView moveRowAtIndexPath:(NSIndexPath *)fromIndexPath toIndexPath:(NSIndexPath *)toIndexPath {
+ }
+ */
 
 /*
-// Override to support conditional rearranging of the table view.
-- (BOOL)tableView:(UITableView *)tableView canMoveRowAtIndexPath:(NSIndexPath *)indexPath {
-    // Return NO if you do not want the item to be re-orderable.
-    return YES;
-}
-*/
+ // Override to support conditional rearranging of the table view.
+ - (BOOL)tableView:(UITableView *)tableView canMoveRowAtIndexPath:(NSIndexPath *)indexPath {
+ // Return NO if you do not want the item to be re-orderable.
+ return YES;
+ }
+ */
 
 /*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
-}
-*/
+ #pragma mark - Navigation
+ 
+ // In a storyboard-based application, you will often want to do a little preparation before navigation
+ - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
+ // Get the new view controller using [segue destinationViewController].
+ // Pass the selected object to the new view controller.
+ }
+ */
 
 @end

@@ -1,12 +1,13 @@
 //
-//  ViewController.m
-//  CoinBaseTest
+//  LogIn.m
+//  OverseaPurchasing
 //
-//  Created by John Hsu on 2016/4/23.
-//  Copyright © 2016年 test. All rights reserved.
+//  Created by Timmy on 2016/6/11.
+//  Copyright © 2016年 ntnu. All rights reserved.
 //
 
 #import "ViewController.h"
+#import "MongoLabSDK/MongoLabSDK.h"
 #import <coinbase-official/CoinbaseOAuth.h>
 #import <coinbase-official/CoinbaseUser.h>
 #import <coinbase-official/CoinbaseAccount.h>
@@ -15,7 +16,10 @@
 @end
 
 @implementation ViewController
+//TODO - Enter database name - you can have multiple databases being used
+#define MY_DATABASE @"tpiti_wallet"
 
+#define allTrim( object ) [object stringByTrimmingCharactersInSet:[NSCharacterSet whitespaceCharacterSet] ]
 - (void)viewDidLoad {
     [super viewDidLoad];
 }
@@ -44,6 +48,10 @@
     // Dispose of any resources that can be recreated.
 }
 
+
+- (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event{
+    [self.view endEditing:YES];
+}
 
 -(void)reAuthorize
 {
@@ -162,4 +170,77 @@
     
 }
 
+- (void)dealloc {
+    [_email release];
+    [_password release];
+    [super dealloc];
+}
+- (IBAction)login:(UIButton *)sender {
+    NSString *MY_COLLECTION = @"User";
+    // get input from textField
+    NSString *email = self.email.text;
+    NSString *password = self.password.text;
+    // Generate Query like {$and:[{"email":"xxxx@gmail.com"},{"password":"123456789"}]}
+    NSString *query = [NSString stringWithFormat:@"{$and:[{\"email\":\"%@\"},{\"password\":\"%@\"}]}", email,password];
+    //NSLog(@"%@",query);
+    // Query
+    NSArray *resultList = [[MongoLabSDK sharedInstance] getCollectionItemList:MY_DATABASE collectionName:MY_COLLECTION query:query];
+    // Error Detection
+    NSLog(@"%@",resultList);
+    
+    if (resultList == nil || [resultList count] == 0) {
+        UIAlertController * alert=   [UIAlertController
+                                      alertControllerWithTitle:@"登入失敗"
+                                      message:@"請重新輸入"
+                                      preferredStyle:UIAlertControllerStyleAlert];
+        UIAlertAction* errormsg = [UIAlertAction
+                                   actionWithTitle:@"再試一次"
+                                   style:UIAlertActionStyleDefault
+                                   handler:^(UIAlertAction * action)
+                                   {
+                                       NSLog(@"unregistered user!");
+                                       return;//block
+                                   }];
+        [alert addAction:errormsg];
+        [self presentViewController:alert animated:YES completion:nil];
+    }
+}
 @end
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
