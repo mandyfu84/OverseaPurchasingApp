@@ -163,7 +163,9 @@
 }
 
 
-
+- (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event{
+    [self.view endEditing:YES];
+}
 
 - (IBAction)Upload:(UIButton *)sender {
     NSLog(@"Upload");
