@@ -1,0 +1,33 @@
+PODS:
+  - coinbase-official (3.2.4):
+    - coinbase-official/client (= 3.2.4)
+    - coinbase-official/core (= 3.2.4)
+    - coinbase-official/OAuth (= 3.2.4)
+  - coinbase-official/client (3.2.4):
+    - coinbase-official/core
+  - coinbase-official/core (3.2.4)
+  - coinbase-official/OAuth (3.2.4):
+    - coinbase-official/core
+  - IQKeyboardManager (4.0.3)
+  - JHKit (0.1.0)
+  - Masonry (0.6.4)
+  - MBProgressHUD (0.9.2)
+  - Toast (2.4)
+
+DEPENDENCIES:
+  - coinbase-official
+  - IQKeyboardManager
+  - JHKit
+  - Masonry (~> 0.6.3)
+  - MBProgressHUD
+  - Toast (~> 2.4)
+
+SPEC CHECKSUMS:
+  coinbase-official: c8b448843ecc6da4402e0600d53ce10fb9db33ca
+  IQKeyboardManager: be9695ffc5a52077deb4847608f338771022d6d1
+  JHKit: 7250e19fdeea69ad17ed30e839301c169c13982d
+  Masonry: 281802d04d787ea2973179ee8bcb50500579ede2
+  MBProgressHUD: 1569cf7ace17a8bac47aabfbb8580a49690386d1
+  Toast: 0773b8fc0e97352ca6054517bec7ebdd4110029d
+
+COCOAPODS: 0.39.0

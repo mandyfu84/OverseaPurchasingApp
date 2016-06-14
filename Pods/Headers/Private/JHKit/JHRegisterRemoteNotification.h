@@ -1,0 +1,1 @@
+../../../JHKit/Pod/Classes/JHRegisterRemoteNotification.h

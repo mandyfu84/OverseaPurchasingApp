@@ -1,0 +1,1819 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0000405BCC000215A3934B9359375062 /* CoinbaseOAuth.m in Sources */ = {isa = PBXBuildFile; fileRef = 48D817839DAAB62B58B7527168EB4605 /* CoinbaseOAuth.m */; };
+		000869D50BECB3200C95168B6DBFBFD2 /* CoinbaseTransfer.m in Sources */ = {isa = PBXBuildFile; fileRef = 2434205B7EDEF87493098A180BD1EC8F /* CoinbaseTransfer.m */; };
+		020C65E81824E3D0EECFFFEEF2B530DD /* CoinbaseRecurringPayment.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D92F5D9800698094F175B62F0546C87 /* CoinbaseRecurringPayment.m */; };
+		02DC2019E8142F8BBFEA76C5EE5AFEE4 /* CoinbaseAuthorization.m in Sources */ = {isa = PBXBuildFile; fileRef = 67BE4160274B65ADE1A79D9317EAF09C /* CoinbaseAuthorization.m */; };
+		04F546EC78C4547C616C178F5F9C7C19 /* JHSafeKeyedSubscript.m in Sources */ = {isa = PBXBuildFile; fileRef = C6AEB60E62E8A620F890BA3E3EDE6954 /* JHSafeKeyedSubscript.m */; };
+		053AFB057D18DA56F19C5733E8D624C9 /* CoinbaseRefund.m in Sources */ = {isa = PBXBuildFile; fileRef = C3F7C84DE78EC52BF52843FF2D0DC80F /* CoinbaseRefund.m */; };
+		0D5D3A8DA1A3B1A51A5E64158C289493 /* CoinbaseApplication.m in Sources */ = {isa = PBXBuildFile; fileRef = 048AEDF4A4148DF45D599CA4F9107179 /* CoinbaseApplication.m */; };
+		0F9DBB180812BDD1DBDA222A2B44DA67 /* IQTitleBarButtonItem.m in Sources */ = {isa = PBXBuildFile; fileRef = F7074F9D904EA6E36B932285658F72D4 /* IQTitleBarButtonItem.m */; };
+		117A6F8DDAE6D68AF44C19F13B8D91B2 /* CoinbaseReport.m in Sources */ = {isa = PBXBuildFile; fileRef = 2829CB7063DE9B2C4B462346865FA2AB /* CoinbaseReport.m */; };
+		12F791CB6D77DE97C2F7D074BF2DD510 /* CoinbaseAddress.h in Headers */ = {isa = PBXBuildFile; fileRef = 891D56CEE7B0ECCC474DA0E08ED37E2E /* CoinbaseAddress.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		130C31057A9B66DB5A843A5904A21484 /* JHSystemPaths.h in Headers */ = {isa = PBXBuildFile; fileRef = 2818173904C02A8F601A706EEADE9DED /* JHSystemPaths.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		13FF5874401735C70E1C4479B5948EEE /* CoinbaseCertificatePinning.m in Sources */ = {isa = PBXBuildFile; fileRef = CE6A7D75A144381973BEB833ED9B7966 /* CoinbaseCertificatePinning.m */; };
+		14CE12936C5CA711118E9BA232BCDC66 /* verisign.der in Resources */ = {isa = PBXBuildFile; fileRef = 3D8A00AC855739CDAC62D535C5668FF6 /* verisign.der */; };
+		166B3C4678407DD3A7753EC0D22EA886 /* CoinbaseToken.m in Sources */ = {isa = PBXBuildFile; fileRef = A9DDD6AF9A6A4E7664B4211F5A8DA56B /* CoinbaseToken.m */; };
+		18DCE7CC39EBF7A5E12031A116FBFDB3 /* CoinbaseReport.h in Headers */ = {isa = PBXBuildFile; fileRef = 3AE6E7268215541ED3444FE86E74574B /* CoinbaseReport.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1913A4F91056A21B2E95467938F9B48B /* CoinbaseObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 40C95F725EABE5E43EF03CF50D93FCEC /* CoinbaseObject.m */; };
+		1B7B0612DCAE96044CA035A4680F039A /* CoinbasePaymentMethod.m in Sources */ = {isa = PBXBuildFile; fileRef = C80E73B06705D905805CBCB0C53148E2 /* CoinbasePaymentMethod.m */; };
+		1C9A0E8EE17C8D72FD9E3914D85B86FB /* IQKeyboardManager-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = E321D015144540D24E3CCCB736DA2A42 /* IQKeyboardManager-dummy.m */; };
+		1FDFA7E404C9B33C636E8124E2731E95 /* IQUITextFieldView+Additions.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E6BF3436D1E4E3BA889116617C3229D /* IQUITextFieldView+Additions.m */; };
+		2155A25001AB6F24410DEDFC1D14E9AB /* CoinbaseDefines.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D3E6BFED29921B10E82462865DBB9EA /* CoinbaseDefines.m */; };
+		2635867332383A79A7385386BD617AAC /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4AE7FD0E16F3FACCFE19068F1E872D9F /* CoreGraphics.framework */; };
+		2905381350CEFFBFFA9BC8B5D027F190 /* MASConstraint.h in Headers */ = {isa = PBXBuildFile; fileRef = 648401A45034690204667B66F040145E /* MASConstraint.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2979E54C4AFD27076576E82ADEED2F00 /* NSLayoutConstraint+MASDebugAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = 1FBCA92FF85467C0F4F19EB7CA49E11F /* NSLayoutConstraint+MASDebugAdditions.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2989492A1A182744E36FD61DF1746D94 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE437620300D81EED04DF8C0301AF9D9 /* Foundation.framework */; };
+		2F6FE6DFADB803598AA4DA02C388948D /* IQKeyboardReturnKeyHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = B225ECF97F2705ACF5AB93A37488C3B4 /* IQKeyboardReturnKeyHandler.m */; };
+		2F85D170E76C661AB0D9E9A8B206C78D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE437620300D81EED04DF8C0301AF9D9 /* Foundation.framework */; };
+		305E4BF435D85E85AE71FD367D669673 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ED04AE2201316F6590E7AD9952706C7B /* UIKit.framework */; };
+		326A22972F0AEA0D3123322D48588006 /* CoinbaseOrder.h in Headers */ = {isa = PBXBuildFile; fileRef = 17857999A5FBFCE2B96FD977D4C72F2C /* CoinbaseOrder.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		331718BFB4A91CFFE026492905231562 /* ViewController+MASAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = 0230608E0C2AB0A05834FDE41621C349 /* ViewController+MASAdditions.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		335DCBC17D2469F228020EF6C7B41F7C /* MASConstraintMaker.m in Sources */ = {isa = PBXBuildFile; fileRef = 71D92B88D3219CA545165DC2746F6FB6 /* MASConstraintMaker.m */; };
+		3517C5B8CE18B37347AF7F89DFA25CAD /* UIView+Toast.h in Headers */ = {isa = PBXBuildFile; fileRef = CF8521A4385B822BE7F546894C6FAD90 /* UIView+Toast.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3671B6E4324B29C6AA963C53F7F12A17 /* IQTextView.h in Headers */ = {isa = PBXBuildFile; fileRef = 8F4A0FA5AB2ACF7057822FADBFC031BB /* IQTextView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		375DA464138B18BDE47E88BE53ED4CAC /* CoinbaseUser.h in Headers */ = {isa = PBXBuildFile; fileRef = 8EA15612D40F80A199BF3F3A3BDF79B1 /* CoinbaseUser.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		379912F8F5C2177FFB76D28E3D2FA718 /* IQKeyboardManager.h in Headers */ = {isa = PBXBuildFile; fileRef = EFC8C58BE7F0D2ECCC02DEBE47F38A9E /* IQKeyboardManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		394E0CE12D0F42352DEF8BCB8CF4047B /* JHURLProtocol.m in Sources */ = {isa = PBXBuildFile; fileRef = 38B3B63AC0DDAD0B6020365A948C7D78 /* JHURLProtocol.m */; };
+		3CC3AC5FCA9B7FD6E608B5BAE8C66CA7 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE437620300D81EED04DF8C0301AF9D9 /* Foundation.framework */; };
+		3EE264C2B3A050E1E356B0150B9BF470 /* CoinbaseCertificatePinning.h in Headers */ = {isa = PBXBuildFile; fileRef = FA995AD38DC4F70426A46D84C68DC56A /* CoinbaseCertificatePinning.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3F63C119F95A6735AE627BBB1BEBC4B1 /* MASViewAttribute.h in Headers */ = {isa = PBXBuildFile; fileRef = D45A2E1F6CA3C517561D0D6388BEA21B /* MASViewAttribute.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4184EED3AB1280CAF83C7D9DA9274560 /* IQUIView+IQKeyboardToolbar.m in Sources */ = {isa = PBXBuildFile; fileRef = E05D692B2533E885AB608500B8D3A860 /* IQUIView+IQKeyboardToolbar.m */; };
+		432BD50F1E699EDF2EA007E850FFCEF7 /* View+MASShorthandAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = 74632655D7CDEA949FC09B864ED0FC08 /* View+MASShorthandAdditions.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4516F94FB4D9904C709A53C9B6E668BE /* CoinbaseToken.h in Headers */ = {isa = PBXBuildFile; fileRef = D07AE84F1540D9F05E1476F0F8AD6291 /* CoinbaseToken.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		474C4F22F9166E9B431ABF0598F21443 /* IQUIViewController+Additions.m in Sources */ = {isa = PBXBuildFile; fileRef = 169B69C4D2999446944F725C6E0D24D7 /* IQUIViewController+Additions.m */; };
+		4A77C3092E2C4DC85D2657B662F074B5 /* IQTextView.m in Sources */ = {isa = PBXBuildFile; fileRef = A0A8B918F429025E749D9EF6158366CE /* IQTextView.m */; };
+		4BE2C99A912D11BE1D95A5828EBE387C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE437620300D81EED04DF8C0301AF9D9 /* Foundation.framework */; };
+		4DD5258D1C4CDC612A48E36D1074E607 /* CoinbaseObject.h in Headers */ = {isa = PBXBuildFile; fileRef = B2BC00CB3AC7678BD8C8CF3B08FDBA94 /* CoinbaseObject.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4EEBF0382F85DFD155CF32B6416F4E08 /* CoinbaseInternal.h in Headers */ = {isa = PBXBuildFile; fileRef = E1D32E59ACD0BAFAECB4E6441E7A82B7 /* CoinbaseInternal.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4F6FA774B85EBE3134E19DA7B5F08D9B /* IQUIView+Hierarchy.m in Sources */ = {isa = PBXBuildFile; fileRef = 017C0E467C945782E9E7C0CBF8C9EC50 /* IQUIView+Hierarchy.m */; };
+		5054A167148A15D4686BBC51B5035B17 /* JHDegradingAction.m in Sources */ = {isa = PBXBuildFile; fileRef = 78E8D73D897E07215016ECB9DF111C26 /* JHDegradingAction.m */; };
+		5457FCC2699281B5A4203BA1559F593F /* NSArray+MASAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = F79C5DA512F499B000ABAEE175A15F19 /* NSArray+MASAdditions.m */; };
+		55EF45A9B7EF08C93D3EBA1A81EE778C /* Coinbase.m in Sources */ = {isa = PBXBuildFile; fileRef = 13027B665C7358036DAE7DA4D20FEFC7 /* Coinbase.m */; };
+		57557F6EFBC36E2A2A70BA37359ECE09 /* CoinbasePaymentMethod.h in Headers */ = {isa = PBXBuildFile; fileRef = 7F7FF734E526B9A71F77FAC74DDDCA5E /* CoinbasePaymentMethod.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		58941DFF62DA7553DB9AEB8F1EB0E508 /* IQUIWindow+Hierarchy.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B48570CB7363AC930459AF74E0B020A /* IQUIWindow+Hierarchy.m */; };
+		5EB4F27B76513AE918BA5AE0868E87C8 /* MBProgressHUD.h in Headers */ = {isa = PBXBuildFile; fileRef = 781EE5317D594964A42D7B36ACCFBDC0 /* MBProgressHUD.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		62CEBF7DD504E345FBB7250E833039F5 /* JHURLProtocol.h in Headers */ = {isa = PBXBuildFile; fileRef = 78A310732F55D4DFBA8567197BD134B6 /* JHURLProtocol.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		6314CB873D75DF3E69131DB6A652EE9A /* CoinbaseAccount.m in Sources */ = {isa = PBXBuildFile; fileRef = DEA5A7A3E627E779659EC66A33D64D4F /* CoinbaseAccount.m */; };
+		63A5EB7B8005256326E69C339D293044 /* IQTitleBarButtonItem.h in Headers */ = {isa = PBXBuildFile; fileRef = 01003226C04AFBD39AD6C0CAE4F5E06F /* IQTitleBarButtonItem.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		655915B2DDAFB638774BDE19B3AAE8ED /* IQUIView+IQKeyboardToolbar.h in Headers */ = {isa = PBXBuildFile; fileRef = 66C3599F1CB8D4E25664680E5D3D0C6F /* IQUIView+IQKeyboardToolbar.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		65A984DBA40E404B23C585F92AFA48C4 /* CoinbaseApplication.h in Headers */ = {isa = PBXBuildFile; fileRef = 0968E10B4F7D368F71A8E40576289626 /* CoinbaseApplication.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		706B941F591C5E310380270187C010C7 /* IQBarButtonItem.h in Headers */ = {isa = PBXBuildFile; fileRef = 23E4D373BE11CDC66F1D8B4DF138F03F /* IQBarButtonItem.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		70D801E0B95C23BCC270E4EC8659D463 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4AE7FD0E16F3FACCFE19068F1E872D9F /* CoreGraphics.framework */; };
+		738CBD86A976878ED4348B804B73C33E /* CoinbasePagingHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = D9920BEBBA10D75598B69DE87C7A035E /* CoinbasePagingHelper.m */; };
+		73E6D53087D5F8AE62F4ADA39378D451 /* CoinbaseButton.m in Sources */ = {isa = PBXBuildFile; fileRef = E2DCE77BF0766F0DB94F34FD6238A3A8 /* CoinbaseButton.m */; };
+		76469FA0CFB3A5B28231C61B8DB1133A /* IQToolbar.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D68AF16C2681142FDB7A3917E6BFFE2 /* IQToolbar.m */; };
+		783A5D1E4EA73E85763F9EDBC0EE3F46 /* IQBarButtonItem.m in Sources */ = {isa = PBXBuildFile; fileRef = A9CECEABF9E4CD222CBDF1AC3A1BF70B /* IQBarButtonItem.m */; };
+		78BEEA03E10996A6426E3577DA904BD1 /* CoinbaseAddress.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E286548260CFB37ED7BAABC824E3C0B /* CoinbaseAddress.m */; };
+		797780A6234DF7A1A26B7263FDE8ED29 /* CoinbaseCurrency.m in Sources */ = {isa = PBXBuildFile; fileRef = 680837929036C1B3CA45468754BA24BC /* CoinbaseCurrency.m */; };
+		7D6A357B1AEA73B1216EF0E64E32D843 /* CoinbaseContact.h in Headers */ = {isa = PBXBuildFile; fileRef = D676D87FF16EC3EA2ADC9E720527F41E /* CoinbaseContact.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7DFE6E6C653A4D816A39FD35EFF5C40A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE437620300D81EED04DF8C0301AF9D9 /* Foundation.framework */; };
+		7E502D758CF7FB8F83C2584AB5B9A0D5 /* digicert-ev.der in Resources */ = {isa = PBXBuildFile; fileRef = 98D3EC42106CCD7A89675D625E9EED53 /* digicert-ev.der */; };
+		80198C029FE56A23A38E541E6EC7C499 /* IQKeyboardManagerConstantsInternal.h in Headers */ = {isa = PBXBuildFile; fileRef = 99D43BE72CE856B498BB1DF7A17F9D21 /* IQKeyboardManagerConstantsInternal.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		81403CAF6C4C1D3DC8B199289C3A6F59 /* View+MASAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 25866966C05F8D63BD65FC1860B76C32 /* View+MASAdditions.m */; };
+		81599471BAB0420D54E1ADF8507A5113 /* Masonry-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E1CC7EDBD23C1BA6D3A3EE7A301AA8A /* Masonry-dummy.m */; };
+		8211C19304D41D07A42911674D2DEB72 /* CoinbaseOAuth.h in Headers */ = {isa = PBXBuildFile; fileRef = B71B1CB6B1AE911B60A64A1E99FBC8C0 /* CoinbaseOAuth.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		82FC12F67E83874B93592218E9FB4CA0 /* MBProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = B094600D8389B5FCDA963F437484660C /* MBProgressHUD.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		8453273F9C601CB3305B670F9E0CE944 /* JHCacheData.h in Headers */ = {isa = PBXBuildFile; fileRef = 24955C4FB98150A140CEB89DA2B5C12A /* JHCacheData.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		87F64EB3D390707F20E564B9B35D02A2 /* CoinbaseAccount.h in Headers */ = {isa = PBXBuildFile; fileRef = F14F44C84E8C02920CE281020D2CE79D /* CoinbaseAccount.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		887298245448F16681E0E993BB6F4541 /* JHRegisterRemoteNotification.h in Headers */ = {isa = PBXBuildFile; fileRef = 926A94BF030B8BA4C10BE990082D1D2F /* JHRegisterRemoteNotification.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		89825FA1D17090932D08AA1AA9E56EC5 /* IQUIViewController+Additions.h in Headers */ = {isa = PBXBuildFile; fileRef = 20C2E00BA176D96E212DD03518307FF4 /* IQUIViewController+Additions.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8BAE6961D466C5B4C6E280F348F8E97A /* IQPreviousNextView.h in Headers */ = {isa = PBXBuildFile; fileRef = C97D464951E08B0DA3692DA95105CC24 /* IQPreviousNextView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8DF3CB0913E5F836850C29A337CF77EE /* JHSafeKeyedSubscript.h in Headers */ = {isa = PBXBuildFile; fileRef = 94052EC0DEBDC7717D7589F5D99BCDF5 /* JHSafeKeyedSubscript.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8EB342F582E3F3F0F6BED3FAEC9D9B27 /* JHRegisterRemoteNotification.m in Sources */ = {isa = PBXBuildFile; fileRef = 711702A3FA186535B1ECD712E953E419 /* JHRegisterRemoteNotification.m */; };
+		90A24A991E454267596DB404D6E1AEA1 /* Pods-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 272643F56613CA0D336AE3DBF19DC404 /* Pods-dummy.m */; };
+		9205037BA8C22574B33FC96C5EA829A3 /* Masonry.h in Headers */ = {isa = PBXBuildFile; fileRef = DCD5EBD95C21597136DD04FC69E31A03 /* Masonry.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		928E849C376B0C2E0EAF51E81FF1602D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE437620300D81EED04DF8C0301AF9D9 /* Foundation.framework */; };
+		92F35D8CAD731880D559A8747C72DB53 /* CoinbaseRefund.h in Headers */ = {isa = PBXBuildFile; fileRef = 57D333E3BE67CA480B8E4E0C686545DE /* CoinbaseRefund.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		931F7C4F90A8A69398B43904FD2EAE3D /* IQNSArray+Sort.h in Headers */ = {isa = PBXBuildFile; fileRef = 984A3C9F1DB19A278B43BD6AA01D2C36 /* IQNSArray+Sort.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		93A1A8A3D258E130B8A5F659740786E0 /* CoinbasePrice.m in Sources */ = {isa = PBXBuildFile; fileRef = EBCB0732DA119A4E9A8599BE168C994E /* CoinbasePrice.m */; };
+		97A53C2A20F01C381520A4D57CDFB58D /* CoinbaseTransaction.m in Sources */ = {isa = PBXBuildFile; fileRef = 7C6CF90A2D0EDDC9CE1A05FCA86A632F /* CoinbaseTransaction.m */; };
+		995E6A69A22A7948A8D56A0C4A315244 /* OtherKit.h in Headers */ = {isa = PBXBuildFile; fileRef = 06841AC604D23900EC4F9ED79CA87F8C /* OtherKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		99639F469520FF73C6674E539D8DE59D /* CoinbaseBalance.m in Sources */ = {isa = PBXBuildFile; fileRef = 25061D7050CAE3C6E9C0822BEFC26C4D /* CoinbaseBalance.m */; };
+		99D8C610BC84BE231C5D3D280F3B12AF /* MASCompositeConstraint.h in Headers */ = {isa = PBXBuildFile; fileRef = FD1A0FE7C5FA563AE3CB89032764BFE7 /* MASCompositeConstraint.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9A6AE1EF2E94AEB6912BE845583E7D57 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ED04AE2201316F6590E7AD9952706C7B /* UIKit.framework */; };
+		9B10996D3E7D589ECEB33D527A0E5E20 /* coinbase-official-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = EAC8CF38C52D8B7350F6068608A0C886 /* coinbase-official-dummy.m */; };
+		9B1738BF7F252D0537BAF7A31A5CCA2C /* KeyboardManager.h in Headers */ = {isa = PBXBuildFile; fileRef = F13690C3DF0F98CCF9B780B662703511 /* KeyboardManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9F2C3EC920E418693D7F04CE6911D7EB /* JHLanguage.h in Headers */ = {isa = PBXBuildFile; fileRef = 0469D8929F947DBDBA8E1E109C3FB1A7 /* JHLanguage.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A44AF130E4C5313CD193D9BF68853026 /* MASViewAttribute.m in Sources */ = {isa = PBXBuildFile; fileRef = 752F4F9DFD7D491F406974C28D457697 /* MASViewAttribute.m */; };
+		A6433AFB029BE62D1C6761C79EA8018E /* JHCacheData.m in Sources */ = {isa = PBXBuildFile; fileRef = DEF46C9A9167B1A43F06BAB5E144C8E8 /* JHCacheData.m */; };
+		A7A9539BFD94AB2E4FF366FC90888288 /* IQKeyboardManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 2971F3E8E1EC79857A27F7F4EC4D35F5 /* IQKeyboardManager.m */; };
+		A7D31BD1F3AD4ED4612467FAD332F388 /* NSArray+MASShorthandAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = 81B5BBDE5E8CBB26040592B62E0C1AF3 /* NSArray+MASShorthandAdditions.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A87A423ED415255AD9BFE1C081C16040 /* IQNSArray+Sort.m in Sources */ = {isa = PBXBuildFile; fileRef = AEFD4E38FCFF174DBC747BE15892B514 /* IQNSArray+Sort.m */; };
+		AA121467EE68AE42C7106F2643288061 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ED04AE2201316F6590E7AD9952706C7B /* UIKit.framework */; };
+		AD9BB06B8AE33058E193992CD2FBB7CA /* IQUIScrollView+Additions.h in Headers */ = {isa = PBXBuildFile; fileRef = 9A0864ABDAF20F135923E097EB8439DB /* IQUIScrollView+Additions.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		AEE045FE63F6F4F05C41FC65E78D81E8 /* IQKeyboardReturnKeyHandler.h in Headers */ = {isa = PBXBuildFile; fileRef = B746B6FB825257176D1A82B5E6C33F2C /* IQKeyboardReturnKeyHandler.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		AF62B956405F7734F5A9B8F3FD4B1B96 /* ViewController+MASAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 4F503B4469FCDF60B1F2D249DE910D53 /* ViewController+MASAdditions.m */; };
+		B2B7C90BA9C4DBD9851C75AC801B0E8E /* MASConstraint+Private.h in Headers */ = {isa = PBXBuildFile; fileRef = 089987B5F94EB99974685D2DD90B3E0C /* MASConstraint+Private.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B2DCE2B1AEA776B0DA57023E13088EEE /* IQPreviousNextView.m in Sources */ = {isa = PBXBuildFile; fileRef = 423E5F4BA3AB8914D1E6B2D61DFAA454 /* IQPreviousNextView.m */; };
+		B5769A6F076274BBDD6DE7EFA80F9685 /* CoinbaseBalance.h in Headers */ = {isa = PBXBuildFile; fileRef = DAA522A0BA80D6A06380E4317E3400FC /* CoinbaseBalance.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B6831B794A886544762B2B5C1CDE5ADD /* CoinbaseAuthorization.h in Headers */ = {isa = PBXBuildFile; fileRef = ED621E0232767D1A02F7EB00648AF760 /* CoinbaseAuthorization.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B9A13A17CE15243E252C11CC87DB2452 /* CoinbaseAccountChange.m in Sources */ = {isa = PBXBuildFile; fileRef = D423ACB9DFAEEF9D982ED972C022BD2F /* CoinbaseAccountChange.m */; };
+		BCD4B362C6194513150915437754E2D4 /* MASCompositeConstraint.m in Sources */ = {isa = PBXBuildFile; fileRef = AF64B72B6B88B321ABA46EBABE649C71 /* MASCompositeConstraint.m */; };
+		BDD210D7537DD15CFE59AE126005E5F8 /* MASLayoutConstraint.m in Sources */ = {isa = PBXBuildFile; fileRef = 21D8DED019C75953A4BF80A38FA92185 /* MASLayoutConstraint.m */; };
+		BE024118D329F8F566BD1811A1DC16CB /* MASConstraint.m in Sources */ = {isa = PBXBuildFile; fileRef = 881764E66CDF309FAD05A8EE88C97D4A /* MASConstraint.m */; };
+		C351547AA2A526A6D14AEFC5BC338222 /* CoinbaseButton.h in Headers */ = {isa = PBXBuildFile; fileRef = AF5D2EAFE692E08149D83678CD2BCC32 /* CoinbaseButton.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C4A92991A9B0DD4BD29C610A27A27150 /* IQToolbar.h in Headers */ = {isa = PBXBuildFile; fileRef = 8A10395EB1BAD0374F028D180332B569 /* IQToolbar.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C6CD759292D7A987B77F35929BA609D2 /* IQUIScrollView+Additions.m in Sources */ = {isa = PBXBuildFile; fileRef = 660F6322CA75E8586440B72A02155BC6 /* IQUIScrollView+Additions.m */; };
+		C6EE194D232E9FE87097C0F1DF91B9FA /* MASLayoutConstraint.h in Headers */ = {isa = PBXBuildFile; fileRef = ED9E087E9C48467D8BB62B5DA16B716F /* MASLayoutConstraint.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		CCFE8567BBA0BE27852D24CD976BFDA1 /* CoinbaseTransfer.h in Headers */ = {isa = PBXBuildFile; fileRef = 0928A2B8CABEBBA922002C09991A9150 /* CoinbaseTransfer.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		CD288EA42DA59FAEAA32A142B0EE3CEB /* JHDegradingAction.h in Headers */ = {isa = PBXBuildFile; fileRef = 1DF88FC9CBFC50BED24381E4067A5F36 /* JHDegradingAction.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		CD500801B4A148223ED0EF8DA756F17F /* JHSystemPaths.m in Sources */ = {isa = PBXBuildFile; fileRef = 05C7F79955B25FD2B0FC2DDEBEF85BD6 /* JHSystemPaths.m */; };
+		CE34E0EA31A3A6DF537D378A9ECDFA5C /* IQUIWindow+Hierarchy.h in Headers */ = {isa = PBXBuildFile; fileRef = 82BC991C088C6C55D02CEE6DBBCF2AD4 /* IQUIWindow+Hierarchy.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		CE5854C3C2AB47143DBB7BD6D85C06B8 /* UIView+Toast.m in Sources */ = {isa = PBXBuildFile; fileRef = A28B31DB331A789F7A3DBAF860539695 /* UIView+Toast.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		CE70B743B5A659CC499E7CA98EDB3100 /* CoinbaseRecurringPayment.h in Headers */ = {isa = PBXBuildFile; fileRef = 2FD819C832FBE94CD66DCA49C616BCA1 /* CoinbaseRecurringPayment.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		CF8003A541EEAC4AEFF0FD59FA5587FB /* CoinbaseTransaction.h in Headers */ = {isa = PBXBuildFile; fileRef = BB02482336BA7E0E96C804AC79F45211 /* CoinbaseTransaction.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D3D9F12613E23AD64C1FA5F7081A3668 /* NSLayoutConstraint+MASDebugAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = D6587D9EBF21320EE13310C5B81B881F /* NSLayoutConstraint+MASDebugAdditions.m */; };
+		D84BCDF1A090981976AC004BAA6D6CB5 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE437620300D81EED04DF8C0301AF9D9 /* Foundation.framework */; };
+		DCE0C84D8E6E3A8EEB6CB83097EC88EC /* Toast-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = FEB4FF58D6D9ACC70A06A2A6182E4954 /* Toast-dummy.m */; };
+		DD1F717B0527C71229B3339324E35E55 /* View+MASAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = C4E43BD5B9F2846E6B445D02E7C6E516 /* View+MASAdditions.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E0C285D3710C4F478DDE2875E7841949 /* CoinbaseCurrency.h in Headers */ = {isa = PBXBuildFile; fileRef = 4C75DB86FB606064149C49C9F4274336 /* CoinbaseCurrency.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E0DFC6748DA54B4CF351EA48D0044BC4 /* JHKit-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E43672434833E7C55AA114CB9DA4C4B /* JHKit-dummy.m */; };
+		E361BE1922FEFA88023C81465A1B1912 /* IQUITextFieldView+Additions.h in Headers */ = {isa = PBXBuildFile; fileRef = 54DE8C379A0E393A36A8393E793F938E /* IQUITextFieldView+Additions.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E5103DFBD6F17738268A47864ADEF5EE /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0DD25CA4A497622D5ABF4C433D79E4DE /* QuartzCore.framework */; };
+		E6B49FBCE3957DB67F691ACCC4CAF4BE /* MASViewConstraint.m in Sources */ = {isa = PBXBuildFile; fileRef = 833DB7FCF3F55EA983F413C4ABC8A974 /* MASViewConstraint.m */; };
+		EB02AEF303313F801392DE8D90AFF0F7 /* MASViewConstraint.h in Headers */ = {isa = PBXBuildFile; fileRef = 666EC7253D25D18362B99BAA936A7E06 /* MASViewConstraint.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		EB5F14C99DA86ACB014C4444E771C03B /* CoinbaseAccountChange.h in Headers */ = {isa = PBXBuildFile; fileRef = 9DC16B2A505D484AB4BAC13B64441579 /* CoinbaseAccountChange.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		EC6CCC98505D2067BC98B4E6223C9DF8 /* MASConstraintMaker.h in Headers */ = {isa = PBXBuildFile; fileRef = FA8B6B007577C700B028491CA9E0F46D /* MASConstraintMaker.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		ED28E207ACC964942B052D783153DC3F /* digicert.der in Resources */ = {isa = PBXBuildFile; fileRef = 30C54912DAFDD69D783682AF9BC5141C /* digicert.der */; };
+		EF906CE8C618766682CF57E979AE9DBF /* CoinbaseUser.m in Sources */ = {isa = PBXBuildFile; fileRef = 1065485971757C41AB9CEA6C88B3044A /* CoinbaseUser.m */; };
+		EFF920C82FBA1114BDB96617F5050501 /* IQKeyboardManagerConstants.h in Headers */ = {isa = PBXBuildFile; fileRef = 86096360190EA2B12EAE39CA68784DC9 /* IQKeyboardManagerConstants.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F239515E506FBDD54FD8534F7B843BCD /* CoinbaseContact.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A666E199B3C03DC4506DD7F338C45B9 /* CoinbaseContact.m */; };
+		F5A9A03B184562D5AA16F2F4D6968F3C /* Coinbase.h in Headers */ = {isa = PBXBuildFile; fileRef = F804FD75B2DF29C667EA073D38047C4E /* Coinbase.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F65E6CDD99F190B117D30E9204606E85 /* CoinbaseDefines.h in Headers */ = {isa = PBXBuildFile; fileRef = 46BF7132BCB9D07EC5395D3DFB7D0C78 /* CoinbaseDefines.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F99F8E827767EB5655E727085DE932F9 /* CoinbaseOrder.m in Sources */ = {isa = PBXBuildFile; fileRef = A4562AF0893897C4DEE19DEAF575AC1A /* CoinbaseOrder.m */; };
+		FC214077677D4F02E03C6C85F774E028 /* MBProgressHUD-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 8AA6685F7173F2A39B3FC8B85B91EBD1 /* MBProgressHUD-dummy.m */; };
+		FD3320F5F856CB76EA32447D9D0CD667 /* CoinbasePrice.h in Headers */ = {isa = PBXBuildFile; fileRef = 76DF1D63FF9167BE2FFBA787CF9DBD3C /* CoinbasePrice.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		FD39EBE3398E1A99965AC003B273450D /* NSArray+MASAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = FF948BADF5A467EF002B46F638A6CE60 /* NSArray+MASAdditions.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		FE641811076715490AD2DCFA5162A076 /* CoinbasePagingHelper.h in Headers */ = {isa = PBXBuildFile; fileRef = B2940D8E95E67C4625A9921F3C78AD8E /* CoinbasePagingHelper.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		FE7DC1B80172FCD9B0CF3A9542E49691 /* IQUIView+Hierarchy.h in Headers */ = {isa = PBXBuildFile; fileRef = 6438FBB7B8A4ADE3CD323DE44B987EB6 /* IQUIView+Hierarchy.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		FF529EDB94EE40A3061DE926A5D55A22 /* JHLanguage.m in Sources */ = {isa = PBXBuildFile; fileRef = C3F25A3E5F2C6729F6ACEF4E1CDA9167 /* JHLanguage.m */; };
+		FF682E8B083BAEBBDF38C52D89D45E37 /* MASUtilities.h in Headers */ = {isa = PBXBuildFile; fileRef = 911C43741E4EF7FEC6AD43D696B204FF /* MASUtilities.h */; settings = {ATTRIBUTES = (Public, ); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		11E49F20C8E2EFFDE42E997D47C2FD95 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5336DAE54BC9EAC91ECD167E1896C612;
+			remoteInfo = "coinbase-official";
+		};
+		179014096C9EBEB86868A4638A69B594 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = AECD244EF471EB3EBC03D0A4731C5920;
+			remoteInfo = Toast;
+		};
+		45FD2AD0E3C319B9849632B25338D2B3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B5527CB67AF20A05F7A3E5CE87E2F5A8;
+			remoteInfo = "JHKit-JHKit";
+		};
+		58B86900E8C74012E9B984FB68A8F040 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C743C42395D3C33F9883CB4690B475A0;
+			remoteInfo = IQKeyboardManager;
+		};
+		5C44EA4A5AB72E99717454089F17DF04 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 639CD2F043E95922797865ECE7182880;
+			remoteInfo = JHKit;
+		};
+		7AED6F47664234454E2E7CE30EADB9F9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C96413869C89C7C06EB1582699CA3FFA;
+			remoteInfo = "coinbase-official-CBCertificates";
+		};
+		7CD5116DF3973D3F60C913AA7DD3EEBB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FE2F1D7B9D9FCEA148517E4657B243F4;
+			remoteInfo = MBProgressHUD;
+		};
+		B6F013DD556CDFB204FA31FB96C4B0C0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 53480ED0BE09FF49E34B1702D485CAAB;
+			remoteInfo = Masonry;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		01003226C04AFBD39AD6C0CAE4F5E06F /* IQTitleBarButtonItem.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = IQTitleBarButtonItem.h; path = IQKeyboardManager/IQToolbar/IQTitleBarButtonItem.h; sourceTree = "<group>"; };
+		017C0E467C945782E9E7C0CBF8C9EC50 /* IQUIView+Hierarchy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "IQUIView+Hierarchy.m"; path = "IQKeyboardManager/Categories/IQUIView+Hierarchy.m"; sourceTree = "<group>"; };
+		0230608E0C2AB0A05834FDE41621C349 /* ViewController+MASAdditions.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "ViewController+MASAdditions.h"; path = "Masonry/ViewController+MASAdditions.h"; sourceTree = "<group>"; };
+		0469D8929F947DBDBA8E1E109C3FB1A7 /* JHLanguage.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = JHLanguage.h; path = Pod/Classes/JHLanguage.h; sourceTree = "<group>"; };
+		048AEDF4A4148DF45D599CA4F9107179 /* CoinbaseApplication.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = CoinbaseApplication.m; path = Pod/Classes/Client/CoinbaseApplication.m; sourceTree = "<group>"; };
+		05C7F79955B25FD2B0FC2DDEBEF85BD6 /* JHSystemPaths.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = JHSystemPaths.m; path = Pod/Classes/JHSystemPaths.m; sourceTree = "<group>"; };
+		06841AC604D23900EC4F9ED79CA87F8C /* OtherKit.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = OtherKit.h; path = Pod/Classes/OtherKit.h; sourceTree = "<group>"; };
+		089987B5F94EB99974685D2DD90B3E0C /* MASConstraint+Private.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "MASConstraint+Private.h"; path = "Masonry/MASConstraint+Private.h"; sourceTree = "<group>"; };
+		0928A2B8CABEBBA922002C09991A9150 /* CoinbaseTransfer.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CoinbaseTransfer.h; path = Pod/Classes/Client/CoinbaseTransfer.h; sourceTree = "<group>"; };
+		0968E10B4F7D368F71A8E40576289626 /* CoinbaseApplication.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CoinbaseApplication.h; path = Pod/Classes/Client/CoinbaseApplication.h; sourceTree = "<group>"; };
+		0D68AF16C2681142FDB7A3917E6BFFE2 /* IQToolbar.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = IQToolbar.m; path = IQKeyboardManager/IQToolbar/IQToolbar.m; sourceTree = "<group>"; };
+		0DD25CA4A497622D5ABF4C433D79E4DE /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.0.sdk/System/Library/Frameworks/QuartzCore.framework; sourceTree = DEVELOPER_DIR; };
+		1065485971757C41AB9CEA6C88B3044A /* CoinbaseUser.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = CoinbaseUser.m; path = Pod/Classes/Client/CoinbaseUser.m; sourceTree = "<group>"; };
+		10834806BD7B412BC24F347361FA2C8E /* Pods-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-acknowledgements.plist"; sourceTree = "<group>"; };
+		13027B665C7358036DAE7DA4D20FEFC7 /* Coinbase.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = Coinbase.m; path = Pod/Classes/Client/Coinbase.m; sourceTree = "<group>"; };
+		13EC997B727CFCEA16268D73ADFB7F4B /* IQKeyboardManager.bundle */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "wrapper.plug-in"; name = IQKeyboardManager.bundle; path = IQKeyboardManager/Resources/IQKeyboardManager.bundle; sourceTree = "<group>"; };
+		159C617FB2BBA5E16C4922CEF4DFD9CA /* libIQKeyboardManager.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libIQKeyboardManager.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		169B69C4D2999446944F725C6E0D24D7 /* IQUIViewController+Additions.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "IQUIViewController+Additions.m"; path = "IQKeyboardManager/Categories/IQUIViewController+Additions.m"; sourceTree = "<group>"; };
+		17857999A5FBFCE2B96FD977D4C72F2C /* CoinbaseOrder.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CoinbaseOrder.h; path = Pod/Classes/Client/CoinbaseOrder.h; sourceTree = "<group>"; };
+		1DF88FC9CBFC50BED24381E4067A5F36 /* JHDegradingAction.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = JHDegradingAction.h; path = Pod/Classes/JHDegradingAction.h; sourceTree = "<group>"; };
+		1FBCA92FF85467C0F4F19EB7CA49E11F /* NSLayoutConstraint+MASDebugAdditions.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSLayoutConstraint+MASDebugAdditions.h"; path = "Masonry/NSLayoutConstraint+MASDebugAdditions.h"; sourceTree = "<group>"; };
+		20C2E00BA176D96E212DD03518307FF4 /* IQUIViewController+Additions.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "IQUIViewController+Additions.h"; path = "IQKeyboardManager/Categories/IQUIViewController+Additions.h"; sourceTree = "<group>"; };
+		2199070D7AA748C816C4A6CB39703D8C /* JHKit-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "JHKit-prefix.pch"; sourceTree = "<group>"; };
+		21D8DED019C75953A4BF80A38FA92185 /* MASLayoutConstraint.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MASLayoutConstraint.m; path = Masonry/MASLayoutConstraint.m; sourceTree = "<group>"; };
+		23E4D373BE11CDC66F1D8B4DF138F03F /* IQBarButtonItem.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = IQBarButtonItem.h; path = IQKeyboardManager/IQToolbar/IQBarButtonItem.h; sourceTree = "<group>"; };
+		2434205B7EDEF87493098A180BD1EC8F /* CoinbaseTransfer.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = CoinbaseTransfer.m; path = Pod/Classes/Client/CoinbaseTransfer.m; sourceTree = "<group>"; };
+		24955C4FB98150A140CEB89DA2B5C12A /* JHCacheData.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = JHCacheData.h; path = Pod/Classes/JHCacheData.h; sourceTree = "<group>"; };
+		25061D7050CAE3C6E9C0822BEFC26C4D /* CoinbaseBalance.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = CoinbaseBalance.m; path = Pod/Classes/Client/CoinbaseBalance.m; sourceTree = "<group>"; };
+		25866966C05F8D63BD65FC1860B76C32 /* View+MASAdditions.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "View+MASAdditions.m"; path = "Masonry/View+MASAdditions.m"; sourceTree = "<group>"; };
+		272643F56613CA0D336AE3DBF19DC404 /* Pods-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-dummy.m"; sourceTree = "<group>"; };
+		2818173904C02A8F601A706EEADE9DED /* JHSystemPaths.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = JHSystemPaths.h; path = Pod/Classes/JHSystemPaths.h; sourceTree = "<group>"; };
+		2829CB7063DE9B2C4B462346865FA2AB /* CoinbaseReport.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = CoinbaseReport.m; path = Pod/Classes/Client/CoinbaseReport.m; sourceTree = "<group>"; };
+		2971F3E8E1EC79857A27F7F4EC4D35F5 /* IQKeyboardManager.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = IQKeyboardManager.m; path = IQKeyboardManager/IQKeyboardManager.m; sourceTree = "<group>"; };
+		2A666E199B3C03DC4506DD7F338C45B9 /* CoinbaseContact.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = CoinbaseContact.m; path = Pod/Classes/Client/CoinbaseContact.m; sourceTree = "<group>"; };
+		2C4F4C65F624DC7AA9AEA9EDAC54E02A /* Masonry-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Masonry-prefix.pch"; sourceTree = "<group>"; };
+		2EB718FCA22E13A50AC548C873A075A1 /* coinbase-official.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "coinbase-official.xcconfig"; sourceTree = "<group>"; };
+		2F269CCFC5C10DA94CB9A00B894655D8 /* JHKit.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = JHKit.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
+		2FD819C832FBE94CD66DCA49C616BCA1 /* CoinbaseRecurringPayment.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CoinbaseRecurringPayment.h; path = Pod/Classes/Client/CoinbaseRecurringPayment.h; sourceTree = "<group>"; };
+		30C54912DAFDD69D783682AF9BC5141C /* digicert.der */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file; name = digicert.der; path = Pod/Assets/Certificates/digicert.der; sourceTree = "<group>"; };
+		3449C1D23D6E0C1ABA8DDF165E50725B /* libMasonry.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libMasonry.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		37DB56D75062CC75FCB0966E1C6E8A8E /* Pods-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-acknowledgements.markdown"; sourceTree = "<group>"; };
+		38B3B63AC0DDAD0B6020365A948C7D78 /* JHURLProtocol.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = JHURLProtocol.m; path = Pod/Classes/JHURLProtocol.m; sourceTree = "<group>"; };
+		3AE6E7268215541ED3444FE86E74574B /* CoinbaseReport.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CoinbaseReport.h; path = Pod/Classes/Client/CoinbaseReport.h; sourceTree = "<group>"; };
+		3D8A00AC855739CDAC62D535C5668FF6 /* verisign.der */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file; name = verisign.der; path = Pod/Assets/Certificates/verisign.der; sourceTree = "<group>"; };
+		3F0753E78886ADDB606586E8E262FEA8 /* JHKit.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = JHKit.xcconfig; sourceTree = "<group>"; };
+		40C95F725EABE5E43EF03CF50D93FCEC /* CoinbaseObject.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = CoinbaseObject.m; path = Pod/Classes/Client/CoinbaseObject.m; sourceTree = "<group>"; };
+		423E5F4BA3AB8914D1E6B2D61DFAA454 /* IQPreviousNextView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = IQPreviousNextView.m; path = IQKeyboardManager/IQToolbar/IQPreviousNextView.m; sourceTree = "<group>"; };
+		433F1C85564EBD9B825878D4839D2D6F /* libJHKit.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libJHKit.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		43C34092B4F4235052159305FA4C931E /* Toast.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Toast.xcconfig; sourceTree = "<group>"; };
+		46BF7132BCB9D07EC5395D3DFB7D0C78 /* CoinbaseDefines.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CoinbaseDefines.h; path = Pod/Classes/CoinbaseDefines.h; sourceTree = "<group>"; };
+		48D817839DAAB62B58B7527168EB4605 /* CoinbaseOAuth.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = CoinbaseOAuth.m; path = Pod/Classes/OAuth/CoinbaseOAuth.m; sourceTree = "<group>"; };
+		4AE7FD0E16F3FACCFE19068F1E872D9F /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.0.sdk/System/Library/Frameworks/CoreGraphics.framework; sourceTree = DEVELOPER_DIR; };
+		4C75DB86FB606064149C49C9F4274336 /* CoinbaseCurrency.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CoinbaseCurrency.h; path = Pod/Classes/Client/CoinbaseCurrency.h; sourceTree = "<group>"; };
+		4E286548260CFB37ED7BAABC824E3C0B /* CoinbaseAddress.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = CoinbaseAddress.m; path = Pod/Classes/Client/CoinbaseAddress.m; sourceTree = "<group>"; };
+		4E762F23EC34ED4A6FF3312D84E33A40 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Pods.debug.xcconfig; sourceTree = "<group>"; };
+		4F503B4469FCDF60B1F2D249DE910D53 /* ViewController+MASAdditions.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "ViewController+MASAdditions.m"; path = "Masonry/ViewController+MASAdditions.m"; sourceTree = "<group>"; };
+		514080FBDD82D06E80E19109068AF0C8 /* libToast.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libToast.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		54D086A7B1318A7C59E7DBF11480A083 /* CBCertificates.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CBCertificates.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
+		54DE8C379A0E393A36A8393E793F938E /* IQUITextFieldView+Additions.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "IQUITextFieldView+Additions.h"; path = "IQKeyboardManager/Categories/IQUITextFieldView+Additions.h"; sourceTree = "<group>"; };
+		57D333E3BE67CA480B8E4E0C686545DE /* CoinbaseRefund.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CoinbaseRefund.h; path = Pod/Classes/Client/CoinbaseRefund.h; sourceTree = "<group>"; };
+		5A32459B6A6D4193C1B0DFE0992ECB71 /* libMBProgressHUD.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libMBProgressHUD.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		5E6BF3436D1E4E3BA889116617C3229D /* IQUITextFieldView+Additions.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "IQUITextFieldView+Additions.m"; path = "IQKeyboardManager/Categories/IQUITextFieldView+Additions.m"; sourceTree = "<group>"; };
+		6438FBB7B8A4ADE3CD323DE44B987EB6 /* IQUIView+Hierarchy.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "IQUIView+Hierarchy.h"; path = "IQKeyboardManager/Categories/IQUIView+Hierarchy.h"; sourceTree = "<group>"; };
+		648401A45034690204667B66F040145E /* MASConstraint.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MASConstraint.h; path = Masonry/MASConstraint.h; sourceTree = "<group>"; };
+		660F6322CA75E8586440B72A02155BC6 /* IQUIScrollView+Additions.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "IQUIScrollView+Additions.m"; path = "IQKeyboardManager/Categories/IQUIScrollView+Additions.m"; sourceTree = "<group>"; };
+		666EC7253D25D18362B99BAA936A7E06 /* MASViewConstraint.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MASViewConstraint.h; path = Masonry/MASViewConstraint.h; sourceTree = "<group>"; };
+		66C3599F1CB8D4E25664680E5D3D0C6F /* IQUIView+IQKeyboardToolbar.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "IQUIView+IQKeyboardToolbar.h"; path = "IQKeyboardManager/IQToolbar/IQUIView+IQKeyboardToolbar.h"; sourceTree = "<group>"; };
+		67BE4160274B65ADE1A79D9317EAF09C /* CoinbaseAuthorization.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = CoinbaseAuthorization.m; path = Pod/Classes/Client/CoinbaseAuthorization.m; sourceTree = "<group>"; };
+		680837929036C1B3CA45468754BA24BC /* CoinbaseCurrency.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = CoinbaseCurrency.m; path = Pod/Classes/Client/CoinbaseCurrency.m; sourceTree = "<group>"; };
+		6911BECA35E7518D864239B7E898EEF3 /* Pods-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-frameworks.sh"; sourceTree = "<group>"; };
+		6E43672434833E7C55AA114CB9DA4C4B /* JHKit-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "JHKit-dummy.m"; sourceTree = "<group>"; };
+		711702A3FA186535B1ECD712E953E419 /* JHRegisterRemoteNotification.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = JHRegisterRemoteNotification.m; path = Pod/Classes/JHRegisterRemoteNotification.m; sourceTree = "<group>"; };
+		71D92B88D3219CA545165DC2746F6FB6 /* MASConstraintMaker.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MASConstraintMaker.m; path = Masonry/MASConstraintMaker.m; sourceTree = "<group>"; };
+		74632655D7CDEA949FC09B864ED0FC08 /* View+MASShorthandAdditions.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "View+MASShorthandAdditions.h"; path = "Masonry/View+MASShorthandAdditions.h"; sourceTree = "<group>"; };
+		752F4F9DFD7D491F406974C28D457697 /* MASViewAttribute.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MASViewAttribute.m; path = Masonry/MASViewAttribute.m; sourceTree = "<group>"; };
+		76DF1D63FF9167BE2FFBA787CF9DBD3C /* CoinbasePrice.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CoinbasePrice.h; path = Pod/Classes/Client/CoinbasePrice.h; sourceTree = "<group>"; };
+		781EE5317D594964A42D7B36ACCFBDC0 /* MBProgressHUD.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = MBProgressHUD.h; sourceTree = "<group>"; };
+		78A310732F55D4DFBA8567197BD134B6 /* JHURLProtocol.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = JHURLProtocol.h; path = Pod/Classes/JHURLProtocol.h; sourceTree = "<group>"; };
+		78E8D73D897E07215016ECB9DF111C26 /* JHDegradingAction.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = JHDegradingAction.m; path = Pod/Classes/JHDegradingAction.m; sourceTree = "<group>"; };
+		7C6CF90A2D0EDDC9CE1A05FCA86A632F /* CoinbaseTransaction.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = CoinbaseTransaction.m; path = Pod/Classes/Client/CoinbaseTransaction.m; sourceTree = "<group>"; };
+		7F7FF734E526B9A71F77FAC74DDDCA5E /* CoinbasePaymentMethod.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CoinbasePaymentMethod.h; path = Pod/Classes/Client/CoinbasePaymentMethod.h; sourceTree = "<group>"; };
+		81B5BBDE5E8CBB26040592B62E0C1AF3 /* NSArray+MASShorthandAdditions.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSArray+MASShorthandAdditions.h"; path = "Masonry/NSArray+MASShorthandAdditions.h"; sourceTree = "<group>"; };
+		82BC991C088C6C55D02CEE6DBBCF2AD4 /* IQUIWindow+Hierarchy.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "IQUIWindow+Hierarchy.h"; path = "IQKeyboardManager/Categories/IQUIWindow+Hierarchy.h"; sourceTree = "<group>"; };
+		833DB7FCF3F55EA983F413C4ABC8A974 /* MASViewConstraint.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MASViewConstraint.m; path = Masonry/MASViewConstraint.m; sourceTree = "<group>"; };
+		86096360190EA2B12EAE39CA68784DC9 /* IQKeyboardManagerConstants.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = IQKeyboardManagerConstants.h; path = IQKeyboardManager/Constants/IQKeyboardManagerConstants.h; sourceTree = "<group>"; };
+		881764E66CDF309FAD05A8EE88C97D4A /* MASConstraint.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MASConstraint.m; path = Masonry/MASConstraint.m; sourceTree = "<group>"; };
+		891D56CEE7B0ECCC474DA0E08ED37E2E /* CoinbaseAddress.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CoinbaseAddress.h; path = Pod/Classes/Client/CoinbaseAddress.h; sourceTree = "<group>"; };
+		8A10395EB1BAD0374F028D180332B569 /* IQToolbar.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = IQToolbar.h; path = IQKeyboardManager/IQToolbar/IQToolbar.h; sourceTree = "<group>"; };
+		8AA6685F7173F2A39B3FC8B85B91EBD1 /* MBProgressHUD-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "MBProgressHUD-dummy.m"; sourceTree = "<group>"; };
+		8BA1F62B79F43AC699F611FF52C90B63 /* Masonry.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Masonry.xcconfig; sourceTree = "<group>"; };
+		8E1CC7EDBD23C1BA6D3A3EE7A301AA8A /* Masonry-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Masonry-dummy.m"; sourceTree = "<group>"; };
+		8EA15612D40F80A199BF3F3A3BDF79B1 /* CoinbaseUser.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CoinbaseUser.h; path = Pod/Classes/Client/CoinbaseUser.h; sourceTree = "<group>"; };
+		8F4A0FA5AB2ACF7057822FADBFC031BB /* IQTextView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = IQTextView.h; path = IQKeyboardManager/IQTextView/IQTextView.h; sourceTree = "<group>"; };
+		911C43741E4EF7FEC6AD43D696B204FF /* MASUtilities.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MASUtilities.h; path = Masonry/MASUtilities.h; sourceTree = "<group>"; };
+		926A94BF030B8BA4C10BE990082D1D2F /* JHRegisterRemoteNotification.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = JHRegisterRemoteNotification.h; path = Pod/Classes/JHRegisterRemoteNotification.h; sourceTree = "<group>"; };
+		94052EC0DEBDC7717D7589F5D99BCDF5 /* JHSafeKeyedSubscript.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = JHSafeKeyedSubscript.h; path = Pod/Classes/JHSafeKeyedSubscript.h; sourceTree = "<group>"; };
+		984A3C9F1DB19A278B43BD6AA01D2C36 /* IQNSArray+Sort.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "IQNSArray+Sort.h"; path = "IQKeyboardManager/Categories/IQNSArray+Sort.h"; sourceTree = "<group>"; };
+		98C98CDFB3F20F2925F6CD1F141BB14F /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Pods.release.xcconfig; sourceTree = "<group>"; };
+		98D3EC42106CCD7A89675D625E9EED53 /* digicert-ev.der */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file; name = "digicert-ev.der"; path = "Pod/Assets/Certificates/digicert-ev.der"; sourceTree = "<group>"; };
+		99D43BE72CE856B498BB1DF7A17F9D21 /* IQKeyboardManagerConstantsInternal.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = IQKeyboardManagerConstantsInternal.h; path = IQKeyboardManager/Constants/IQKeyboardManagerConstantsInternal.h; sourceTree = "<group>"; };
+		9A0864ABDAF20F135923E097EB8439DB /* IQUIScrollView+Additions.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "IQUIScrollView+Additions.h"; path = "IQKeyboardManager/Categories/IQUIScrollView+Additions.h"; sourceTree = "<group>"; };
+		9B48570CB7363AC930459AF74E0B020A /* IQUIWindow+Hierarchy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "IQUIWindow+Hierarchy.m"; path = "IQKeyboardManager/Categories/IQUIWindow+Hierarchy.m"; sourceTree = "<group>"; };
+		9D3E6BFED29921B10E82462865DBB9EA /* CoinbaseDefines.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = CoinbaseDefines.m; path = Pod/Classes/CoinbaseDefines.m; sourceTree = "<group>"; };
+		9D92F5D9800698094F175B62F0546C87 /* CoinbaseRecurringPayment.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = CoinbaseRecurringPayment.m; path = Pod/Classes/Client/CoinbaseRecurringPayment.m; sourceTree = "<group>"; };
+		9DC16B2A505D484AB4BAC13B64441579 /* CoinbaseAccountChange.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CoinbaseAccountChange.h; path = Pod/Classes/Client/CoinbaseAccountChange.h; sourceTree = "<group>"; };
+		A0A8B918F429025E749D9EF6158366CE /* IQTextView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = IQTextView.m; path = IQKeyboardManager/IQTextView/IQTextView.m; sourceTree = "<group>"; };
+		A1A36D34413696BE466E2CA0AFF194DA /* Pods-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-resources.sh"; sourceTree = "<group>"; };
+		A28B31DB331A789F7A3DBAF860539695 /* UIView+Toast.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIView+Toast.m"; path = "Toast/Toast/UIView+Toast.m"; sourceTree = "<group>"; };
+		A4562AF0893897C4DEE19DEAF575AC1A /* CoinbaseOrder.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = CoinbaseOrder.m; path = Pod/Classes/Client/CoinbaseOrder.m; sourceTree = "<group>"; };
+		A9CECEABF9E4CD222CBDF1AC3A1BF70B /* IQBarButtonItem.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = IQBarButtonItem.m; path = IQKeyboardManager/IQToolbar/IQBarButtonItem.m; sourceTree = "<group>"; };
+		A9DDD6AF9A6A4E7664B4211F5A8DA56B /* CoinbaseToken.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = CoinbaseToken.m; path = Pod/Classes/Client/CoinbaseToken.m; sourceTree = "<group>"; };
+		AD45CCA57895D8417E78D13962F80CAD /* Toast-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Toast-prefix.pch"; sourceTree = "<group>"; };
+		AEFD4E38FCFF174DBC747BE15892B514 /* IQNSArray+Sort.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "IQNSArray+Sort.m"; path = "IQKeyboardManager/Categories/IQNSArray+Sort.m"; sourceTree = "<group>"; };
+		AF5D2EAFE692E08149D83678CD2BCC32 /* CoinbaseButton.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CoinbaseButton.h; path = Pod/Classes/Client/CoinbaseButton.h; sourceTree = "<group>"; };
+		AF64B72B6B88B321ABA46EBABE649C71 /* MASCompositeConstraint.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MASCompositeConstraint.m; path = Masonry/MASCompositeConstraint.m; sourceTree = "<group>"; };
+		B094600D8389B5FCDA963F437484660C /* MBProgressHUD.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = MBProgressHUD.m; sourceTree = "<group>"; };
+		B225ECF97F2705ACF5AB93A37488C3B4 /* IQKeyboardReturnKeyHandler.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = IQKeyboardReturnKeyHandler.m; path = IQKeyboardManager/IQKeyboardReturnKeyHandler.m; sourceTree = "<group>"; };
+		B2940D8E95E67C4625A9921F3C78AD8E /* CoinbasePagingHelper.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CoinbasePagingHelper.h; path = Pod/Classes/Client/CoinbasePagingHelper.h; sourceTree = "<group>"; };
+		B2BC00CB3AC7678BD8C8CF3B08FDBA94 /* CoinbaseObject.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CoinbaseObject.h; path = Pod/Classes/Client/CoinbaseObject.h; sourceTree = "<group>"; };
+		B71B1CB6B1AE911B60A64A1E99FBC8C0 /* CoinbaseOAuth.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CoinbaseOAuth.h; path = Pod/Classes/OAuth/CoinbaseOAuth.h; sourceTree = "<group>"; };
+		B746B6FB825257176D1A82B5E6C33F2C /* IQKeyboardReturnKeyHandler.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = IQKeyboardReturnKeyHandler.h; path = IQKeyboardManager/IQKeyboardReturnKeyHandler.h; sourceTree = "<group>"; };
+		B7793B35BD0431381B11D493B5A257B2 /* libcoinbase-official.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libcoinbase-official.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		BA6428E9F66FD5A23C0A2E06ED26CD2F /* Podfile */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		BB02482336BA7E0E96C804AC79F45211 /* CoinbaseTransaction.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CoinbaseTransaction.h; path = Pod/Classes/Client/CoinbaseTransaction.h; sourceTree = "<group>"; };
+		C3F25A3E5F2C6729F6ACEF4E1CDA9167 /* JHLanguage.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = JHLanguage.m; path = Pod/Classes/JHLanguage.m; sourceTree = "<group>"; };
+		C3F7C84DE78EC52BF52843FF2D0DC80F /* CoinbaseRefund.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = CoinbaseRefund.m; path = Pod/Classes/Client/CoinbaseRefund.m; sourceTree = "<group>"; };
+		C4E43BD5B9F2846E6B445D02E7C6E516 /* View+MASAdditions.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "View+MASAdditions.h"; path = "Masonry/View+MASAdditions.h"; sourceTree = "<group>"; };
+		C6AEB60E62E8A620F890BA3E3EDE6954 /* JHSafeKeyedSubscript.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = JHSafeKeyedSubscript.m; path = Pod/Classes/JHSafeKeyedSubscript.m; sourceTree = "<group>"; };
+		C80E73B06705D905805CBCB0C53148E2 /* CoinbasePaymentMethod.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = CoinbasePaymentMethod.m; path = Pod/Classes/Client/CoinbasePaymentMethod.m; sourceTree = "<group>"; };
+		C97D464951E08B0DA3692DA95105CC24 /* IQPreviousNextView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = IQPreviousNextView.h; path = IQKeyboardManager/IQToolbar/IQPreviousNextView.h; sourceTree = "<group>"; };
+		CE437620300D81EED04DF8C0301AF9D9 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		CE6A7D75A144381973BEB833ED9B7966 /* CoinbaseCertificatePinning.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = CoinbaseCertificatePinning.m; path = Pod/Classes/Client/CoinbaseCertificatePinning.m; sourceTree = "<group>"; };
+		CF8521A4385B822BE7F546894C6FAD90 /* UIView+Toast.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIView+Toast.h"; path = "Toast/Toast/UIView+Toast.h"; sourceTree = "<group>"; };
+		D07AE84F1540D9F05E1476F0F8AD6291 /* CoinbaseToken.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CoinbaseToken.h; path = Pod/Classes/Client/CoinbaseToken.h; sourceTree = "<group>"; };
+		D423ACB9DFAEEF9D982ED972C022BD2F /* CoinbaseAccountChange.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = CoinbaseAccountChange.m; path = Pod/Classes/Client/CoinbaseAccountChange.m; sourceTree = "<group>"; };
+		D45A2E1F6CA3C517561D0D6388BEA21B /* MASViewAttribute.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MASViewAttribute.h; path = Masonry/MASViewAttribute.h; sourceTree = "<group>"; };
+		D5AA25F9E5C5A89AAE4A33DF504B60A3 /* IQKeyboardManager.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = IQKeyboardManager.xcconfig; sourceTree = "<group>"; };
+		D6587D9EBF21320EE13310C5B81B881F /* NSLayoutConstraint+MASDebugAdditions.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSLayoutConstraint+MASDebugAdditions.m"; path = "Masonry/NSLayoutConstraint+MASDebugAdditions.m"; sourceTree = "<group>"; };
+		D676D87FF16EC3EA2ADC9E720527F41E /* CoinbaseContact.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CoinbaseContact.h; path = Pod/Classes/Client/CoinbaseContact.h; sourceTree = "<group>"; };
+		D9920BEBBA10D75598B69DE87C7A035E /* CoinbasePagingHelper.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = CoinbasePagingHelper.m; path = Pod/Classes/Client/CoinbasePagingHelper.m; sourceTree = "<group>"; };
+		DAA522A0BA80D6A06380E4317E3400FC /* CoinbaseBalance.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CoinbaseBalance.h; path = Pod/Classes/Client/CoinbaseBalance.h; sourceTree = "<group>"; };
+		DB946B183754336DDA490FAD49B258E5 /* coinbase-official-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "coinbase-official-prefix.pch"; sourceTree = "<group>"; };
+		DCD5EBD95C21597136DD04FC69E31A03 /* Masonry.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = Masonry.h; path = Masonry/Masonry.h; sourceTree = "<group>"; };
+		DEA5A7A3E627E779659EC66A33D64D4F /* CoinbaseAccount.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = CoinbaseAccount.m; path = Pod/Classes/Client/CoinbaseAccount.m; sourceTree = "<group>"; };
+		DEF46C9A9167B1A43F06BAB5E144C8E8 /* JHCacheData.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = JHCacheData.m; path = Pod/Classes/JHCacheData.m; sourceTree = "<group>"; };
+		E05D692B2533E885AB608500B8D3A860 /* IQUIView+IQKeyboardToolbar.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "IQUIView+IQKeyboardToolbar.m"; path = "IQKeyboardManager/IQToolbar/IQUIView+IQKeyboardToolbar.m"; sourceTree = "<group>"; };
+		E1D32E59ACD0BAFAECB4E6441E7A82B7 /* CoinbaseInternal.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CoinbaseInternal.h; path = Pod/Classes/Client/CoinbaseInternal.h; sourceTree = "<group>"; };
+		E2DCE77BF0766F0DB94F34FD6238A3A8 /* CoinbaseButton.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = CoinbaseButton.m; path = Pod/Classes/Client/CoinbaseButton.m; sourceTree = "<group>"; };
+		E321D015144540D24E3CCCB736DA2A42 /* IQKeyboardManager-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "IQKeyboardManager-dummy.m"; sourceTree = "<group>"; };
+		E9D9E985BDFD2765CCBB9C8F75CB2296 /* MBProgressHUD-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "MBProgressHUD-prefix.pch"; sourceTree = "<group>"; };
+		EAC8CF38C52D8B7350F6068608A0C886 /* coinbase-official-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "coinbase-official-dummy.m"; sourceTree = "<group>"; };
+		EBCB0732DA119A4E9A8599BE168C994E /* CoinbasePrice.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = CoinbasePrice.m; path = Pod/Classes/Client/CoinbasePrice.m; sourceTree = "<group>"; };
+		ED04AE2201316F6590E7AD9952706C7B /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.0.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
+		ED621E0232767D1A02F7EB00648AF760 /* CoinbaseAuthorization.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CoinbaseAuthorization.h; path = Pod/Classes/Client/CoinbaseAuthorization.h; sourceTree = "<group>"; };
+		ED9E087E9C48467D8BB62B5DA16B716F /* MASLayoutConstraint.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MASLayoutConstraint.h; path = Masonry/MASLayoutConstraint.h; sourceTree = "<group>"; };
+		EEC85E849CD5A8BB09A9BC0502AFE13C /* MBProgressHUD.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = MBProgressHUD.xcconfig; sourceTree = "<group>"; };
+		EFC8C58BE7F0D2ECCC02DEBE47F38A9E /* IQKeyboardManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = IQKeyboardManager.h; path = IQKeyboardManager/IQKeyboardManager.h; sourceTree = "<group>"; };
+		F13690C3DF0F98CCF9B780B662703511 /* KeyboardManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = KeyboardManager.h; path = IQKeyboardManager/KeyboardManager.h; sourceTree = "<group>"; };
+		F14F44C84E8C02920CE281020D2CE79D /* CoinbaseAccount.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CoinbaseAccount.h; path = Pod/Classes/Client/CoinbaseAccount.h; sourceTree = "<group>"; };
+		F7074F9D904EA6E36B932285658F72D4 /* IQTitleBarButtonItem.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = IQTitleBarButtonItem.m; path = IQKeyboardManager/IQToolbar/IQTitleBarButtonItem.m; sourceTree = "<group>"; };
+		F79C5DA512F499B000ABAEE175A15F19 /* NSArray+MASAdditions.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSArray+MASAdditions.m"; path = "Masonry/NSArray+MASAdditions.m"; sourceTree = "<group>"; };
+		F804FD75B2DF29C667EA073D38047C4E /* Coinbase.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = Coinbase.h; path = Pod/Classes/Client/Coinbase.h; sourceTree = "<group>"; };
+		FA0E9CE961A265B714CB3BDAF22BE297 /* IQKeyboardManager-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "IQKeyboardManager-prefix.pch"; sourceTree = "<group>"; };
+		FA8B6B007577C700B028491CA9E0F46D /* MASConstraintMaker.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MASConstraintMaker.h; path = Masonry/MASConstraintMaker.h; sourceTree = "<group>"; };
+		FA995AD38DC4F70426A46D84C68DC56A /* CoinbaseCertificatePinning.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CoinbaseCertificatePinning.h; path = Pod/Classes/Client/CoinbaseCertificatePinning.h; sourceTree = "<group>"; };
+		FB491095DADFA0407E43C29AB76FF1FE /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		FD1A0FE7C5FA563AE3CB89032764BFE7 /* MASCompositeConstraint.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MASCompositeConstraint.h; path = Masonry/MASCompositeConstraint.h; sourceTree = "<group>"; };
+		FEB4FF58D6D9ACC70A06A2A6182E4954 /* Toast-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Toast-dummy.m"; sourceTree = "<group>"; };
+		FF948BADF5A467EF002B46F638A6CE60 /* NSArray+MASAdditions.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSArray+MASAdditions.h"; path = "Masonry/NSArray+MASAdditions.h"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		051D644ED72BA2BE2352E4E312047F2C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1F366F9B39C454CB53A0715FC2463B17 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7DFE6E6C653A4D816A39FD35EFF5C40A /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		20ECA7E4A66D86A303E15FC463950408 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				928E849C376B0C2E0EAF51E81FF1602D /* Foundation.framework in Frameworks */,
+				E5103DFBD6F17738268A47864ADEF5EE /* QuartzCore.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		515A94D23AA1C616DD8D4C64F9439168 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4BE2C99A912D11BE1D95A5828EBE387C /* Foundation.framework in Frameworks */,
+				305E4BF435D85E85AE71FD367D669673 /* UIKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5DBE1CBEA48AD47ED23D9C40BAE58849 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8F48DD2298FDC70A693E62F304FE5C81 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D84BCDF1A090981976AC004BAA6D6CB5 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E48110DE0BC8FCB94400708AF33950E3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2635867332383A79A7385386BD617AAC /* CoreGraphics.framework in Frameworks */,
+				3CC3AC5FCA9B7FD6E608B5BAE8C66CA7 /* Foundation.framework in Frameworks */,
+				AA121467EE68AE42C7106F2643288061 /* UIKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E81C08F5CCC0A5FBFF4559E2173164C7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				70D801E0B95C23BCC270E4EC8659D463 /* CoreGraphics.framework in Frameworks */,
+				2989492A1A182744E36FD61DF1746D94 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FAB9E9D9BBDB93399D3C2B91469EC4B6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2F85D170E76C661AB0D9E9A8B206C78D /* Foundation.framework in Frameworks */,
+				9A6AE1EF2E94AEB6912BE845583E7D57 /* UIKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		037C0CA694176A3C0915F62C9D20B3E6 /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				B3D1D13E0C6553800746CB8FD61CF946 /* Pods */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		12E853E0233740B197FF46781276EBBE /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				13EC997B727CFCEA16268D73ADFB7F4B /* IQKeyboardManager.bundle */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		14B8B9B15ECBE87983FF987239AB2D7B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A9203A0FF197B8764CD853B6EE3A159E /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		21B01EEE8D672DD01A418ACB9EB6B1BE /* coinbase-official */ = {
+			isa = PBXGroup;
+			children = (
+				4144617513223C147B47E7595C51F097 /* client */,
+				263AACB274F913F8BA1724D4F6FDF377 /* core */,
+				492B0F6094C4EBA53666884E7F80C32D /* OAuth */,
+				3B44A15E966E8697FC46C9647FC4AE14 /* Resources */,
+				23512570717154E8F03E125DEB672754 /* Support Files */,
+			);
+			path = "coinbase-official";
+			sourceTree = "<group>";
+		};
+		23512570717154E8F03E125DEB672754 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				2EB718FCA22E13A50AC548C873A075A1 /* coinbase-official.xcconfig */,
+				EAC8CF38C52D8B7350F6068608A0C886 /* coinbase-official-dummy.m */,
+				DB946B183754336DDA490FAD49B258E5 /* coinbase-official-prefix.pch */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/coinbase-official";
+			sourceTree = "<group>";
+		};
+		263AACB274F913F8BA1724D4F6FDF377 /* core */ = {
+			isa = PBXGroup;
+			children = (
+				46BF7132BCB9D07EC5395D3DFB7D0C78 /* CoinbaseDefines.h */,
+				9D3E6BFED29921B10E82462865DBB9EA /* CoinbaseDefines.m */,
+			);
+			name = core;
+			sourceTree = "<group>";
+		};
+		27170350E78BDD1BB743A54088D6C1FC /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				8BA1F62B79F43AC699F611FF52C90B63 /* Masonry.xcconfig */,
+				8E1CC7EDBD23C1BA6D3A3EE7A301AA8A /* Masonry-dummy.m */,
+				2C4F4C65F624DC7AA9AEA9EDAC54E02A /* Masonry-prefix.pch */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/Masonry";
+			sourceTree = "<group>";
+		};
+		358DD5C594018D10413B99B22EAAB2A9 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				54D086A7B1318A7C59E7DBF11480A083 /* CBCertificates.bundle */,
+				2F269CCFC5C10DA94CB9A00B894655D8 /* JHKit.bundle */,
+				B7793B35BD0431381B11D493B5A257B2 /* libcoinbase-official.a */,
+				159C617FB2BBA5E16C4922CEF4DFD9CA /* libIQKeyboardManager.a */,
+				433F1C85564EBD9B825878D4839D2D6F /* libJHKit.a */,
+				3449C1D23D6E0C1ABA8DDF165E50725B /* libMasonry.a */,
+				5A32459B6A6D4193C1B0DFE0992ECB71 /* libMBProgressHUD.a */,
+				FB491095DADFA0407E43C29AB76FF1FE /* libPods.a */,
+				514080FBDD82D06E80E19109068AF0C8 /* libToast.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		3B44A15E966E8697FC46C9647FC4AE14 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				30C54912DAFDD69D783682AF9BC5141C /* digicert.der */,
+				98D3EC42106CCD7A89675D625E9EED53 /* digicert-ev.der */,
+				3D8A00AC855739CDAC62D535C5668FF6 /* verisign.der */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		40DC070A75B9BA48DCA8C2CEC531B575 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				D5AA25F9E5C5A89AAE4A33DF504B60A3 /* IQKeyboardManager.xcconfig */,
+				E321D015144540D24E3CCCB736DA2A42 /* IQKeyboardManager-dummy.m */,
+				FA0E9CE961A265B714CB3BDAF22BE297 /* IQKeyboardManager-prefix.pch */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/IQKeyboardManager";
+			sourceTree = "<group>";
+		};
+		4144617513223C147B47E7595C51F097 /* client */ = {
+			isa = PBXGroup;
+			children = (
+				F804FD75B2DF29C667EA073D38047C4E /* Coinbase.h */,
+				13027B665C7358036DAE7DA4D20FEFC7 /* Coinbase.m */,
+				F14F44C84E8C02920CE281020D2CE79D /* CoinbaseAccount.h */,
+				DEA5A7A3E627E779659EC66A33D64D4F /* CoinbaseAccount.m */,
+				9DC16B2A505D484AB4BAC13B64441579 /* CoinbaseAccountChange.h */,
+				D423ACB9DFAEEF9D982ED972C022BD2F /* CoinbaseAccountChange.m */,
+				891D56CEE7B0ECCC474DA0E08ED37E2E /* CoinbaseAddress.h */,
+				4E286548260CFB37ED7BAABC824E3C0B /* CoinbaseAddress.m */,
+				0968E10B4F7D368F71A8E40576289626 /* CoinbaseApplication.h */,
+				048AEDF4A4148DF45D599CA4F9107179 /* CoinbaseApplication.m */,
+				ED621E0232767D1A02F7EB00648AF760 /* CoinbaseAuthorization.h */,
+				67BE4160274B65ADE1A79D9317EAF09C /* CoinbaseAuthorization.m */,
+				DAA522A0BA80D6A06380E4317E3400FC /* CoinbaseBalance.h */,
+				25061D7050CAE3C6E9C0822BEFC26C4D /* CoinbaseBalance.m */,
+				AF5D2EAFE692E08149D83678CD2BCC32 /* CoinbaseButton.h */,
+				E2DCE77BF0766F0DB94F34FD6238A3A8 /* CoinbaseButton.m */,
+				FA995AD38DC4F70426A46D84C68DC56A /* CoinbaseCertificatePinning.h */,
+				CE6A7D75A144381973BEB833ED9B7966 /* CoinbaseCertificatePinning.m */,
+				D676D87FF16EC3EA2ADC9E720527F41E /* CoinbaseContact.h */,
+				2A666E199B3C03DC4506DD7F338C45B9 /* CoinbaseContact.m */,
+				4C75DB86FB606064149C49C9F4274336 /* CoinbaseCurrency.h */,
+				680837929036C1B3CA45468754BA24BC /* CoinbaseCurrency.m */,
+				E1D32E59ACD0BAFAECB4E6441E7A82B7 /* CoinbaseInternal.h */,
+				B2BC00CB3AC7678BD8C8CF3B08FDBA94 /* CoinbaseObject.h */,
+				40C95F725EABE5E43EF03CF50D93FCEC /* CoinbaseObject.m */,
+				17857999A5FBFCE2B96FD977D4C72F2C /* CoinbaseOrder.h */,
+				A4562AF0893897C4DEE19DEAF575AC1A /* CoinbaseOrder.m */,
+				B2940D8E95E67C4625A9921F3C78AD8E /* CoinbasePagingHelper.h */,
+				D9920BEBBA10D75598B69DE87C7A035E /* CoinbasePagingHelper.m */,
+				7F7FF734E526B9A71F77FAC74DDDCA5E /* CoinbasePaymentMethod.h */,
+				C80E73B06705D905805CBCB0C53148E2 /* CoinbasePaymentMethod.m */,
+				76DF1D63FF9167BE2FFBA787CF9DBD3C /* CoinbasePrice.h */,
+				EBCB0732DA119A4E9A8599BE168C994E /* CoinbasePrice.m */,
+				2FD819C832FBE94CD66DCA49C616BCA1 /* CoinbaseRecurringPayment.h */,
+				9D92F5D9800698094F175B62F0546C87 /* CoinbaseRecurringPayment.m */,
+				57D333E3BE67CA480B8E4E0C686545DE /* CoinbaseRefund.h */,
+				C3F7C84DE78EC52BF52843FF2D0DC80F /* CoinbaseRefund.m */,
+				3AE6E7268215541ED3444FE86E74574B /* CoinbaseReport.h */,
+				2829CB7063DE9B2C4B462346865FA2AB /* CoinbaseReport.m */,
+				D07AE84F1540D9F05E1476F0F8AD6291 /* CoinbaseToken.h */,
+				A9DDD6AF9A6A4E7664B4211F5A8DA56B /* CoinbaseToken.m */,
+				BB02482336BA7E0E96C804AC79F45211 /* CoinbaseTransaction.h */,
+				7C6CF90A2D0EDDC9CE1A05FCA86A632F /* CoinbaseTransaction.m */,
+				0928A2B8CABEBBA922002C09991A9150 /* CoinbaseTransfer.h */,
+				2434205B7EDEF87493098A180BD1EC8F /* CoinbaseTransfer.m */,
+				8EA15612D40F80A199BF3F3A3BDF79B1 /* CoinbaseUser.h */,
+				1065485971757C41AB9CEA6C88B3044A /* CoinbaseUser.m */,
+			);
+			name = client;
+			sourceTree = "<group>";
+		};
+		431281F3AD049E05BF9C2F24D03AE0E2 /* JHKit */ = {
+			isa = PBXGroup;
+			children = (
+				24955C4FB98150A140CEB89DA2B5C12A /* JHCacheData.h */,
+				DEF46C9A9167B1A43F06BAB5E144C8E8 /* JHCacheData.m */,
+				1DF88FC9CBFC50BED24381E4067A5F36 /* JHDegradingAction.h */,
+				78E8D73D897E07215016ECB9DF111C26 /* JHDegradingAction.m */,
+				0469D8929F947DBDBA8E1E109C3FB1A7 /* JHLanguage.h */,
+				C3F25A3E5F2C6729F6ACEF4E1CDA9167 /* JHLanguage.m */,
+				926A94BF030B8BA4C10BE990082D1D2F /* JHRegisterRemoteNotification.h */,
+				711702A3FA186535B1ECD712E953E419 /* JHRegisterRemoteNotification.m */,
+				94052EC0DEBDC7717D7589F5D99BCDF5 /* JHSafeKeyedSubscript.h */,
+				C6AEB60E62E8A620F890BA3E3EDE6954 /* JHSafeKeyedSubscript.m */,
+				2818173904C02A8F601A706EEADE9DED /* JHSystemPaths.h */,
+				05C7F79955B25FD2B0FC2DDEBEF85BD6 /* JHSystemPaths.m */,
+				78A310732F55D4DFBA8567197BD134B6 /* JHURLProtocol.h */,
+				38B3B63AC0DDAD0B6020365A948C7D78 /* JHURLProtocol.m */,
+				06841AC604D23900EC4F9ED79CA87F8C /* OtherKit.h */,
+				5D6AFB45DE06A649F55A0590F686F826 /* Support Files */,
+			);
+			path = JHKit;
+			sourceTree = "<group>";
+		};
+		492B0F6094C4EBA53666884E7F80C32D /* OAuth */ = {
+			isa = PBXGroup;
+			children = (
+				B71B1CB6B1AE911B60A64A1E99FBC8C0 /* CoinbaseOAuth.h */,
+				48D817839DAAB62B58B7527168EB4605 /* CoinbaseOAuth.m */,
+			);
+			name = OAuth;
+			sourceTree = "<group>";
+		};
+		4A43DDA81A3A9628CFA81B9C51953DF5 /* Toast */ = {
+			isa = PBXGroup;
+			children = (
+				CF8521A4385B822BE7F546894C6FAD90 /* UIView+Toast.h */,
+				A28B31DB331A789F7A3DBAF860539695 /* UIView+Toast.m */,
+				B93A8B5A101E6B906E339F739A63562F /* Support Files */,
+			);
+			path = Toast;
+			sourceTree = "<group>";
+		};
+		4AC6FF53D012717416158FA9E9736FFF /* MBProgressHUD */ = {
+			isa = PBXGroup;
+			children = (
+				781EE5317D594964A42D7B36ACCFBDC0 /* MBProgressHUD.h */,
+				B094600D8389B5FCDA963F437484660C /* MBProgressHUD.m */,
+				A9FA00B52498CFE1BFC2B268EE89D681 /* Support Files */,
+			);
+			path = MBProgressHUD;
+			sourceTree = "<group>";
+		};
+		53BECA2549A5ED53499644B8875AFAD6 /* Masonry */ = {
+			isa = PBXGroup;
+			children = (
+				FD1A0FE7C5FA563AE3CB89032764BFE7 /* MASCompositeConstraint.h */,
+				AF64B72B6B88B321ABA46EBABE649C71 /* MASCompositeConstraint.m */,
+				648401A45034690204667B66F040145E /* MASConstraint.h */,
+				881764E66CDF309FAD05A8EE88C97D4A /* MASConstraint.m */,
+				089987B5F94EB99974685D2DD90B3E0C /* MASConstraint+Private.h */,
+				FA8B6B007577C700B028491CA9E0F46D /* MASConstraintMaker.h */,
+				71D92B88D3219CA545165DC2746F6FB6 /* MASConstraintMaker.m */,
+				ED9E087E9C48467D8BB62B5DA16B716F /* MASLayoutConstraint.h */,
+				21D8DED019C75953A4BF80A38FA92185 /* MASLayoutConstraint.m */,
+				DCD5EBD95C21597136DD04FC69E31A03 /* Masonry.h */,
+				911C43741E4EF7FEC6AD43D696B204FF /* MASUtilities.h */,
+				D45A2E1F6CA3C517561D0D6388BEA21B /* MASViewAttribute.h */,
+				752F4F9DFD7D491F406974C28D457697 /* MASViewAttribute.m */,
+				666EC7253D25D18362B99BAA936A7E06 /* MASViewConstraint.h */,
+				833DB7FCF3F55EA983F413C4ABC8A974 /* MASViewConstraint.m */,
+				FF948BADF5A467EF002B46F638A6CE60 /* NSArray+MASAdditions.h */,
+				F79C5DA512F499B000ABAEE175A15F19 /* NSArray+MASAdditions.m */,
+				81B5BBDE5E8CBB26040592B62E0C1AF3 /* NSArray+MASShorthandAdditions.h */,
+				1FBCA92FF85467C0F4F19EB7CA49E11F /* NSLayoutConstraint+MASDebugAdditions.h */,
+				D6587D9EBF21320EE13310C5B81B881F /* NSLayoutConstraint+MASDebugAdditions.m */,
+				C4E43BD5B9F2846E6B445D02E7C6E516 /* View+MASAdditions.h */,
+				25866966C05F8D63BD65FC1860B76C32 /* View+MASAdditions.m */,
+				74632655D7CDEA949FC09B864ED0FC08 /* View+MASShorthandAdditions.h */,
+				0230608E0C2AB0A05834FDE41621C349 /* ViewController+MASAdditions.h */,
+				4F503B4469FCDF60B1F2D249DE910D53 /* ViewController+MASAdditions.m */,
+				27170350E78BDD1BB743A54088D6C1FC /* Support Files */,
+			);
+			path = Masonry;
+			sourceTree = "<group>";
+		};
+		5D6AFB45DE06A649F55A0590F686F826 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				3F0753E78886ADDB606586E8E262FEA8 /* JHKit.xcconfig */,
+				6E43672434833E7C55AA114CB9DA4C4B /* JHKit-dummy.m */,
+				2199070D7AA748C816C4A6CB39703D8C /* JHKit-prefix.pch */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/JHKit";
+			sourceTree = "<group>";
+		};
+		7DB346D0F39D3F0E887471402A8071AB = {
+			isa = PBXGroup;
+			children = (
+				BA6428E9F66FD5A23C0A2E06ED26CD2F /* Podfile */,
+				14B8B9B15ECBE87983FF987239AB2D7B /* Frameworks */,
+				B02E0CF6583181DFA25765775B4075BD /* Pods */,
+				358DD5C594018D10413B99B22EAAB2A9 /* Products */,
+				037C0CA694176A3C0915F62C9D20B3E6 /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		A9203A0FF197B8764CD853B6EE3A159E /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				4AE7FD0E16F3FACCFE19068F1E872D9F /* CoreGraphics.framework */,
+				CE437620300D81EED04DF8C0301AF9D9 /* Foundation.framework */,
+				0DD25CA4A497622D5ABF4C433D79E4DE /* QuartzCore.framework */,
+				ED04AE2201316F6590E7AD9952706C7B /* UIKit.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		A9FA00B52498CFE1BFC2B268EE89D681 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				EEC85E849CD5A8BB09A9BC0502AFE13C /* MBProgressHUD.xcconfig */,
+				8AA6685F7173F2A39B3FC8B85B91EBD1 /* MBProgressHUD-dummy.m */,
+				E9D9E985BDFD2765CCBB9C8F75CB2296 /* MBProgressHUD-prefix.pch */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/MBProgressHUD";
+			sourceTree = "<group>";
+		};
+		B02E0CF6583181DFA25765775B4075BD /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				21B01EEE8D672DD01A418ACB9EB6B1BE /* coinbase-official */,
+				B3A968DDF7E7D23012ED195A6DB4E937 /* IQKeyboardManager */,
+				431281F3AD049E05BF9C2F24D03AE0E2 /* JHKit */,
+				53BECA2549A5ED53499644B8875AFAD6 /* Masonry */,
+				4AC6FF53D012717416158FA9E9736FFF /* MBProgressHUD */,
+				4A43DDA81A3A9628CFA81B9C51953DF5 /* Toast */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		B3A968DDF7E7D23012ED195A6DB4E937 /* IQKeyboardManager */ = {
+			isa = PBXGroup;
+			children = (
+				23E4D373BE11CDC66F1D8B4DF138F03F /* IQBarButtonItem.h */,
+				A9CECEABF9E4CD222CBDF1AC3A1BF70B /* IQBarButtonItem.m */,
+				EFC8C58BE7F0D2ECCC02DEBE47F38A9E /* IQKeyboardManager.h */,
+				2971F3E8E1EC79857A27F7F4EC4D35F5 /* IQKeyboardManager.m */,
+				86096360190EA2B12EAE39CA68784DC9 /* IQKeyboardManagerConstants.h */,
+				99D43BE72CE856B498BB1DF7A17F9D21 /* IQKeyboardManagerConstantsInternal.h */,
+				B746B6FB825257176D1A82B5E6C33F2C /* IQKeyboardReturnKeyHandler.h */,
+				B225ECF97F2705ACF5AB93A37488C3B4 /* IQKeyboardReturnKeyHandler.m */,
+				984A3C9F1DB19A278B43BD6AA01D2C36 /* IQNSArray+Sort.h */,
+				AEFD4E38FCFF174DBC747BE15892B514 /* IQNSArray+Sort.m */,
+				C97D464951E08B0DA3692DA95105CC24 /* IQPreviousNextView.h */,
+				423E5F4BA3AB8914D1E6B2D61DFAA454 /* IQPreviousNextView.m */,
+				8F4A0FA5AB2ACF7057822FADBFC031BB /* IQTextView.h */,
+				A0A8B918F429025E749D9EF6158366CE /* IQTextView.m */,
+				01003226C04AFBD39AD6C0CAE4F5E06F /* IQTitleBarButtonItem.h */,
+				F7074F9D904EA6E36B932285658F72D4 /* IQTitleBarButtonItem.m */,
+				8A10395EB1BAD0374F028D180332B569 /* IQToolbar.h */,
+				0D68AF16C2681142FDB7A3917E6BFFE2 /* IQToolbar.m */,
+				9A0864ABDAF20F135923E097EB8439DB /* IQUIScrollView+Additions.h */,
+				660F6322CA75E8586440B72A02155BC6 /* IQUIScrollView+Additions.m */,
+				54DE8C379A0E393A36A8393E793F938E /* IQUITextFieldView+Additions.h */,
+				5E6BF3436D1E4E3BA889116617C3229D /* IQUITextFieldView+Additions.m */,
+				6438FBB7B8A4ADE3CD323DE44B987EB6 /* IQUIView+Hierarchy.h */,
+				017C0E467C945782E9E7C0CBF8C9EC50 /* IQUIView+Hierarchy.m */,
+				66C3599F1CB8D4E25664680E5D3D0C6F /* IQUIView+IQKeyboardToolbar.h */,
+				E05D692B2533E885AB608500B8D3A860 /* IQUIView+IQKeyboardToolbar.m */,
+				20C2E00BA176D96E212DD03518307FF4 /* IQUIViewController+Additions.h */,
+				169B69C4D2999446944F725C6E0D24D7 /* IQUIViewController+Additions.m */,
+				82BC991C088C6C55D02CEE6DBBCF2AD4 /* IQUIWindow+Hierarchy.h */,
+				9B48570CB7363AC930459AF74E0B020A /* IQUIWindow+Hierarchy.m */,
+				F13690C3DF0F98CCF9B780B662703511 /* KeyboardManager.h */,
+				12E853E0233740B197FF46781276EBBE /* Resources */,
+				40DC070A75B9BA48DCA8C2CEC531B575 /* Support Files */,
+			);
+			path = IQKeyboardManager;
+			sourceTree = "<group>";
+		};
+		B3D1D13E0C6553800746CB8FD61CF946 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				37DB56D75062CC75FCB0966E1C6E8A8E /* Pods-acknowledgements.markdown */,
+				10834806BD7B412BC24F347361FA2C8E /* Pods-acknowledgements.plist */,
+				272643F56613CA0D336AE3DBF19DC404 /* Pods-dummy.m */,
+				6911BECA35E7518D864239B7E898EEF3 /* Pods-frameworks.sh */,
+				A1A36D34413696BE466E2CA0AFF194DA /* Pods-resources.sh */,
+				4E762F23EC34ED4A6FF3312D84E33A40 /* Pods.debug.xcconfig */,
+				98C98CDFB3F20F2925F6CD1F141BB14F /* Pods.release.xcconfig */,
+			);
+			name = Pods;
+			path = "Target Support Files/Pods";
+			sourceTree = "<group>";
+		};
+		B93A8B5A101E6B906E339F739A63562F /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				43C34092B4F4235052159305FA4C931E /* Toast.xcconfig */,
+				FEB4FF58D6D9ACC70A06A2A6182E4954 /* Toast-dummy.m */,
+				AD45CCA57895D8417E78D13962F80CAD /* Toast-prefix.pch */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/Toast";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		2A74A69B3A3F7AC0DC6266BB27A340DB /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F5A9A03B184562D5AA16F2F4D6968F3C /* Coinbase.h in Headers */,
+				87F64EB3D390707F20E564B9B35D02A2 /* CoinbaseAccount.h in Headers */,
+				EB5F14C99DA86ACB014C4444E771C03B /* CoinbaseAccountChange.h in Headers */,
+				12F791CB6D77DE97C2F7D074BF2DD510 /* CoinbaseAddress.h in Headers */,
+				65A984DBA40E404B23C585F92AFA48C4 /* CoinbaseApplication.h in Headers */,
+				B6831B794A886544762B2B5C1CDE5ADD /* CoinbaseAuthorization.h in Headers */,
+				B5769A6F076274BBDD6DE7EFA80F9685 /* CoinbaseBalance.h in Headers */,
+				C351547AA2A526A6D14AEFC5BC338222 /* CoinbaseButton.h in Headers */,
+				3EE264C2B3A050E1E356B0150B9BF470 /* CoinbaseCertificatePinning.h in Headers */,
+				7D6A357B1AEA73B1216EF0E64E32D843 /* CoinbaseContact.h in Headers */,
+				E0C285D3710C4F478DDE2875E7841949 /* CoinbaseCurrency.h in Headers */,
+				F65E6CDD99F190B117D30E9204606E85 /* CoinbaseDefines.h in Headers */,
+				4EEBF0382F85DFD155CF32B6416F4E08 /* CoinbaseInternal.h in Headers */,
+				8211C19304D41D07A42911674D2DEB72 /* CoinbaseOAuth.h in Headers */,
+				4DD5258D1C4CDC612A48E36D1074E607 /* CoinbaseObject.h in Headers */,
+				326A22972F0AEA0D3123322D48588006 /* CoinbaseOrder.h in Headers */,
+				FE641811076715490AD2DCFA5162A076 /* CoinbasePagingHelper.h in Headers */,
+				57557F6EFBC36E2A2A70BA37359ECE09 /* CoinbasePaymentMethod.h in Headers */,
+				FD3320F5F856CB76EA32447D9D0CD667 /* CoinbasePrice.h in Headers */,
+				CE70B743B5A659CC499E7CA98EDB3100 /* CoinbaseRecurringPayment.h in Headers */,
+				92F35D8CAD731880D559A8747C72DB53 /* CoinbaseRefund.h in Headers */,
+				18DCE7CC39EBF7A5E12031A116FBFDB3 /* CoinbaseReport.h in Headers */,
+				4516F94FB4D9904C709A53C9B6E668BE /* CoinbaseToken.h in Headers */,
+				CF8003A541EEAC4AEFF0FD59FA5587FB /* CoinbaseTransaction.h in Headers */,
+				CCFE8567BBA0BE27852D24CD976BFDA1 /* CoinbaseTransfer.h in Headers */,
+				375DA464138B18BDE47E88BE53ED4CAC /* CoinbaseUser.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		657D857047A6A935B5A2E9BD049194F2 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				99D8C610BC84BE231C5D3D280F3B12AF /* MASCompositeConstraint.h in Headers */,
+				B2B7C90BA9C4DBD9851C75AC801B0E8E /* MASConstraint+Private.h in Headers */,
+				2905381350CEFFBFFA9BC8B5D027F190 /* MASConstraint.h in Headers */,
+				EC6CCC98505D2067BC98B4E6223C9DF8 /* MASConstraintMaker.h in Headers */,
+				C6EE194D232E9FE87097C0F1DF91B9FA /* MASLayoutConstraint.h in Headers */,
+				9205037BA8C22574B33FC96C5EA829A3 /* Masonry.h in Headers */,
+				FF682E8B083BAEBBDF38C52D89D45E37 /* MASUtilities.h in Headers */,
+				3F63C119F95A6735AE627BBB1BEBC4B1 /* MASViewAttribute.h in Headers */,
+				EB02AEF303313F801392DE8D90AFF0F7 /* MASViewConstraint.h in Headers */,
+				FD39EBE3398E1A99965AC003B273450D /* NSArray+MASAdditions.h in Headers */,
+				A7D31BD1F3AD4ED4612467FAD332F388 /* NSArray+MASShorthandAdditions.h in Headers */,
+				2979E54C4AFD27076576E82ADEED2F00 /* NSLayoutConstraint+MASDebugAdditions.h in Headers */,
+				DD1F717B0527C71229B3339324E35E55 /* View+MASAdditions.h in Headers */,
+				432BD50F1E699EDF2EA007E850FFCEF7 /* View+MASShorthandAdditions.h in Headers */,
+				331718BFB4A91CFFE026492905231562 /* ViewController+MASAdditions.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6816AAA2106AB78DAB1593E64685CA9C /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8453273F9C601CB3305B670F9E0CE944 /* JHCacheData.h in Headers */,
+				CD288EA42DA59FAEAA32A142B0EE3CEB /* JHDegradingAction.h in Headers */,
+				9F2C3EC920E418693D7F04CE6911D7EB /* JHLanguage.h in Headers */,
+				887298245448F16681E0E993BB6F4541 /* JHRegisterRemoteNotification.h in Headers */,
+				8DF3CB0913E5F836850C29A337CF77EE /* JHSafeKeyedSubscript.h in Headers */,
+				130C31057A9B66DB5A843A5904A21484 /* JHSystemPaths.h in Headers */,
+				62CEBF7DD504E345FBB7250E833039F5 /* JHURLProtocol.h in Headers */,
+				995E6A69A22A7948A8D56A0C4A315244 /* OtherKit.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7B84F1BA36367F987294B060A0858C5C /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3517C5B8CE18B37347AF7F89DFA25CAD /* UIView+Toast.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EF1C003613925663F17E023C73AF519C /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5EB4F27B76513AE918BA5AE0868E87C8 /* MBProgressHUD.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F52928BD67347CC6527F506A9F93DF92 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				706B941F591C5E310380270187C010C7 /* IQBarButtonItem.h in Headers */,
+				379912F8F5C2177FFB76D28E3D2FA718 /* IQKeyboardManager.h in Headers */,
+				EFF920C82FBA1114BDB96617F5050501 /* IQKeyboardManagerConstants.h in Headers */,
+				80198C029FE56A23A38E541E6EC7C499 /* IQKeyboardManagerConstantsInternal.h in Headers */,
+				AEE045FE63F6F4F05C41FC65E78D81E8 /* IQKeyboardReturnKeyHandler.h in Headers */,
+				931F7C4F90A8A69398B43904FD2EAE3D /* IQNSArray+Sort.h in Headers */,
+				8BAE6961D466C5B4C6E280F348F8E97A /* IQPreviousNextView.h in Headers */,
+				3671B6E4324B29C6AA963C53F7F12A17 /* IQTextView.h in Headers */,
+				63A5EB7B8005256326E69C339D293044 /* IQTitleBarButtonItem.h in Headers */,
+				C4A92991A9B0DD4BD29C610A27A27150 /* IQToolbar.h in Headers */,
+				AD9BB06B8AE33058E193992CD2FBB7CA /* IQUIScrollView+Additions.h in Headers */,
+				E361BE1922FEFA88023C81465A1B1912 /* IQUITextFieldView+Additions.h in Headers */,
+				FE7DC1B80172FCD9B0CF3A9542E49691 /* IQUIView+Hierarchy.h in Headers */,
+				655915B2DDAFB638774BDE19B3AAE8ED /* IQUIView+IQKeyboardToolbar.h in Headers */,
+				89825FA1D17090932D08AA1AA9E56EC5 /* IQUIViewController+Additions.h in Headers */,
+				CE34E0EA31A3A6DF537D378A9ECDFA5C /* IQUIWindow+Hierarchy.h in Headers */,
+				9B1738BF7F252D0537BAF7A31A5CCA2C /* KeyboardManager.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		0BF6C4D1D73C805882CA2B7FA4C4E0C3 /* Pods */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D4C66FE17FA12ADB82774F26C7D125A2 /* Build configuration list for PBXNativeTarget "Pods" */;
+			buildPhases = (
+				D4E4A36CF781E558AEFBA4C173CEC1F8 /* Sources */,
+				8F48DD2298FDC70A693E62F304FE5C81 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D2A105CE31C690C3FE8DEAB2E35AE8C6 /* PBXTargetDependency */,
+				C3AAF85525C3038FB98EE90C94537534 /* PBXTargetDependency */,
+				4B773B78AA2BEF547C8B273A0E0F8645 /* PBXTargetDependency */,
+				EEFE434B2F3FEBB2ECB10047F5632E74 /* PBXTargetDependency */,
+				4A2F14AC047546C1954ED9B4E729C064 /* PBXTargetDependency */,
+				51FF4055226B3C3F1840DCC293A649F1 /* PBXTargetDependency */,
+			);
+			name = Pods;
+			productName = Pods;
+			productReference = FB491095DADFA0407E43C29AB76FF1FE /* libPods.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		5336DAE54BC9EAC91ECD167E1896C612 /* coinbase-official */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5317EAFC9A7A640E263235437175DD05 /* Build configuration list for PBXNativeTarget "coinbase-official" */;
+			buildPhases = (
+				027E8E715E9BF71B0CD7D95113BDA8F6 /* Sources */,
+				515A94D23AA1C616DD8D4C64F9439168 /* Frameworks */,
+				2A74A69B3A3F7AC0DC6266BB27A340DB /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				9F67B932D15064D2811387CCDC7210B1 /* PBXTargetDependency */,
+			);
+			name = "coinbase-official";
+			productName = "coinbase-official";
+			productReference = B7793B35BD0431381B11D493B5A257B2 /* libcoinbase-official.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		53480ED0BE09FF49E34B1702D485CAAB /* Masonry */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B6653DB75D219E078020C341A7D83ECE /* Build configuration list for PBXNativeTarget "Masonry" */;
+			buildPhases = (
+				DC8579C657135E3C32AB580A48C6D524 /* Sources */,
+				FAB9E9D9BBDB93399D3C2B91469EC4B6 /* Frameworks */,
+				657D857047A6A935B5A2E9BD049194F2 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Masonry;
+			productName = Masonry;
+			productReference = 3449C1D23D6E0C1ABA8DDF165E50725B /* libMasonry.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		639CD2F043E95922797865ECE7182880 /* JHKit */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5450F88FE85B736BB98479DFBFC48B5D /* Build configuration list for PBXNativeTarget "JHKit" */;
+			buildPhases = (
+				E7770EC8EA32B3D2AF42A9AC9F60E421 /* Sources */,
+				1F366F9B39C454CB53A0715FC2463B17 /* Frameworks */,
+				6816AAA2106AB78DAB1593E64685CA9C /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				62CA9378F0A542D0D3C213BB96891E9C /* PBXTargetDependency */,
+			);
+			name = JHKit;
+			productName = JHKit;
+			productReference = 433F1C85564EBD9B825878D4839D2D6F /* libJHKit.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		AECD244EF471EB3EBC03D0A4731C5920 /* Toast */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9BA64666233EFFE44D1D631E5082FB7F /* Build configuration list for PBXNativeTarget "Toast" */;
+			buildPhases = (
+				1B92275F8DA26ACFDC4115063AF2E172 /* Sources */,
+				20ECA7E4A66D86A303E15FC463950408 /* Frameworks */,
+				7B84F1BA36367F987294B060A0858C5C /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Toast;
+			productName = Toast;
+			productReference = 514080FBDD82D06E80E19109068AF0C8 /* libToast.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		B5527CB67AF20A05F7A3E5CE87E2F5A8 /* JHKit-JHKit */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A1A0097099B9DD11EE02207C08824383 /* Build configuration list for PBXNativeTarget "JHKit-JHKit" */;
+			buildPhases = (
+				89BC10C486F1F2045AEA01F84C6CFF40 /* Sources */,
+				051D644ED72BA2BE2352E4E312047F2C /* Frameworks */,
+				831C0EAC379BC54002AFF80CA70692B4 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "JHKit-JHKit";
+			productName = "JHKit-JHKit";
+			productReference = 2F269CCFC5C10DA94CB9A00B894655D8 /* JHKit.bundle */;
+			productType = "com.apple.product-type.bundle";
+		};
+		C743C42395D3C33F9883CB4690B475A0 /* IQKeyboardManager */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E15F12AD560582224D8AEDCD680513E9 /* Build configuration list for PBXNativeTarget "IQKeyboardManager" */;
+			buildPhases = (
+				4FB3BB7F3B9B5697A1E7BBC9FC14CC53 /* Sources */,
+				E48110DE0BC8FCB94400708AF33950E3 /* Frameworks */,
+				F52928BD67347CC6527F506A9F93DF92 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = IQKeyboardManager;
+			productName = IQKeyboardManager;
+			productReference = 159C617FB2BBA5E16C4922CEF4DFD9CA /* libIQKeyboardManager.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		C96413869C89C7C06EB1582699CA3FFA /* coinbase-official-CBCertificates */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F99F629B1645C48D0F76F05F8B55EF26 /* Build configuration list for PBXNativeTarget "coinbase-official-CBCertificates" */;
+			buildPhases = (
+				44A91823773E39709EC19D7EE87F1BE9 /* Sources */,
+				5DBE1CBEA48AD47ED23D9C40BAE58849 /* Frameworks */,
+				3FE4EF133995EAA33ABB927FD1ACAE1C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "coinbase-official-CBCertificates";
+			productName = "coinbase-official-CBCertificates";
+			productReference = 54D086A7B1318A7C59E7DBF11480A083 /* CBCertificates.bundle */;
+			productType = "com.apple.product-type.bundle";
+		};
+		FE2F1D7B9D9FCEA148517E4657B243F4 /* MBProgressHUD */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F2F5671C4613023EE94A2E62DA06031D /* Build configuration list for PBXNativeTarget "MBProgressHUD" */;
+			buildPhases = (
+				098439AB598DDF1AF51146A2E3E2E562 /* Sources */,
+				E81C08F5CCC0A5FBFF4559E2173164C7 /* Frameworks */,
+				EF1C003613925663F17E023C73AF519C /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MBProgressHUD;
+			productName = MBProgressHUD;
+			productReference = 5A32459B6A6D4193C1B0DFE0992ECB71 /* libMBProgressHUD.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D41D8CD98F00B204E9800998ECF8427E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0700;
+				LastUpgradeCheck = 0730;
+			};
+			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
+			productRefGroup = 358DD5C594018D10413B99B22EAAB2A9 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				5336DAE54BC9EAC91ECD167E1896C612 /* coinbase-official */,
+				C96413869C89C7C06EB1582699CA3FFA /* coinbase-official-CBCertificates */,
+				C743C42395D3C33F9883CB4690B475A0 /* IQKeyboardManager */,
+				639CD2F043E95922797865ECE7182880 /* JHKit */,
+				B5527CB67AF20A05F7A3E5CE87E2F5A8 /* JHKit-JHKit */,
+				53480ED0BE09FF49E34B1702D485CAAB /* Masonry */,
+				FE2F1D7B9D9FCEA148517E4657B243F4 /* MBProgressHUD */,
+				0BF6C4D1D73C805882CA2B7FA4C4E0C3 /* Pods */,
+				AECD244EF471EB3EBC03D0A4731C5920 /* Toast */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		3FE4EF133995EAA33ABB927FD1ACAE1C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7E502D758CF7FB8F83C2584AB5B9A0D5 /* digicert-ev.der in Resources */,
+				ED28E207ACC964942B052D783153DC3F /* digicert.der in Resources */,
+				14CE12936C5CA711118E9BA232BCDC66 /* verisign.der in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		831C0EAC379BC54002AFF80CA70692B4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		027E8E715E9BF71B0CD7D95113BDA8F6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9B10996D3E7D589ECEB33D527A0E5E20 /* coinbase-official-dummy.m in Sources */,
+				55EF45A9B7EF08C93D3EBA1A81EE778C /* Coinbase.m in Sources */,
+				6314CB873D75DF3E69131DB6A652EE9A /* CoinbaseAccount.m in Sources */,
+				B9A13A17CE15243E252C11CC87DB2452 /* CoinbaseAccountChange.m in Sources */,
+				78BEEA03E10996A6426E3577DA904BD1 /* CoinbaseAddress.m in Sources */,
+				0D5D3A8DA1A3B1A51A5E64158C289493 /* CoinbaseApplication.m in Sources */,
+				02DC2019E8142F8BBFEA76C5EE5AFEE4 /* CoinbaseAuthorization.m in Sources */,
+				99639F469520FF73C6674E539D8DE59D /* CoinbaseBalance.m in Sources */,
+				73E6D53087D5F8AE62F4ADA39378D451 /* CoinbaseButton.m in Sources */,
+				13FF5874401735C70E1C4479B5948EEE /* CoinbaseCertificatePinning.m in Sources */,
+				F239515E506FBDD54FD8534F7B843BCD /* CoinbaseContact.m in Sources */,
+				797780A6234DF7A1A26B7263FDE8ED29 /* CoinbaseCurrency.m in Sources */,
+				2155A25001AB6F24410DEDFC1D14E9AB /* CoinbaseDefines.m in Sources */,
+				0000405BCC000215A3934B9359375062 /* CoinbaseOAuth.m in Sources */,
+				1913A4F91056A21B2E95467938F9B48B /* CoinbaseObject.m in Sources */,
+				F99F8E827767EB5655E727085DE932F9 /* CoinbaseOrder.m in Sources */,
+				738CBD86A976878ED4348B804B73C33E /* CoinbasePagingHelper.m in Sources */,
+				1B7B0612DCAE96044CA035A4680F039A /* CoinbasePaymentMethod.m in Sources */,
+				93A1A8A3D258E130B8A5F659740786E0 /* CoinbasePrice.m in Sources */,
+				020C65E81824E3D0EECFFFEEF2B530DD /* CoinbaseRecurringPayment.m in Sources */,
+				053AFB057D18DA56F19C5733E8D624C9 /* CoinbaseRefund.m in Sources */,
+				117A6F8DDAE6D68AF44C19F13B8D91B2 /* CoinbaseReport.m in Sources */,
+				166B3C4678407DD3A7753EC0D22EA886 /* CoinbaseToken.m in Sources */,
+				97A53C2A20F01C381520A4D57CDFB58D /* CoinbaseTransaction.m in Sources */,
+				000869D50BECB3200C95168B6DBFBFD2 /* CoinbaseTransfer.m in Sources */,
+				EF906CE8C618766682CF57E979AE9DBF /* CoinbaseUser.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		098439AB598DDF1AF51146A2E3E2E562 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FC214077677D4F02E03C6C85F774E028 /* MBProgressHUD-dummy.m in Sources */,
+				82FC12F67E83874B93592218E9FB4CA0 /* MBProgressHUD.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1B92275F8DA26ACFDC4115063AF2E172 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DCE0C84D8E6E3A8EEB6CB83097EC88EC /* Toast-dummy.m in Sources */,
+				CE5854C3C2AB47143DBB7BD6D85C06B8 /* UIView+Toast.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		44A91823773E39709EC19D7EE87F1BE9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4FB3BB7F3B9B5697A1E7BBC9FC14CC53 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				783A5D1E4EA73E85763F9EDBC0EE3F46 /* IQBarButtonItem.m in Sources */,
+				1C9A0E8EE17C8D72FD9E3914D85B86FB /* IQKeyboardManager-dummy.m in Sources */,
+				A7A9539BFD94AB2E4FF366FC90888288 /* IQKeyboardManager.m in Sources */,
+				2F6FE6DFADB803598AA4DA02C388948D /* IQKeyboardReturnKeyHandler.m in Sources */,
+				A87A423ED415255AD9BFE1C081C16040 /* IQNSArray+Sort.m in Sources */,
+				B2DCE2B1AEA776B0DA57023E13088EEE /* IQPreviousNextView.m in Sources */,
+				4A77C3092E2C4DC85D2657B662F074B5 /* IQTextView.m in Sources */,
+				0F9DBB180812BDD1DBDA222A2B44DA67 /* IQTitleBarButtonItem.m in Sources */,
+				76469FA0CFB3A5B28231C61B8DB1133A /* IQToolbar.m in Sources */,
+				C6CD759292D7A987B77F35929BA609D2 /* IQUIScrollView+Additions.m in Sources */,
+				1FDFA7E404C9B33C636E8124E2731E95 /* IQUITextFieldView+Additions.m in Sources */,
+				4F6FA774B85EBE3134E19DA7B5F08D9B /* IQUIView+Hierarchy.m in Sources */,
+				4184EED3AB1280CAF83C7D9DA9274560 /* IQUIView+IQKeyboardToolbar.m in Sources */,
+				474C4F22F9166E9B431ABF0598F21443 /* IQUIViewController+Additions.m in Sources */,
+				58941DFF62DA7553DB9AEB8F1EB0E508 /* IQUIWindow+Hierarchy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		89BC10C486F1F2045AEA01F84C6CFF40 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D4E4A36CF781E558AEFBA4C173CEC1F8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				90A24A991E454267596DB404D6E1AEA1 /* Pods-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DC8579C657135E3C32AB580A48C6D524 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BCD4B362C6194513150915437754E2D4 /* MASCompositeConstraint.m in Sources */,
+				BE024118D329F8F566BD1811A1DC16CB /* MASConstraint.m in Sources */,
+				335DCBC17D2469F228020EF6C7B41F7C /* MASConstraintMaker.m in Sources */,
+				BDD210D7537DD15CFE59AE126005E5F8 /* MASLayoutConstraint.m in Sources */,
+				81599471BAB0420D54E1ADF8507A5113 /* Masonry-dummy.m in Sources */,
+				A44AF130E4C5313CD193D9BF68853026 /* MASViewAttribute.m in Sources */,
+				E6B49FBCE3957DB67F691ACCC4CAF4BE /* MASViewConstraint.m in Sources */,
+				5457FCC2699281B5A4203BA1559F593F /* NSArray+MASAdditions.m in Sources */,
+				D3D9F12613E23AD64C1FA5F7081A3668 /* NSLayoutConstraint+MASDebugAdditions.m in Sources */,
+				81403CAF6C4C1D3DC8B199289C3A6F59 /* View+MASAdditions.m in Sources */,
+				AF62B956405F7734F5A9B8F3FD4B1B96 /* ViewController+MASAdditions.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E7770EC8EA32B3D2AF42A9AC9F60E421 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A6433AFB029BE62D1C6761C79EA8018E /* JHCacheData.m in Sources */,
+				5054A167148A15D4686BBC51B5035B17 /* JHDegradingAction.m in Sources */,
+				E0DFC6748DA54B4CF351EA48D0044BC4 /* JHKit-dummy.m in Sources */,
+				FF529EDB94EE40A3061DE926A5D55A22 /* JHLanguage.m in Sources */,
+				8EB342F582E3F3F0F6BED3FAEC9D9B27 /* JHRegisterRemoteNotification.m in Sources */,
+				04F546EC78C4547C616C178F5F9C7C19 /* JHSafeKeyedSubscript.m in Sources */,
+				CD500801B4A148223ED0EF8DA756F17F /* JHSystemPaths.m in Sources */,
+				394E0CE12D0F42352DEF8BCB8CF4047B /* JHURLProtocol.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		4A2F14AC047546C1954ED9B4E729C064 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = Toast;
+			target = AECD244EF471EB3EBC03D0A4731C5920 /* Toast */;
+			targetProxy = 179014096C9EBEB86868A4638A69B594 /* PBXContainerItemProxy */;
+		};
+		4B773B78AA2BEF547C8B273A0E0F8645 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = MBProgressHUD;
+			target = FE2F1D7B9D9FCEA148517E4657B243F4 /* MBProgressHUD */;
+			targetProxy = 7CD5116DF3973D3F60C913AA7DD3EEBB /* PBXContainerItemProxy */;
+		};
+		51FF4055226B3C3F1840DCC293A649F1 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "coinbase-official";
+			target = 5336DAE54BC9EAC91ECD167E1896C612 /* coinbase-official */;
+			targetProxy = 11E49F20C8E2EFFDE42E997D47C2FD95 /* PBXContainerItemProxy */;
+		};
+		62CA9378F0A542D0D3C213BB96891E9C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "JHKit-JHKit";
+			target = B5527CB67AF20A05F7A3E5CE87E2F5A8 /* JHKit-JHKit */;
+			targetProxy = 45FD2AD0E3C319B9849632B25338D2B3 /* PBXContainerItemProxy */;
+		};
+		9F67B932D15064D2811387CCDC7210B1 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "coinbase-official-CBCertificates";
+			target = C96413869C89C7C06EB1582699CA3FFA /* coinbase-official-CBCertificates */;
+			targetProxy = 7AED6F47664234454E2E7CE30EADB9F9 /* PBXContainerItemProxy */;
+		};
+		C3AAF85525C3038FB98EE90C94537534 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = JHKit;
+			target = 639CD2F043E95922797865ECE7182880 /* JHKit */;
+			targetProxy = 5C44EA4A5AB72E99717454089F17DF04 /* PBXContainerItemProxy */;
+		};
+		D2A105CE31C690C3FE8DEAB2E35AE8C6 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = IQKeyboardManager;
+			target = C743C42395D3C33F9883CB4690B475A0 /* IQKeyboardManager */;
+			targetProxy = 58B86900E8C74012E9B984FB68A8F040 /* PBXContainerItemProxy */;
+		};
+		EEFE434B2F3FEBB2ECB10047F5632E74 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = Masonry;
+			target = 53480ED0BE09FF49E34B1702D485CAAB /* Masonry */;
+			targetProxy = B6F013DD556CDFB204FA31FB96C4B0C0 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		00D1C630D35E8DA816660D67D259D86C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2EB718FCA22E13A50AC548C873A075A1 /* coinbase-official.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				PRODUCT_NAME = CBCertificates;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Debug;
+		};
+		0AFB87F223F309CC1E0552CAD496102E /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 98C98CDFB3F20F2925F6CD1F141BB14F /* Pods.release.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MACH_O_TYPE = staticlib;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		2C06BFFB4B33650BA6DF9192C2A8D4AF /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3F0753E78886ADDB606586E8E262FEA8 /* JHKit.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/JHKit/JHKit-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PUBLIC_HEADERS_FOLDER_PATH = "";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		2EB7464BFC4B881299B5657C95CD0AF5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = EEC85E849CD5A8BB09A9BC0502AFE13C /* MBProgressHUD.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/MBProgressHUD/MBProgressHUD-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PUBLIC_HEADERS_FOLDER_PATH = "";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		403C6DAF990AAECA935C91C55B84B19E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D5AA25F9E5C5A89AAE4A33DF504B60A3 /* IQKeyboardManager.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/IQKeyboardManager/IQKeyboardManager-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PUBLIC_HEADERS_FOLDER_PATH = "";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		4223EC60D5836F585C1A1554B13C8A6C /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D5AA25F9E5C5A89AAE4A33DF504B60A3 /* IQKeyboardManager.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/IQKeyboardManager/IQKeyboardManager-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PUBLIC_HEADERS_FOLDER_PATH = "";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		85058CC1B7F169AF3F20F2B975F0B1D8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4E762F23EC34ED4A6FF3312D84E33A40 /* Pods.debug.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MACH_O_TYPE = staticlib;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		858D1B5ABF8A08BB2DFCE1212B3451F0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2EB718FCA22E13A50AC548C873A075A1 /* coinbase-official.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/coinbase-official/coinbase-official-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PUBLIC_HEADERS_FOLDER_PATH = "";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		895FA8DD0F6E5139A7D1F2515075F4DC /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3F0753E78886ADDB606586E8E262FEA8 /* JHKit.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				PRODUCT_NAME = JHKit;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Release;
+		};
+		919FAA2929EE9C5D42F4E864F99B6175 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = EEC85E849CD5A8BB09A9BC0502AFE13C /* MBProgressHUD.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/MBProgressHUD/MBProgressHUD-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PUBLIC_HEADERS_FOLDER_PATH = "";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		95AE3FB211FA06239C7330FF540873D7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8BA1F62B79F43AC699F611FF52C90B63 /* Masonry.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Masonry/Masonry-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PUBLIC_HEADERS_FOLDER_PATH = "";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		A70CDAD61F90AC503C7D04CC22DA2923 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				ONLY_ACTIVE_ARCH = YES;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		AD9CABC2D3425A108E40788A461E9503 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3F0753E78886ADDB606586E8E262FEA8 /* JHKit.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				PRODUCT_NAME = JHKit;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Debug;
+		};
+		BB7BF6D53A5E1AA65565D743CC7BE316 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2EB718FCA22E13A50AC548C873A075A1 /* coinbase-official.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/coinbase-official/coinbase-official-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PUBLIC_HEADERS_FOLDER_PATH = "";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		D55F4D36EF21F8D3696E249676A83541 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 43C34092B4F4235052159305FA4C931E /* Toast.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Toast/Toast-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PUBLIC_HEADERS_FOLDER_PATH = "";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		D8CCB0163F831F204DB6A4F0DC947121 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2EB718FCA22E13A50AC548C873A075A1 /* coinbase-official.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				PRODUCT_NAME = CBCertificates;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Release;
+		};
+		EA9502759CAF22AB85E90BF2A1CC916C /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 43C34092B4F4235052159305FA4C931E /* Toast.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Toast/Toast-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PUBLIC_HEADERS_FOLDER_PATH = "";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		F32D50A4AC6ED66C828A43903BC8E8B6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3F0753E78886ADDB606586E8E262FEA8 /* JHKit.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/JHKit/JHKit-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PUBLIC_HEADERS_FOLDER_PATH = "";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		FB45FFD90572718D82AB9092B750F0CA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_PREPROCESSOR_DEFINITIONS = "RELEASE=1";
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		FCB543E03B40FD44221FE9A409AE51EA /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8BA1F62B79F43AC699F611FF52C90B63 /* Masonry.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Masonry/Masonry-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PUBLIC_HEADERS_FOLDER_PATH = "";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A70CDAD61F90AC503C7D04CC22DA2923 /* Debug */,
+				FB45FFD90572718D82AB9092B750F0CA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5317EAFC9A7A640E263235437175DD05 /* Build configuration list for PBXNativeTarget "coinbase-official" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				858D1B5ABF8A08BB2DFCE1212B3451F0 /* Debug */,
+				BB7BF6D53A5E1AA65565D743CC7BE316 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5450F88FE85B736BB98479DFBFC48B5D /* Build configuration list for PBXNativeTarget "JHKit" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F32D50A4AC6ED66C828A43903BC8E8B6 /* Debug */,
+				2C06BFFB4B33650BA6DF9192C2A8D4AF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9BA64666233EFFE44D1D631E5082FB7F /* Build configuration list for PBXNativeTarget "Toast" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D55F4D36EF21F8D3696E249676A83541 /* Debug */,
+				EA9502759CAF22AB85E90BF2A1CC916C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A1A0097099B9DD11EE02207C08824383 /* Build configuration list for PBXNativeTarget "JHKit-JHKit" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AD9CABC2D3425A108E40788A461E9503 /* Debug */,
+				895FA8DD0F6E5139A7D1F2515075F4DC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B6653DB75D219E078020C341A7D83ECE /* Build configuration list for PBXNativeTarget "Masonry" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				95AE3FB211FA06239C7330FF540873D7 /* Debug */,
+				FCB543E03B40FD44221FE9A409AE51EA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D4C66FE17FA12ADB82774F26C7D125A2 /* Build configuration list for PBXNativeTarget "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				85058CC1B7F169AF3F20F2B975F0B1D8 /* Debug */,
+				0AFB87F223F309CC1E0552CAD496102E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E15F12AD560582224D8AEDCD680513E9 /* Build configuration list for PBXNativeTarget "IQKeyboardManager" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				403C6DAF990AAECA935C91C55B84B19E /* Debug */,
+				4223EC60D5836F585C1A1554B13C8A6C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F2F5671C4613023EE94A2E62DA06031D /* Build configuration list for PBXNativeTarget "MBProgressHUD" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2EB7464BFC4B881299B5657C95CD0AF5 /* Debug */,
+				919FAA2929EE9C5D42F4E864F99B6175 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F99F629B1645C48D0F76F05F8B55EF26 /* Build configuration list for PBXNativeTarget "coinbase-official-CBCertificates" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				00D1C630D35E8DA816660D67D259D86C /* Debug */,
+				D8CCB0163F831F204DB6A4F0DC947121 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+}

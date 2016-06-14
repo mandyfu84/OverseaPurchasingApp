@@ -1,0 +1,580 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		03D0087D1CCBC50D00A6648A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 03D0087C1CCBC50D00A6648A /* main.m */; };
+		03D008801CCBC50D00A6648A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 03D0087F1CCBC50D00A6648A /* AppDelegate.m */; };
+		03D008831CCBC50D00A6648A /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 03D008821CCBC50D00A6648A /* ViewController.m */; };
+		03D008861CCBC50D00A6648A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 03D008841CCBC50D00A6648A /* Main.storyboard */; };
+		03D008881CCBC50D00A6648A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 03D008871CCBC50D00A6648A /* Assets.xcassets */; };
+		03D0088B1CCBC50D00A6648A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 03D008891CCBC50D00A6648A /* LaunchScreen.storyboard */; };
+		3038628E1D0FD48C002B719E /* AddItemTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 303862671D0FD48C002B719E /* AddItemTableViewController.m */; };
+		3038628F1D0FD48C002B719E /* 3C.png in Resources */ = {isa = PBXBuildFile; fileRef = 303862681D0FD48C002B719E /* 3C.png */; };
+		303862901D0FD48C002B719E /* bags.png in Resources */ = {isa = PBXBuildFile; fileRef = 3038626A1D0FD48C002B719E /* bags.png */; };
+		303862911D0FD48C002B719E /* desk.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 3038626C1D0FD48C002B719E /* desk.jpg */; };
+		303862921D0FD48C002B719E /* folder.png in Resources */ = {isa = PBXBuildFile; fileRef = 3038626D1D0FD48C002B719E /* folder.png */; };
+		303862931D0FD48C002B719E /* food.png in Resources */ = {isa = PBXBuildFile; fileRef = 3038626E1D0FD48C002B719E /* food.png */; };
+		303862941D0FD48C002B719E /* IconAllItem.png in Resources */ = {isa = PBXBuildFile; fileRef = 3038626F1D0FD48C002B719E /* IconAllItem.png */; };
+		303862951D0FD48C002B719E /* IconCart.png in Resources */ = {isa = PBXBuildFile; fileRef = 303862701D0FD48C002B719E /* IconCart.png */; };
+		303862961D0FD48C002B719E /* IconUser.png in Resources */ = {isa = PBXBuildFile; fileRef = 303862711D0FD48C002B719E /* IconUser.png */; };
+		303862971D0FD48C002B719E /* item1.png in Resources */ = {isa = PBXBuildFile; fileRef = 303862721D0FD48C002B719E /* item1.png */; };
+		303862981D0FD48C002B719E /* item2.png in Resources */ = {isa = PBXBuildFile; fileRef = 303862731D0FD48C002B719E /* item2.png */; };
+		303862991D0FD48C002B719E /* item3.png in Resources */ = {isa = PBXBuildFile; fileRef = 303862741D0FD48C002B719E /* item3.png */; };
+		3038629A1D0FD48C002B719E /* ItemDetailUIViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 303862761D0FD48C002B719E /* ItemDetailUIViewController.m */; };
+		3038629B1D0FD48C002B719E /* ItemObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 303862781D0FD48C002B719E /* ItemObject.m */; };
+		3038629C1D0FD48C002B719E /* Items.m in Sources */ = {isa = PBXBuildFile; fileRef = 3038627A1D0FD48C002B719E /* Items.m */; };
+		3038629D1D0FD48C002B719E /* ItemTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3038627C1D0FD48C002B719E /* ItemTableViewController.m */; };
+		3038629E1D0FD48C002B719E /* Launch.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 3038627D1D0FD48C002B719E /* Launch.jpg */; };
+		3038629F1D0FD48C002B719E /* life.png in Resources */ = {isa = PBXBuildFile; fileRef = 3038627E1D0FD48C002B719E /* life.png */; };
+		303862A01D0FD48C002B719E /* list.png in Resources */ = {isa = PBXBuildFile; fileRef = 3038627F1D0FD48C002B719E /* list.png */; };
+		303862A11D0FD48C002B719E /* LogIn.m in Sources */ = {isa = PBXBuildFile; fileRef = 303862811D0FD48C002B719E /* LogIn.m */; };
+		303862A21D0FD48C002B719E /* macbook.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 303862821D0FD48C002B719E /* macbook.jpg */; };
+		303862A31D0FD48C002B719E /* others.png in Resources */ = {isa = PBXBuildFile; fileRef = 303862831D0FD48C002B719E /* others.png */; };
+		303862A41D0FD48C002B719E /* pants.png in Resources */ = {isa = PBXBuildFile; fileRef = 303862841D0FD48C002B719E /* pants.png */; };
+		303862A51D0FD48C002B719E /* plane.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 303862851D0FD48C002B719E /* plane.jpg */; };
+		303862A61D0FD48C002B719E /* shirts.png in Resources */ = {isa = PBXBuildFile; fileRef = 303862861D0FD48C002B719E /* shirts.png */; };
+		303862A71D0FD48C002B719E /* shoes.png in Resources */ = {isa = PBXBuildFile; fileRef = 303862871D0FD48C002B719E /* shoes.png */; };
+		303862A81D0FD48C002B719E /* SignUp.m in Sources */ = {isa = PBXBuildFile; fileRef = 303862891D0FD48C002B719E /* SignUp.m */; };
+		303862A91D0FD48C002B719E /* user.png in Resources */ = {isa = PBXBuildFile; fileRef = 3038628A1D0FD48C002B719E /* user.png */; };
+		303862AA1D0FD48C002B719E /* UserObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 3038628C1D0FD48C002B719E /* UserObject.m */; };
+		303862AB1D0FD48C002B719E /* UserPageBackground.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 3038628D1D0FD48C002B719E /* UserPageBackground.jpg */; };
+		303862BC1D0FD4C8002B719E /* MongoLabSDK.m in Sources */ = {isa = PBXBuildFile; fileRef = 303862AF1D0FD4C8002B719E /* MongoLabSDK.m */; };
+		303862BD1D0FD4C8002B719E /* NSObject+SBJSON.m in Sources */ = {isa = PBXBuildFile; fileRef = 303862B11D0FD4C8002B719E /* NSObject+SBJSON.m */; };
+		303862BE1D0FD4C8002B719E /* NSString+SBJSON.m in Sources */ = {isa = PBXBuildFile; fileRef = 303862B31D0FD4C8002B719E /* NSString+SBJSON.m */; };
+		303862BF1D0FD4C8002B719E /* SBJSON.m in Sources */ = {isa = PBXBuildFile; fileRef = 303862B51D0FD4C8002B719E /* SBJSON.m */; };
+		303862C01D0FD4C8002B719E /* SBJsonBase.m in Sources */ = {isa = PBXBuildFile; fileRef = 303862B71D0FD4C8002B719E /* SBJsonBase.m */; };
+		303862C11D0FD4C8002B719E /* SBJsonParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 303862B91D0FD4C8002B719E /* SBJsonParser.m */; };
+		303862C21D0FD4C8002B719E /* SBJsonWriter.m in Sources */ = {isa = PBXBuildFile; fileRef = 303862BB1D0FD4C8002B719E /* SBJsonWriter.m */; };
+		E57BE1DDC7E358B5218368B4 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = BBE314BAE74037F56D5E7F00 /* libPods.a */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		03D008781CCBC50D00A6648A /* CoinBaseTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CoinBaseTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		03D0087C1CCBC50D00A6648A /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		03D0087E1CCBC50D00A6648A /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		03D0087F1CCBC50D00A6648A /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		03D008811CCBC50D00A6648A /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		03D008821CCBC50D00A6648A /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		03D008851CCBC50D00A6648A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		03D008871CCBC50D00A6648A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		03D0088A1CCBC50D00A6648A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		03D0088C1CCBC50D00A6648A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		303862671D0FD48C002B719E /* AddItemTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AddItemTableViewController.m; path = CoinBaseTest/AddItemTableViewController.m; sourceTree = "<group>"; };
+		303862681D0FD48C002B719E /* 3C.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = 3C.png; path = CoinBaseTest/3C.png; sourceTree = "<group>"; };
+		303862691D0FD48C002B719E /* AddItemTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AddItemTableViewController.h; path = CoinBaseTest/AddItemTableViewController.h; sourceTree = "<group>"; };
+		3038626A1D0FD48C002B719E /* bags.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = bags.png; path = CoinBaseTest/bags.png; sourceTree = "<group>"; };
+		3038626B1D0FD48C002B719E /* CategoryTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CategoryTableViewCell.h; path = CoinBaseTest/CategoryTableViewCell.h; sourceTree = "<group>"; };
+		3038626C1D0FD48C002B719E /* desk.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = desk.jpg; path = CoinBaseTest/desk.jpg; sourceTree = "<group>"; };
+		3038626D1D0FD48C002B719E /* folder.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = folder.png; path = CoinBaseTest/folder.png; sourceTree = "<group>"; };
+		3038626E1D0FD48C002B719E /* food.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = food.png; path = CoinBaseTest/food.png; sourceTree = "<group>"; };
+		3038626F1D0FD48C002B719E /* IconAllItem.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = IconAllItem.png; path = CoinBaseTest/IconAllItem.png; sourceTree = "<group>"; };
+		303862701D0FD48C002B719E /* IconCart.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = IconCart.png; path = CoinBaseTest/IconCart.png; sourceTree = "<group>"; };
+		303862711D0FD48C002B719E /* IconUser.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = IconUser.png; path = CoinBaseTest/IconUser.png; sourceTree = "<group>"; };
+		303862721D0FD48C002B719E /* item1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = item1.png; path = CoinBaseTest/item1.png; sourceTree = "<group>"; };
+		303862731D0FD48C002B719E /* item2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = item2.png; path = CoinBaseTest/item2.png; sourceTree = "<group>"; };
+		303862741D0FD48C002B719E /* item3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = item3.png; path = CoinBaseTest/item3.png; sourceTree = "<group>"; };
+		303862751D0FD48C002B719E /* ItemDetailUIViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ItemDetailUIViewController.h; path = CoinBaseTest/ItemDetailUIViewController.h; sourceTree = "<group>"; };
+		303862761D0FD48C002B719E /* ItemDetailUIViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ItemDetailUIViewController.m; path = CoinBaseTest/ItemDetailUIViewController.m; sourceTree = "<group>"; };
+		303862771D0FD48C002B719E /* ItemObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ItemObject.h; path = CoinBaseTest/ItemObject.h; sourceTree = "<group>"; };
+		303862781D0FD48C002B719E /* ItemObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ItemObject.m; path = CoinBaseTest/ItemObject.m; sourceTree = "<group>"; };
+		303862791D0FD48C002B719E /* items.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = items.h; path = CoinBaseTest/items.h; sourceTree = "<group>"; };
+		3038627A1D0FD48C002B719E /* Items.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Items.m; path = CoinBaseTest/Items.m; sourceTree = "<group>"; };
+		3038627B1D0FD48C002B719E /* ItemTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ItemTableViewController.h; path = CoinBaseTest/ItemTableViewController.h; sourceTree = "<group>"; };
+		3038627C1D0FD48C002B719E /* ItemTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ItemTableViewController.m; path = CoinBaseTest/ItemTableViewController.m; sourceTree = "<group>"; };
+		3038627D1D0FD48C002B719E /* Launch.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = Launch.jpg; path = CoinBaseTest/Launch.jpg; sourceTree = "<group>"; };
+		3038627E1D0FD48C002B719E /* life.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = life.png; path = CoinBaseTest/life.png; sourceTree = "<group>"; };
+		3038627F1D0FD48C002B719E /* list.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = list.png; path = CoinBaseTest/list.png; sourceTree = "<group>"; };
+		303862801D0FD48C002B719E /* LogIn.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LogIn.h; path = CoinBaseTest/LogIn.h; sourceTree = "<group>"; };
+		303862811D0FD48C002B719E /* LogIn.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = LogIn.m; path = CoinBaseTest/LogIn.m; sourceTree = "<group>"; };
+		303862821D0FD48C002B719E /* macbook.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = macbook.jpg; path = CoinBaseTest/macbook.jpg; sourceTree = "<group>"; };
+		303862831D0FD48C002B719E /* others.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = others.png; path = CoinBaseTest/others.png; sourceTree = "<group>"; };
+		303862841D0FD48C002B719E /* pants.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = pants.png; path = CoinBaseTest/pants.png; sourceTree = "<group>"; };
+		303862851D0FD48C002B719E /* plane.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = plane.jpg; path = CoinBaseTest/plane.jpg; sourceTree = "<group>"; };
+		303862861D0FD48C002B719E /* shirts.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = shirts.png; path = CoinBaseTest/shirts.png; sourceTree = "<group>"; };
+		303862871D0FD48C002B719E /* shoes.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = shoes.png; path = CoinBaseTest/shoes.png; sourceTree = "<group>"; };
+		303862881D0FD48C002B719E /* SignUp.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SignUp.h; path = CoinBaseTest/SignUp.h; sourceTree = "<group>"; };
+		303862891D0FD48C002B719E /* SignUp.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SignUp.m; path = CoinBaseTest/SignUp.m; sourceTree = "<group>"; };
+		3038628A1D0FD48C002B719E /* user.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = user.png; path = CoinBaseTest/user.png; sourceTree = "<group>"; };
+		3038628B1D0FD48C002B719E /* UserObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = UserObject.h; path = CoinBaseTest/UserObject.h; sourceTree = "<group>"; };
+		3038628C1D0FD48C002B719E /* UserObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = UserObject.m; path = CoinBaseTest/UserObject.m; sourceTree = "<group>"; };
+		3038628D1D0FD48C002B719E /* UserPageBackground.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = UserPageBackground.jpg; path = CoinBaseTest/UserPageBackground.jpg; sourceTree = "<group>"; };
+		303862AD1D0FD4C8002B719E /* JSON.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSON.h; sourceTree = "<group>"; };
+		303862AE1D0FD4C8002B719E /* MongoLabSDK.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MongoLabSDK.h; sourceTree = "<group>"; };
+		303862AF1D0FD4C8002B719E /* MongoLabSDK.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MongoLabSDK.m; sourceTree = "<group>"; };
+		303862B01D0FD4C8002B719E /* NSObject+SBJSON.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+SBJSON.h"; sourceTree = "<group>"; };
+		303862B11D0FD4C8002B719E /* NSObject+SBJSON.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+SBJSON.m"; sourceTree = "<group>"; };
+		303862B21D0FD4C8002B719E /* NSString+SBJSON.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+SBJSON.h"; sourceTree = "<group>"; };
+		303862B31D0FD4C8002B719E /* NSString+SBJSON.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+SBJSON.m"; sourceTree = "<group>"; };
+		303862B41D0FD4C8002B719E /* SBJSON.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBJSON.h; sourceTree = "<group>"; };
+		303862B51D0FD4C8002B719E /* SBJSON.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBJSON.m; sourceTree = "<group>"; };
+		303862B61D0FD4C8002B719E /* SBJsonBase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBJsonBase.h; sourceTree = "<group>"; };
+		303862B71D0FD4C8002B719E /* SBJsonBase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBJsonBase.m; sourceTree = "<group>"; };
+		303862B81D0FD4C8002B719E /* SBJsonParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBJsonParser.h; sourceTree = "<group>"; };
+		303862B91D0FD4C8002B719E /* SBJsonParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBJsonParser.m; sourceTree = "<group>"; };
+		303862BA1D0FD4C8002B719E /* SBJsonWriter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBJsonWriter.h; sourceTree = "<group>"; };
+		303862BB1D0FD4C8002B719E /* SBJsonWriter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBJsonWriter.m; sourceTree = "<group>"; };
+		435556662F18A20A5474BA88 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
+		BBE314BAE74037F56D5E7F00 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		E80597339793F17D5A7BA961 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		03D008751CCBC50D00A6648A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E57BE1DDC7E358B5218368B4 /* libPods.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		03D0086F1CCBC50D00A6648A = {
+			isa = PBXGroup;
+			children = (
+				303862AC1D0FD4C8002B719E /* MongoLabSDK */,
+				303862671D0FD48C002B719E /* AddItemTableViewController.m */,
+				303862681D0FD48C002B719E /* 3C.png */,
+				303862691D0FD48C002B719E /* AddItemTableViewController.h */,
+				3038626A1D0FD48C002B719E /* bags.png */,
+				3038626B1D0FD48C002B719E /* CategoryTableViewCell.h */,
+				3038626C1D0FD48C002B719E /* desk.jpg */,
+				3038626D1D0FD48C002B719E /* folder.png */,
+				3038626E1D0FD48C002B719E /* food.png */,
+				3038626F1D0FD48C002B719E /* IconAllItem.png */,
+				303862701D0FD48C002B719E /* IconCart.png */,
+				303862711D0FD48C002B719E /* IconUser.png */,
+				303862721D0FD48C002B719E /* item1.png */,
+				303862731D0FD48C002B719E /* item2.png */,
+				303862741D0FD48C002B719E /* item3.png */,
+				303862751D0FD48C002B719E /* ItemDetailUIViewController.h */,
+				303862761D0FD48C002B719E /* ItemDetailUIViewController.m */,
+				303862771D0FD48C002B719E /* ItemObject.h */,
+				303862781D0FD48C002B719E /* ItemObject.m */,
+				303862791D0FD48C002B719E /* items.h */,
+				3038627A1D0FD48C002B719E /* Items.m */,
+				3038627B1D0FD48C002B719E /* ItemTableViewController.h */,
+				3038627C1D0FD48C002B719E /* ItemTableViewController.m */,
+				3038627D1D0FD48C002B719E /* Launch.jpg */,
+				3038627E1D0FD48C002B719E /* life.png */,
+				3038627F1D0FD48C002B719E /* list.png */,
+				303862801D0FD48C002B719E /* LogIn.h */,
+				303862811D0FD48C002B719E /* LogIn.m */,
+				303862821D0FD48C002B719E /* macbook.jpg */,
+				303862831D0FD48C002B719E /* others.png */,
+				303862841D0FD48C002B719E /* pants.png */,
+				303862851D0FD48C002B719E /* plane.jpg */,
+				303862861D0FD48C002B719E /* shirts.png */,
+				303862871D0FD48C002B719E /* shoes.png */,
+				303862881D0FD48C002B719E /* SignUp.h */,
+				303862891D0FD48C002B719E /* SignUp.m */,
+				3038628A1D0FD48C002B719E /* user.png */,
+				3038628B1D0FD48C002B719E /* UserObject.h */,
+				3038628C1D0FD48C002B719E /* UserObject.m */,
+				3038628D1D0FD48C002B719E /* UserPageBackground.jpg */,
+				03D0087A1CCBC50D00A6648A /* CoinBaseTest */,
+				03D008791CCBC50D00A6648A /* Products */,
+				5B98D98B3790CEB2E6D12337 /* Pods */,
+				7FD2168C2743BAE0B9B37792 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		03D008791CCBC50D00A6648A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				03D008781CCBC50D00A6648A /* CoinBaseTest.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		03D0087A1CCBC50D00A6648A /* CoinBaseTest */ = {
+			isa = PBXGroup;
+			children = (
+				03D0087E1CCBC50D00A6648A /* AppDelegate.h */,
+				03D0087F1CCBC50D00A6648A /* AppDelegate.m */,
+				03D008811CCBC50D00A6648A /* ViewController.h */,
+				03D008821CCBC50D00A6648A /* ViewController.m */,
+				03D008841CCBC50D00A6648A /* Main.storyboard */,
+				03D008871CCBC50D00A6648A /* Assets.xcassets */,
+				03D008891CCBC50D00A6648A /* LaunchScreen.storyboard */,
+				03D0088C1CCBC50D00A6648A /* Info.plist */,
+				03D0087B1CCBC50D00A6648A /* Supporting Files */,
+			);
+			path = CoinBaseTest;
+			sourceTree = "<group>";
+		};
+		03D0087B1CCBC50D00A6648A /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				03D0087C1CCBC50D00A6648A /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		303862AC1D0FD4C8002B719E /* MongoLabSDK */ = {
+			isa = PBXGroup;
+			children = (
+				303862AD1D0FD4C8002B719E /* JSON.h */,
+				303862AE1D0FD4C8002B719E /* MongoLabSDK.h */,
+				303862AF1D0FD4C8002B719E /* MongoLabSDK.m */,
+				303862B01D0FD4C8002B719E /* NSObject+SBJSON.h */,
+				303862B11D0FD4C8002B719E /* NSObject+SBJSON.m */,
+				303862B21D0FD4C8002B719E /* NSString+SBJSON.h */,
+				303862B31D0FD4C8002B719E /* NSString+SBJSON.m */,
+				303862B41D0FD4C8002B719E /* SBJSON.h */,
+				303862B51D0FD4C8002B719E /* SBJSON.m */,
+				303862B61D0FD4C8002B719E /* SBJsonBase.h */,
+				303862B71D0FD4C8002B719E /* SBJsonBase.m */,
+				303862B81D0FD4C8002B719E /* SBJsonParser.h */,
+				303862B91D0FD4C8002B719E /* SBJsonParser.m */,
+				303862BA1D0FD4C8002B719E /* SBJsonWriter.h */,
+				303862BB1D0FD4C8002B719E /* SBJsonWriter.m */,
+			);
+			name = MongoLabSDK;
+			path = CoinBaseTest/MongoLabSDK;
+			sourceTree = "<group>";
+		};
+		5B98D98B3790CEB2E6D12337 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				435556662F18A20A5474BA88 /* Pods.debug.xcconfig */,
+				E80597339793F17D5A7BA961 /* Pods.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		7FD2168C2743BAE0B9B37792 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				BBE314BAE74037F56D5E7F00 /* libPods.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		03D008771CCBC50D00A6648A /* CoinBaseTest */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 03D0088F1CCBC50D00A6648A /* Build configuration list for PBXNativeTarget "CoinBaseTest" */;
+			buildPhases = (
+				A98FF78C9B6811DB9D618B58 /* Check Pods Manifest.lock */,
+				03D008741CCBC50D00A6648A /* Sources */,
+				03D008751CCBC50D00A6648A /* Frameworks */,
+				03D008761CCBC50D00A6648A /* Resources */,
+				17969C3720C87E0E589E55E0 /* Embed Pods Frameworks */,
+				9D355C22C9430A06B8B02AAF /* Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CoinBaseTest;
+			productName = CoinBaseTest;
+			productReference = 03D008781CCBC50D00A6648A /* CoinBaseTest.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		03D008701CCBC50D00A6648A /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0730;
+				ORGANIZATIONNAME = test;
+				TargetAttributes = {
+					03D008771CCBC50D00A6648A = {
+						CreatedOnToolsVersion = 7.3;
+					};
+				};
+			};
+			buildConfigurationList = 03D008731CCBC50D00A6648A /* Build configuration list for PBXProject "CoinBaseTest" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 03D0086F1CCBC50D00A6648A;
+			productRefGroup = 03D008791CCBC50D00A6648A /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				03D008771CCBC50D00A6648A /* CoinBaseTest */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		03D008761CCBC50D00A6648A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				03D0088B1CCBC50D00A6648A /* LaunchScreen.storyboard in Resources */,
+				303862901D0FD48C002B719E /* bags.png in Resources */,
+				303862A91D0FD48C002B719E /* user.png in Resources */,
+				303862A01D0FD48C002B719E /* list.png in Resources */,
+				303862961D0FD48C002B719E /* IconUser.png in Resources */,
+				303862A21D0FD48C002B719E /* macbook.jpg in Resources */,
+				303862A71D0FD48C002B719E /* shoes.png in Resources */,
+				303862A51D0FD48C002B719E /* plane.jpg in Resources */,
+				03D008881CCBC50D00A6648A /* Assets.xcassets in Resources */,
+				303862981D0FD48C002B719E /* item2.png in Resources */,
+				303862941D0FD48C002B719E /* IconAllItem.png in Resources */,
+				303862931D0FD48C002B719E /* food.png in Resources */,
+				03D008861CCBC50D00A6648A /* Main.storyboard in Resources */,
+				303862911D0FD48C002B719E /* desk.jpg in Resources */,
+				303862971D0FD48C002B719E /* item1.png in Resources */,
+				3038628F1D0FD48C002B719E /* 3C.png in Resources */,
+				303862A61D0FD48C002B719E /* shirts.png in Resources */,
+				3038629F1D0FD48C002B719E /* life.png in Resources */,
+				303862A41D0FD48C002B719E /* pants.png in Resources */,
+				303862951D0FD48C002B719E /* IconCart.png in Resources */,
+				303862A31D0FD48C002B719E /* others.png in Resources */,
+				303862AB1D0FD48C002B719E /* UserPageBackground.jpg in Resources */,
+				303862991D0FD48C002B719E /* item3.png in Resources */,
+				303862921D0FD48C002B719E /* folder.png in Resources */,
+				3038629E1D0FD48C002B719E /* Launch.jpg in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		17969C3720C87E0E589E55E0 /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9D355C22C9430A06B8B02AAF /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A98FF78C9B6811DB9D618B58 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		03D008741CCBC50D00A6648A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				303862A11D0FD48C002B719E /* LogIn.m in Sources */,
+				303862C01D0FD4C8002B719E /* SBJsonBase.m in Sources */,
+				03D008831CCBC50D00A6648A /* ViewController.m in Sources */,
+				3038629B1D0FD48C002B719E /* ItemObject.m in Sources */,
+				3038629D1D0FD48C002B719E /* ItemTableViewController.m in Sources */,
+				3038629A1D0FD48C002B719E /* ItemDetailUIViewController.m in Sources */,
+				03D008801CCBC50D00A6648A /* AppDelegate.m in Sources */,
+				3038628E1D0FD48C002B719E /* AddItemTableViewController.m in Sources */,
+				303862A81D0FD48C002B719E /* SignUp.m in Sources */,
+				303862AA1D0FD48C002B719E /* UserObject.m in Sources */,
+				303862C11D0FD4C8002B719E /* SBJsonParser.m in Sources */,
+				303862BF1D0FD4C8002B719E /* SBJSON.m in Sources */,
+				303862BC1D0FD4C8002B719E /* MongoLabSDK.m in Sources */,
+				303862C21D0FD4C8002B719E /* SBJsonWriter.m in Sources */,
+				3038629C1D0FD48C002B719E /* Items.m in Sources */,
+				303862BD1D0FD4C8002B719E /* NSObject+SBJSON.m in Sources */,
+				303862BE1D0FD4C8002B719E /* NSString+SBJSON.m in Sources */,
+				03D0087D1CCBC50D00A6648A /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		03D008841CCBC50D00A6648A /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				03D008851CCBC50D00A6648A /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		03D008891CCBC50D00A6648A /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				03D0088A1CCBC50D00A6648A /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		03D0088D1CCBC50D00A6648A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		03D0088E1CCBC50D00A6648A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		03D008901CCBC50D00A6648A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 435556662F18A20A5474BA88 /* Pods.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_OBJC_ARC = NO;
+				INFOPLIST_FILE = CoinBaseTest/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.test.coinbasesandboxtest;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		03D008911CCBC50D00A6648A /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E80597339793F17D5A7BA961 /* Pods.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_OBJC_ARC = NO;
+				INFOPLIST_FILE = CoinBaseTest/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.test.coinbasesandboxtest;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		03D008731CCBC50D00A6648A /* Build configuration list for PBXProject "CoinBaseTest" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				03D0088D1CCBC50D00A6648A /* Debug */,
+				03D0088E1CCBC50D00A6648A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		03D0088F1CCBC50D00A6648A /* Build configuration list for PBXNativeTarget "CoinBaseTest" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				03D008901CCBC50D00A6648A /* Debug */,
+				03D008911CCBC50D00A6648A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 03D008701CCBC50D00A6648A /* Project object */;
+}
