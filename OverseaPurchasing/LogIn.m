@@ -65,7 +65,7 @@
     NSArray *resultList = [[MongoLabSDK sharedInstance] getCollectionItemList:MY_DATABASE collectionName:MY_COLLECTION query:query];
     // Error Detection
     NSLog(@"%@",resultList);
-    NSLog(@"unregistered user!");
+    
     if (resultList == nil || [resultList count] == 0) {
         UIAlertController * alert=   [UIAlertController
                                       alertControllerWithTitle:@"登入失敗"
@@ -76,6 +76,7 @@
                                    style:UIAlertActionStyleDefault
                                    handler:^(UIAlertAction * action)
                                    {
+                                       NSLog(@"unregistered user!");
                                        return;//block
                                    }];
         [alert addAction:errormsg];

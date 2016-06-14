@@ -14,6 +14,9 @@
 @property (strong, nonatomic) IBOutlet UITextField *ItemCategory;
 @property (strong, nonatomic) IBOutlet UITextField *ItemLocation;
 @property (strong, nonatomic) IBOutlet UITextField *ItemDetail;
-- (IBAction)TakeaPhoto:(id)sender;
+@property (retain, nonatomic) IBOutlet UIImageView *image;
+- (IBAction)takePhoto:(UIButton *)sender;
+
+- (IBAction)Upload:(UIButton *)sender;
 
 @end

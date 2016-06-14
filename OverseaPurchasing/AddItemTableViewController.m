@@ -8,7 +8,7 @@
 
 #import "AddItemTableViewController.h"
 
-@interface AddItemTableViewController ()
+@interface AddItemTableViewController ()<UINavigationControllerDelegate,UIImagePickerControllerDelegate,NSURLConnectionDelegate>
 
 @end
 
@@ -22,6 +22,15 @@
     
     // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
     // self.navigationItem.rightBarButtonItem = self.editButtonItem;
+    if (![UIImagePickerController isSourceTypeAvailable:UIImagePickerControllerSourceTypeCamera]) {
+        
+        UIAlertView *myAlertView = [[UIAlertView alloc] initWithTitle:@"Error"
+                                                              message:@"Device has no camera"
+                                                             delegate:nil
+                                                    cancelButtonTitle:@"OK"
+                                                    otherButtonTitles: nil];
+        [myAlertView show];
+    }
 }
 
 - (void)didReceiveMemoryWarning {
@@ -101,8 +110,77 @@
     [_ItemCategory release];
     [_ItemLocation release];
     [_ItemDetail release];
+    [_image release];
     [super dealloc];
 }
-- (IBAction)TakeaPhoto:(id)sender {
+
+- (IBAction)takePhoto:(UIButton *)sender {
+    NSLog(@"take a photo");
+    UIAlertController *alertController = [UIAlertController alertControllerWithTitle:nil
+                                                                             message:nil
+                                                                      preferredStyle:UIAlertControllerStyleActionSheet];
+    // Create the actions.
+    UIAlertAction *cancel = [UIAlertAction actionWithTitle:NSLocalizedString(@"取消", nil) style:UIAlertActionStyleCancel handler:^(UIAlertAction *action) {
+        NSLog(@"Cancel!");
+    }];
+    UIAlertAction *takePhoto = [UIAlertAction actionWithTitle:NSLocalizedString(@"拍攝", nil) style:UIAlertActionStyleDefault handler:^(UIAlertAction *action) {
+        NSLog(@"take a shot!");
+        
+        UIImagePickerController *picker = [[UIImagePickerController alloc] init];
+        picker.delegate = self;
+        picker.allowsEditing = YES;
+        picker.sourceType = UIImagePickerControllerSourceTypeCamera;
+        [self presentViewController:picker animated:YES completion:NULL];
+    }];
+    UIAlertAction *selectGallery = [UIAlertAction actionWithTitle:NSLocalizedString(@"從相簿", nil) style:UIAlertActionStyleDefault handler:^(UIAlertAction *action) {
+        NSLog(@"select from gallery!");
+        UIImagePickerController *picker = [[UIImagePickerController alloc] init];
+        picker.delegate = self;
+        picker.allowsEditing = YES;
+        picker.sourceType = UIImagePickerControllerSourceTypePhotoLibrary;
+        [self presentViewController:picker animated:YES completion:NULL];
+    }];
+    // Add the actions.
+    [alertController addAction:cancel];
+    [alertController addAction:takePhoto];
+    [alertController addAction:selectGallery];
+    // Show it
+    [self presentViewController:alertController animated:YES completion:nil];
+    
 }
+
+- (void)imagePickerController:(UIImagePickerController *)picker didFinishPickingMediaWithInfo:(NSDictionary *)info {
+    
+    UIImage *chosenImage = info[UIImagePickerControllerEditedImage];
+    NSLog(@"Image Information:\n%@",info[UIImagePickerControllerEditedImage]);
+    self.image.image = chosenImage;
+    [picker dismissViewControllerAnimated:YES completion:NULL];
+}
+
+- (void)imagePickerControllerDidCancel:(UIImagePickerController *)picker {
+    //if user cancels taking photo
+    [picker dismissViewControllerAnimated:YES completion:NULL];
+}
+
+
+
+
+- (IBAction)Upload:(UIButton *)sender {
+    NSLog(@"Upload");
+    NSString *MY_COLLECTION = @"User"; // indicate which collection to send
+    // Declare a dictionary and mapping key and value
+    NSMutableDictionary *item = [NSMutableDictionary dictionary];
+    [item setValue:self.ItemName.text forKey:@"name"];
+    [item setValue:[NSNumber numberWithFloat:[self.ItemPrice.text intValue]] forKey:@"price"];
+    [item setValue:self.ItemCategory.text forKey:@"category"];
+    [item setValue:self.ItemLocation.text forKey:@"location"];
+    [item setValue:self.ItemDetail.text forKey:@"detail"];
+    
+    [item setValue:[NSNumber numberWithInt:2] forKey:@"id"];
+    [item setValue:@"www.google.com/img02.jpg" forKey:@"img_url"];
+    [item setValue:@"40347905S@gmail.com" forKey:@"courier_mail"];
+
+    NSLog(@"%@",item);
+}
+
 @end
