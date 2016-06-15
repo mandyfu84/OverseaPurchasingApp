@@ -13,6 +13,7 @@
 #define ITEM_PRICE @"Item Price"
 #define ITEM_COUNTRY @"Item County"
 #define ITEM_DETAIL @"Item Detail"
+#define ITEM_IMGURL @"Item IMGURL"
 
 @interface Items : NSObject
 

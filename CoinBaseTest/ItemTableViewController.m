@@ -41,9 +41,34 @@
     self.items = [[NSMutableArray alloc] init];
     
     for (NSMutableDictionary *itemData in [Items allItems]){
+        NSString *URL = itemData[ITEM_IMGURL];
+        NSURL *imageURL = [NSURL URLWithString:URL];
+        
+        NSData *imageData = [NSData dataWithContentsOfURL:imageURL];
+        UIImage *image = [UIImage imageWithData:imageData];
+        ItemObject *item = [[ItemObject alloc] initWithData:itemData andImage:image];
+        
+        [self.items addObject:item];
+        /*
+        // run on a background thread
+        dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_BACKGROUND, 0), ^{
+            NSData *imageData = [NSData dataWithContentsOfURL:imageURL];
+            NSLog(@"URL: %@",imageURL);
+            NSLog(@"Size of Image(bytes):%d",[imageData length]);
+            
+            dispatch_async(dispatch_get_main_queue(), ^{
+                // Update the UI
+                ItemObject *item = [[ItemObject alloc] initWithData:itemData andImage:[UIImage imageWithData:imageData]];
+                
+                [self.items addObject:item];
+            });
+        });
+         */
+        /*
         NSString *imageName = [NSString stringWithFormat:@"%@.png", itemData[ITEM_TITLE]];
         ItemObject *item = [[ItemObject alloc] initWithData:itemData andImage:[UIImage imageNamed:imageName]];
         [self.items addObject:item];
+         */
     }
     
     
