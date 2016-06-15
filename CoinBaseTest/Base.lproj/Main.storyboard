@@ -90,7 +90,7 @@
                                             <rect key="frame" x="0.0" y="0.0" width="320" height="249"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" id="71L-Bd-L9F">
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="default-image.jpg" id="71L-Bd-L9F">
                                                     <rect key="frame" x="15" y="0.0" width="290" height="249"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 </imageView>
@@ -641,6 +641,7 @@
     </scenes>
     <resources>
         <image name="UserPageBackground.jpg" width="696" height="664"/>
+        <image name="default-image.jpg" width="275" height="275"/>
         <image name="folder.png" width="30" height="30"/>
         <image name="list.png" width="30" height="30"/>
         <image name="macbook.jpg" width="1000" height="667"/>

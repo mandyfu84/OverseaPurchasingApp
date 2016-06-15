@@ -50,6 +50,7 @@
 		303862C01D0FD4C8002B719E /* SBJsonBase.m in Sources */ = {isa = PBXBuildFile; fileRef = 303862B71D0FD4C8002B719E /* SBJsonBase.m */; };
 		303862C11D0FD4C8002B719E /* SBJsonParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 303862B91D0FD4C8002B719E /* SBJsonParser.m */; };
 		303862C21D0FD4C8002B719E /* SBJsonWriter.m in Sources */ = {isa = PBXBuildFile; fileRef = 303862BB1D0FD4C8002B719E /* SBJsonWriter.m */; };
+		A5C0B0431D110EF6007CDC6F /* default-image.jpg in Resources */ = {isa = PBXBuildFile; fileRef = A5C0B0421D110EF6007CDC6F /* default-image.jpg */; };
 		E57BE1DDC7E358B5218368B4 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = BBE314BAE74037F56D5E7F00 /* libPods.a */; };
 /* End PBXBuildFile section */
 
@@ -119,6 +120,7 @@
 		303862BA1D0FD4C8002B719E /* SBJsonWriter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBJsonWriter.h; sourceTree = "<group>"; };
 		303862BB1D0FD4C8002B719E /* SBJsonWriter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBJsonWriter.m; sourceTree = "<group>"; };
 		435556662F18A20A5474BA88 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
+		A5C0B0421D110EF6007CDC6F /* default-image.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = "default-image.jpg"; path = "CoinBaseTest/default-image.jpg"; sourceTree = "<group>"; };
 		BBE314BAE74037F56D5E7F00 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		E80597339793F17D5A7BA961 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -140,6 +142,7 @@
 			children = (
 				303862AC1D0FD4C8002B719E /* MongoLabSDK */,
 				303862671D0FD48C002B719E /* AddItemTableViewController.m */,
+				A5C0B0421D110EF6007CDC6F /* default-image.jpg */,
 				303862681D0FD48C002B719E /* 3C.png */,
 				303862691D0FD48C002B719E /* AddItemTableViewController.h */,
 				3038626A1D0FD48C002B719E /* bags.png */,
@@ -325,6 +328,7 @@
 				303862961D0FD48C002B719E /* IconUser.png in Resources */,
 				303862A21D0FD48C002B719E /* macbook.jpg in Resources */,
 				303862A71D0FD48C002B719E /* shoes.png in Resources */,
+				A5C0B0431D110EF6007CDC6F /* default-image.jpg in Resources */,
 				303862A51D0FD48C002B719E /* plane.jpg in Resources */,
 				03D008881CCBC50D00A6648A /* Assets.xcassets in Resources */,
 				303862981D0FD48C002B719E /* item2.png in Resources */,
