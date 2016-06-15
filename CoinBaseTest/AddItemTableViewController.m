@@ -150,6 +150,45 @@
     [super dealloc];
 }
 
+/*
+-(int) getCurrentMaxID{
+    NSLog(@"getCurrentMaxID");
+    int id = 0;
+    
+    NSString *query = @"{\"_id\":-1}";
+    NSString *queryParams = @"";
+    queryParams = [NSString stringWithFormat:@"&s=%@", [query stringByAddingPercentEscapesUsingEncoding:NSUTF8StringEncoding]];
+    //NSString* urlString =@"https://api.mongolab.com/api/1/databases/tpiti_wallet/collections/Product?apiKey=v0KbZnCTNV1mUIziflTd2i932GHY2uAd&q={\"_id\":150}";
+    NSString *urlString = @"";
+    urlString = [NSString stringWithFormat:@"https://api.mongolab.com/api/1/databases/tpiti_wallet/collections/Product?apiKey=v0KbZnCTNV1mUIziflTd2i932GHY2uAd%@",queryParams];
+    NSLog(@"%@",urlString);
+
+    NSURL *url = [NSURL URLWithString:urlString];
+    
+    NSURLRequest *request = [NSURLRequest requestWithURL:url];
+    [NSURLConnection sendAsynchronousRequest:request
+                                       queue:[NSOperationQueue mainQueue]
+                           completionHandler:^(NSURLResponse *response,
+                                               NSData *data, NSError *connectionError)
+     {
+         if (data.length > 0 && connectionError == nil)
+         {
+             NSLog(@"below:");
+             NSDictionary *MAXdata = [NSJSONSerialization JSONObjectWithData:data
+                                                                      options:0
+                                                                        error:NULL];
+             
+             NSLog(@"%@",MAXdata);
+             //NSNumber *orderNumber =
+             //id = [orderNumber intValue];
+         }
+     }];
+    return id;
+}
+*/
+
+
+
 - (IBAction)takePhoto:(UIButton *)sender {
     NSLog(@"take a photo");
     UIAlertController *alertController = [UIAlertController alertControllerWithTitle:nil
@@ -216,20 +255,42 @@
     [item setValue:self.ItemDetail.text forKey:@"detail"];
     [item setValue:@"40347905S@gmail.com" forKey:@"seller_mail"]; // parameter passing needed
     
+    
+    
     // get id from MongoDB
-    NSArray *resultList = [[MongoLabSDK sharedInstance] getCollectionItemList:MY_DATABASE collectionName:MY_COLLECTION query:nil];
+    //https://api.mongolab.com/api/1/databases/tpiti_wallet/collections/Product?apiKey=v0KbZnCTNV1mUIziflTd2i932GHY2uAd&s={"_id":-1}&l=1
+    NSString *sort = @"{\"_id\":-1}";
+    NSArray *resultList = [[MongoLabSDK sharedInstance] getCollectionItemList:MY_DATABASE collectionName:MY_COLLECTION query:nil  sortOrder:sort limit:1];
+    
+    
+    NSLog(@"%@",resultList);
+    
     int id = 0;
-    if (resultList == nil || [resultList count] == 0) {
+    NSLog(@"%lu",(unsigned long)resultList.count);
+    if (resultList == nil || resultList.count == 0) {
         NSLog(@"empty_id");
         id = 0;
     }else{
         NSNumber *orderNumber = [[resultList objectAtIndex: 0 ]objectForKey:@"_id"];
-        NSLog(@"%@",orderNumber);
+        NSLog(@"orderNumber = %@",orderNumber);
         id = [orderNumber intValue];
         id += 1;
+        NSLog(@"%d",id);
     }
     [item setValue:[NSNumber numberWithInt:id] forKey:@"_id"];
     
+    //[self getCurrentMaxID];
+    //int id = 3;
+     //[item setValue:[NSNumber numberWithInt:id] forKey:@"_id"];
+    
+    
+    
+    
+    
+    
+    
+     
+     
     // -----upload image------
     NSData *imageData = UIImageJPEGRepresentation(_image.image, 0.1);
     NSLog(@"Size of Image(bytes):%lu",(unsigned long)[imageData length]);

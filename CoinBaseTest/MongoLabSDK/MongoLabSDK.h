@@ -26,6 +26,8 @@
 // Get all items in a Collection
 -(NSArray *) getCollectionItemList:(NSString *) databaseName collectionName:(NSString *) collectionName query:(NSString *) query;
 
+-(NSArray *) getCollectionItemList:(NSString *) databaseName collectionName:(NSString *) collectionName query:(NSString *) query sortOrder:(NSString *) sortOrder limit:(int) limit;
+
 // Get a specific set of items or single item from a collection - Query is JSON and is encoded for you so send in raw json
 -(NSArray *) getCollectionItemList:(NSString *) databaseName collectionName:(NSString *) collectionName query:(NSString *) query countOnly:(BOOL)  countOnly fields:(NSString *) fields  findOne:(BOOL) findOne sortOrder:(NSString *) sortOrder skip:(int) skip limit:(int) limit;
 
