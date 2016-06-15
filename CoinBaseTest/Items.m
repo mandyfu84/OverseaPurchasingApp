@@ -52,13 +52,15 @@
          NSString *location = [[resultList objectAtIndex:i]objectForKey:@"location"];
          NSString *detail = [[resultList objectAtIndex:i]objectForKey:@"detail"];
          NSString *imgurl = [[resultList objectAtIndex:i]objectForKey:@"img_url"];
+         NSString *email = [[resultList objectAtIndex:i]objectForKey:@"seller_mail"];
          NSDictionary *itemDic = @{
                                    ITEM_TITLE : title,
                                    ITEM_CATEGORY : category ,
                                    ITEM_PRICE : price,
                                    ITEM_COUNTRY : location,
                                    ITEM_DETAIL : detail,
-                                   ITEM_IMGURL : imgurl
+                                   ITEM_IMGURL : imgurl,
+                                   ITEM_EMAIL : email
                                    };
          [itemImformation addObject:itemDic];
      }

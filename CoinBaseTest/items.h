@@ -14,7 +14,7 @@
 #define ITEM_COUNTRY @"Item County"
 #define ITEM_DETAIL @"Item Detail"
 #define ITEM_IMGURL @"Item IMGURL"
-
+#define ITEM_EMAIL @"Item Email"
 @interface Items : NSObject
 
 +(NSArray *) allItems;
