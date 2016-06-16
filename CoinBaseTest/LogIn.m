@@ -9,6 +9,7 @@
 #import "LogIn.h"
 #import "MongoLabSDK/MongoLabSDK.h"
 
+#import "GeneralData .h"
 #import "ViewController.h"
 #import <coinbase-official/CoinbaseOAuth.h>
 #import <coinbase-official/CoinbaseUser.h>
@@ -68,7 +69,9 @@
 
 -(IBAction)currentUserAction:(id)sender
 {
+
     [self.client getCurrentUser:^(CoinbaseUser *user, NSError *error) {
+
         if ([error.userInfo[@"statusCode"] intValue] == 401) {
             ///[self reAuthorize];
             [self reAuthorize];
@@ -76,7 +79,8 @@
         if (error) {
             NSLog(@"Could not load user: %@", error);
         } else {
-            NSLog(@"Signed in as: %@", user.email);
+            
+            NSLog(@"Signed in as: %@",user.email);
             currentUser = user;
         }
     }];
@@ -95,6 +99,7 @@
         ///[self goAuthorize];
     }
 }
+
 
 
 - (void)viewDidLoad {
@@ -132,6 +137,7 @@
     // get input from textField
     NSString *email = self.emailField.text;
     NSString *password = self.password.text;
+
     // Generate Query like {$and:[{"email":"xxxx@gmail.com"},{"password":"123456789"}]}
     NSString *query = [NSString stringWithFormat:@"{$and:[{\"email\":\"%@\"},{\"password\":\"%@\"}]}", email,password];
     //NSLog(@"%@",query);
@@ -139,7 +145,7 @@
     NSArray *resultList = [[MongoLabSDK sharedInstance] getCollectionItemList:MY_DATABASE collectionName:MY_COLLECTION query:query];
     // Error Detection
     NSLog(@"%@",resultList);
-    
+
     if (resultList == nil || [resultList count] == 0) {
         UIAlertController * alert=   [UIAlertController
                                       alertControllerWithTitle:@"登入失敗"

@@ -8,7 +8,7 @@
 
 #import "AddItemTableViewController.h"
 #import "MongoLabSDK.h"
-
+#import "GeneralData .h"
 
 @interface AddItemTableViewController ()<UINavigationControllerDelegate,UIImagePickerControllerDelegate,NSURLConnectionDelegate>
 
@@ -253,7 +253,7 @@
     [item setValue:self.ItemCategory.text forKey:@"category"];
     [item setValue:self.ItemLocation.text forKey:@"location"];
     [item setValue:self.ItemDetail.text forKey:@"detail"];
-    [item setValue:@"40347905S@gmail.com" forKey:@"seller_mail"]; // parameter passing needed
+    [item setValue: [singletonObject sharedSingletonObject]->account forKey:@"seller_mail"]; // parameter passing needed
     
     
     

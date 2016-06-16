@@ -13,6 +13,8 @@
 		03D008861CCBC50D00A6648A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 03D008841CCBC50D00A6648A /* Main.storyboard */; };
 		03D008881CCBC50D00A6648A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 03D008871CCBC50D00A6648A /* Assets.xcassets */; };
 		03D0088B1CCBC50D00A6648A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 03D008891CCBC50D00A6648A /* LaunchScreen.storyboard */; };
+		291144AD1D11B7D7008F8D8A /* GeneralData .m in Sources */ = {isa = PBXBuildFile; fileRef = 291144AC1D11B7D7008F8D8A /* GeneralData .m */; };
+		291144B01D11B7E2008F8D8A /* UserViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 291144AF1D11B7E2008F8D8A /* UserViewController.m */; };
 		3038628E1D0FD48C002B719E /* AddItemTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 303862671D0FD48C002B719E /* AddItemTableViewController.m */; };
 		3038628F1D0FD48C002B719E /* 3C.png in Resources */ = {isa = PBXBuildFile; fileRef = 303862681D0FD48C002B719E /* 3C.png */; };
 		303862901D0FD48C002B719E /* bags.png in Resources */ = {isa = PBXBuildFile; fileRef = 3038626A1D0FD48C002B719E /* bags.png */; };
@@ -66,6 +68,10 @@
 		03D008871CCBC50D00A6648A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		03D0088A1CCBC50D00A6648A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		03D0088C1CCBC50D00A6648A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		291144AB1D11B7D7008F8D8A /* GeneralData .h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "GeneralData .h"; sourceTree = "<group>"; };
+		291144AC1D11B7D7008F8D8A /* GeneralData .m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "GeneralData .m"; sourceTree = "<group>"; };
+		291144AE1D11B7E2008F8D8A /* UserViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UserViewController.h; sourceTree = "<group>"; };
+		291144AF1D11B7E2008F8D8A /* UserViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UserViewController.m; sourceTree = "<group>"; };
 		303862671D0FD48C002B719E /* AddItemTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AddItemTableViewController.m; path = CoinBaseTest/AddItemTableViewController.m; sourceTree = "<group>"; };
 		303862681D0FD48C002B719E /* 3C.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = 3C.png; path = CoinBaseTest/3C.png; sourceTree = "<group>"; };
 		303862691D0FD48C002B719E /* AddItemTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AddItemTableViewController.h; path = CoinBaseTest/AddItemTableViewController.h; sourceTree = "<group>"; };
@@ -149,7 +155,11 @@
 				3038626B1D0FD48C002B719E /* CategoryTableViewCell.h */,
 				303862751D0FD48C002B719E /* ItemDetailUIViewController.h */,
 				303862761D0FD48C002B719E /* ItemDetailUIViewController.m */,
+				291144AB1D11B7D7008F8D8A /* GeneralData .h */,
+				291144AC1D11B7D7008F8D8A /* GeneralData .m */,
 				303862771D0FD48C002B719E /* ItemObject.h */,
+				291144AE1D11B7E2008F8D8A /* UserViewController.h */,
+				291144AF1D11B7E2008F8D8A /* UserViewController.m */,
 				303862781D0FD48C002B719E /* ItemObject.m */,
 				303862791D0FD48C002B719E /* items.h */,
 				3038627A1D0FD48C002B719E /* Items.m */,
@@ -418,11 +428,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				291144B01D11B7E2008F8D8A /* UserViewController.m in Sources */,
 				303862A11D0FD48C002B719E /* LogIn.m in Sources */,
 				303862C01D0FD4C8002B719E /* SBJsonBase.m in Sources */,
 				03D008831CCBC50D00A6648A /* ViewController.m in Sources */,
 				3038629B1D0FD48C002B719E /* ItemObject.m in Sources */,
 				3038629D1D0FD48C002B719E /* ItemTableViewController.m in Sources */,
+				291144AD1D11B7D7008F8D8A /* GeneralData .m in Sources */,
 				3038629A1D0FD48C002B719E /* ItemDetailUIViewController.m in Sources */,
 				03D008801CCBC50D00A6648A /* AppDelegate.m in Sources */,
 				3038628E1D0FD48C002B719E /* AddItemTableViewController.m in Sources */,

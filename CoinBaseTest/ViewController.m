@@ -11,6 +11,7 @@
 #import <coinbase-official/CoinbaseOAuth.h>
 #import <coinbase-official/CoinbaseUser.h>
 #import <coinbase-official/CoinbaseAccount.h>
+#import "GeneralData .h"
 @interface ViewController ()
 
 @end
@@ -138,6 +139,7 @@
             NSLog(@"Signed in as: %@", user.email);
             self.emailField.text = user.email;
             self.moneyField.text = user.balance.amount;
+               [singletonObject sharedSingletonObject]->account=self.emailField.text;
             currentUser = user;
         }
     }];
