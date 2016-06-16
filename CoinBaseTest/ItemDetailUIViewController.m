@@ -14,6 +14,7 @@
 #import <coinbase-official/CoinbaseAccount.h>
 #import "GeneralData .h"
 @interface ItemDetailUIViewController()
+- (IBAction)ContactPress:(UIButton *)sender;
 
 @end
 
@@ -228,4 +229,17 @@
 }
 
 
+- (IBAction)ContactPress:(UIButton *)sender {
+    NSLog(@"receiverField's text = %@",[singletonObject sharedSingletonObject]->ownermail);
+    NSString *account = [singletonObject sharedSingletonObject]->account;
+    double price = [singletonObject sharedSingletonObject]->price;
+    //put email info here:
+    NSString *toEmail=[singletonObject sharedSingletonObject]->ownermail;
+    NSString *subject=[NSString stringWithFormat:@"OverseaPurchasing - %@ 已向您訂購該產品", account];
+    NSString *body = [NSString stringWithFormat:@"已經向您付款 BTC %f, 請儘速到貨", price];
+    //opens mail app with new email started
+    NSString *email = [NSString stringWithFormat:@"mailto:%@?subject=%@&body=%@", toEmail,subject,body];
+    email = [email stringByAddingPercentEscapesUsingEncoding:NSUTF8StringEncoding];
+    [[UIApplication sharedApplication] openURL:[NSURL URLWithString:email]];
+}
 @end
