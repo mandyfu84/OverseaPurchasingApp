@@ -45,5 +45,8 @@
 @property (strong) NSString *refreshToken;
 @property (nonatomic, retain) Coinbase *client;
 
+@property (retain, nonatomic) IBOutlet UILabel *selleremailField;
+@property (retain, nonatomic) IBOutlet UILabel *priceField;
+
 @end
 

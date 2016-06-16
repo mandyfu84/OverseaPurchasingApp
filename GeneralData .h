@@ -11,8 +11,9 @@
 @interface singletonObject :NSObject {
     @public
     NSString *account;
-    float price;
+    double price;
     NSString *ownermail;
+    double balance;
 }
 
 

@@ -140,6 +140,7 @@
             self.emailField.text = user.email;
             self.moneyField.text = user.balance.amount;
                [singletonObject sharedSingletonObject]->account=self.emailField.text;
+               [singletonObject sharedSingletonObject]->balance =[self.moneyField.text doubleValue];
             currentUser = user;
         }
     }];

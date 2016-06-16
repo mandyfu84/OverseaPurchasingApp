@@ -10,6 +10,7 @@
 
 @interface UserViewController : UIViewController
 @property (retain, nonatomic) IBOutlet UILabel *useremail;
+@property (retain, nonatomic) IBOutlet UILabel *moneyField;
 
 
 @end

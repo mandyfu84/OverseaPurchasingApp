@@ -249,7 +249,7 @@
     // Declare a dictionary and mapping key and value
     NSMutableDictionary *item = [NSMutableDictionary dictionary];
     [item setValue:self.ItemName.text forKey:@"name"];
-    [item setValue:[NSNumber numberWithFloat:[self.ItemPrice.text intValue]] forKey:@"price"];
+    [item setValue:[NSNumber numberWithFloat:[self.ItemPrice.text doubleValue]] forKey:@"price"];
     [item setValue:self.ItemCategory.text forKey:@"category"];
     [item setValue:self.ItemLocation.text forKey:@"location"];
     [item setValue:self.ItemDetail.text forKey:@"detail"];

@@ -6,8 +6,12 @@
 //  Copyright © 2016年 ntnu. All rights reserved.
 //
 
+#import "ViewController.h"
+
 #import "UserViewController.h"
 #import "GeneralData .h"
+
+
 @interface UserViewController ()
 
 @end
@@ -18,6 +22,14 @@
     [super viewDidLoad];
     //[singletonObject sharedSingletonObject]->account=@"OAQQQ";
     self.useremail.text=[singletonObject sharedSingletonObject]->account;
+    self.moneyField.text =[NSString stringWithFormat:@"%8e", [singletonObject sharedSingletonObject]->balance];
+}
+-(void)viewDidAppear:(BOOL)animated
+{
+    NSLog(@"didappear");
+    
+    [super viewDidAppear:animated];
+
 }
 
 - (void)didReceiveMemoryWarning {

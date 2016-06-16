@@ -26,6 +26,9 @@
     // Do any additional setup after loading the view, typically from a nib.
     self.itemImage.image = self.itemObject.image;
     self.itemNameLabel.text = self.itemObject.name;
+    
+    self.selleremailField.text = [singletonObject sharedSingletonObject]->ownermail;
+    self.priceField.text = [NSString stringWithFormat:@"%f", [singletonObject sharedSingletonObject]->price];
 }
 
 - (void)didReceiveMemoryWarning {
@@ -206,11 +209,15 @@
         //            NSLog(@"bal:%@",bal);
         //
         //        }];
-        [acc sendAmount:@"0.00000002" to:@"40347905S@gmail.com" completion:^(CoinbaseTransaction *transaction, NSError *sendError) {
+        //[singletonObject sharedSingletonObject]->price
+        //[[NSNumber numberWithFloat:myFloat] stringValue]
+        [acc sendAmount:[[NSNumber numberWithFloat:[singletonObject sharedSingletonObject]->price] stringValue] to:[singletonObject sharedSingletonObject]->ownermail completion:^(CoinbaseTransaction *transaction, NSError *sendError) {
             NSLog(@"error:%@",sendError);
             NSLog(@"transaction:%@",transaction);
-            NSLog(@"receiverField's text = %@",receiverField.text);
-            
+            NSLog(@"receiverField's text = %@",[singletonObject sharedSingletonObject]->ownermail);
+            self.selleremailField.text = [singletonObject sharedSingletonObject]->ownermail;
+            self.priceField.text = [NSString stringWithFormat:@"%e", [singletonObject sharedSingletonObject]->price];
+            NSLog(@"item price: %@",[NSString stringWithFormat:@"%e", [singletonObject sharedSingletonObject]->price]);
             if (sendError) {
                 NSString *errorString = [sendError description];
                 [[[UIAlertView alloc] initWithTitle:@"send error" message:errorString delegate:nil cancelButtonTitle:@"Ok" otherButtonTitles:nil] show];
