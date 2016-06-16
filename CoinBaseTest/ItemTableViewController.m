@@ -10,7 +10,7 @@
 #import "Items.h"
 #import "ItemObject.h"
 #import "ItemDetailUIViewController.h"
-#import "SizableImageTableViewCell.h"
+#import "makeThumbnailOfSize.h"
 
 @interface ItemTableViewController ()
 
@@ -97,20 +97,20 @@
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     static NSString *CellIdentifier = @"Cell";
-    SizableImageTableViewCell *cell = (SizableImageTableViewCell *)[tableView dequeueReusableCellWithIdentifier:CellIdentifier forIndexPath:indexPath];
+    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier forIndexPath:indexPath];
+
     
     // Configure the cell...
-    if (cell == nil) {
-        cell = [[[SizableImageTableViewCell alloc] initWithStyle:UITableViewCellStyleSubtitle reuseIdentifier:CellIdentifier] autorelease];
-        cell.accessoryType = UITableViewCellAccessoryDisclosureIndicator;
-    }
     
     ItemObject *item = [self.items objectAtIndex:indexPath.row];
     cell.textLabel.text = item.name;
     cell.detailTextLabel.text =  [NSNumber numberWithFloat:item.price].stringValue;
-    cell.imageView.frame = CGRectMake(cell.imageView.frame.origin.x, cell.imageView.frame.origin.y, 40,40);
-    cell.imageView.image = item.image;
     
+    
+    UIImage *bigImage = item.image;
+    UIImage *thumb = [bigImage makeThumbnailOfSize:CGSizeMake(80,80)];
+    cell.imageView.image = thumb;
+
     
     //  cell.backgroundColor = [UIColor clearColor];
     

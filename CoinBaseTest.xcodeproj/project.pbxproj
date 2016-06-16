@@ -50,7 +50,7 @@
 		303862C01D0FD4C8002B719E /* SBJsonBase.m in Sources */ = {isa = PBXBuildFile; fileRef = 303862B71D0FD4C8002B719E /* SBJsonBase.m */; };
 		303862C11D0FD4C8002B719E /* SBJsonParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 303862B91D0FD4C8002B719E /* SBJsonParser.m */; };
 		303862C21D0FD4C8002B719E /* SBJsonWriter.m in Sources */ = {isa = PBXBuildFile; fileRef = 303862BB1D0FD4C8002B719E /* SBJsonWriter.m */; };
-		37517FE91D11AA9F008BC2C0 /* SizableImageTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 37517FE81D11AA9F008BC2C0 /* SizableImageTableViewCell.m */; };
+		37730E0D1D11C4FB00347714 /* makeThumbnailOfSize.m in Sources */ = {isa = PBXBuildFile; fileRef = 37730E0C1D11C4FB00347714 /* makeThumbnailOfSize.m */; };
 		A5C0B0431D110EF6007CDC6F /* default-image.jpg in Resources */ = {isa = PBXBuildFile; fileRef = A5C0B0421D110EF6007CDC6F /* default-image.jpg */; };
 		E57BE1DDC7E358B5218368B4 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = BBE314BAE74037F56D5E7F00 /* libPods.a */; };
 /* End PBXBuildFile section */
@@ -120,8 +120,8 @@
 		303862B91D0FD4C8002B719E /* SBJsonParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBJsonParser.m; sourceTree = "<group>"; };
 		303862BA1D0FD4C8002B719E /* SBJsonWriter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBJsonWriter.h; sourceTree = "<group>"; };
 		303862BB1D0FD4C8002B719E /* SBJsonWriter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBJsonWriter.m; sourceTree = "<group>"; };
-		37517FE71D11AA9F008BC2C0 /* SizableImageTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SizableImageTableViewCell.h; sourceTree = "<group>"; };
-		37517FE81D11AA9F008BC2C0 /* SizableImageTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SizableImageTableViewCell.m; sourceTree = "<group>"; };
+		37730E0B1D11C4FB00347714 /* makeThumbnailOfSize.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = makeThumbnailOfSize.h; sourceTree = "<group>"; };
+		37730E0C1D11C4FB00347714 /* makeThumbnailOfSize.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = makeThumbnailOfSize.m; sourceTree = "<group>"; };
 		435556662F18A20A5474BA88 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		A5C0B0421D110EF6007CDC6F /* default-image.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = "default-image.jpg"; path = "CoinBaseTest/default-image.jpg"; sourceTree = "<group>"; };
 		BBE314BAE74037F56D5E7F00 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -155,8 +155,8 @@
 				3038627A1D0FD48C002B719E /* Items.m */,
 				3038627B1D0FD48C002B719E /* ItemTableViewController.h */,
 				3038627C1D0FD48C002B719E /* ItemTableViewController.m */,
-				37517FE71D11AA9F008BC2C0 /* SizableImageTableViewCell.h */,
-				37517FE81D11AA9F008BC2C0 /* SizableImageTableViewCell.m */,
+				37730E0B1D11C4FB00347714 /* makeThumbnailOfSize.h */,
+				37730E0C1D11C4FB00347714 /* makeThumbnailOfSize.m */,
 				303862801D0FD48C002B719E /* LogIn.h */,
 				303862811D0FD48C002B719E /* LogIn.m */,
 				303862881D0FD48C002B719E /* SignUp.h */,
@@ -424,12 +424,12 @@
 				3038629B1D0FD48C002B719E /* ItemObject.m in Sources */,
 				3038629D1D0FD48C002B719E /* ItemTableViewController.m in Sources */,
 				3038629A1D0FD48C002B719E /* ItemDetailUIViewController.m in Sources */,
-				37517FE91D11AA9F008BC2C0 /* SizableImageTableViewCell.m in Sources */,
 				03D008801CCBC50D00A6648A /* AppDelegate.m in Sources */,
 				3038628E1D0FD48C002B719E /* AddItemTableViewController.m in Sources */,
 				303862A81D0FD48C002B719E /* SignUp.m in Sources */,
 				303862AA1D0FD48C002B719E /* UserObject.m in Sources */,
 				303862C11D0FD4C8002B719E /* SBJsonParser.m in Sources */,
+				37730E0D1D11C4FB00347714 /* makeThumbnailOfSize.m in Sources */,
 				303862BF1D0FD4C8002B719E /* SBJSON.m in Sources */,
 				303862BC1D0FD4C8002B719E /* MongoLabSDK.m in Sources */,
 				303862C21D0FD4C8002B719E /* SBJsonWriter.m in Sources */,
