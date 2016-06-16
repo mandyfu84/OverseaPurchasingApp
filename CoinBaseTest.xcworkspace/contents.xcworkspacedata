@@ -2,6 +2,12 @@
 <Workspace
    version = "1.0">
    <FileRef
+      location = "group:makeThumbnailOfSize.h">
+   </FileRef>
+   <FileRef
+      location = "group:makeThumbnailOfSize.m">
+   </FileRef>
+   <FileRef
       location = "group:CoinBaseTest.xcodeproj">
    </FileRef>
    <FileRef
