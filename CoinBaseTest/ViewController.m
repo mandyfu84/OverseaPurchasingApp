@@ -13,6 +13,7 @@
 #import <coinbase-official/CoinbaseAccount.h>
 #import "GeneralData .h"
 @interface ViewController ()
+@property (retain, nonatomic) IBOutlet UIActivityIndicatorView *spinner;
 
 @end
 
@@ -117,6 +118,13 @@
 
 -(IBAction)currentUserAction:(id)sender
 {
+    // Activity Indicator
+    _spinner.autoresizingMask = UIViewAutoresizingFlexibleBottomMargin|UIViewAutoresizingFlexibleTopMargin|UIViewAutoresizingFlexibleLeftMargin|UIViewAutoresizingFlexibleRightMargin;
+    _spinner.hidesWhenStopped = true;
+    _spinner.center = self.view.center;
+    [self.view addSubview:_spinner];
+    [_spinner startAnimating];
+
     NSLog(@"log-in authentication");
     // Authorize check
     if ([[NSUserDefaults standardUserDefaults] objectForKey:@"access_token"]) {
@@ -144,6 +152,12 @@
             currentUser = user;
         }
     }];
+    // Activity Indicator End
+    dispatch_async(dispatch_get_main_queue(), ^(void) {
+        NSLog(@"wait for a while");// don't delete this line
+        [NSThread sleepForTimeInterval:1.0];
+        [_spinner stopAnimating];
+    });
 }
 
 
@@ -216,6 +230,7 @@
     //[_password release];
     [_emailField release];
     [_moneyField release];
+    [_spinner release];
     [super dealloc];
 }
 
@@ -256,6 +271,11 @@
     }else{
         [self performSegueWithIdentifier:@"confirmSegue" sender:self];
         NSLog(@"Pass!");
+        // Activity Indicator Start
+        _spinner.autoresizingMask = UIViewAutoresizingFlexibleBottomMargin|UIViewAutoresizingFlexibleTopMargin|UIViewAutoresizingFlexibleLeftMargin|UIViewAutoresizingFlexibleRightMargin;
+        _spinner.center = self.view.center;
+        [self.view addSubview:_spinner];
+        [_spinner startAnimating];
     }
     /*
     NSString *MY_COLLECTION = @"User";

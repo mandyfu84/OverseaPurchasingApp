@@ -11,6 +11,7 @@
 #import "GeneralData .h"
 
 @interface AddItemTableViewController ()<UINavigationControllerDelegate,UIImagePickerControllerDelegate,NSURLConnectionDelegate>
+@property (retain, nonatomic) IBOutlet UIActivityIndicatorView *spinner;
 
 @end
 
@@ -52,8 +53,12 @@
         [myAlertView show];
     }
     
-    
-    
+    // Generate Activity Indicator
+    _spinner.autoresizingMask = UIViewAutoresizingFlexibleBottomMargin|UIViewAutoresizingFlexibleTopMargin|UIViewAutoresizingFlexibleLeftMargin|UIViewAutoresizingFlexibleRightMargin;
+    _spinner.hidesWhenStopped = true;
+    _spinner.center = self.view.center;
+    [self.view addSubview:_spinner]; // invisible now
+    NSLog(@"viedidloadfinish");
 }
 
 
@@ -147,6 +152,7 @@
     [_ItemLocation release];
     [_ItemDetail release];
     [_image release];
+    [_spinner release];
     [super dealloc];
 }
 
@@ -243,6 +249,9 @@
 }
 
 - (IBAction)Upload:(UIButton *)sender {
+    // Activity Indicator Start
+    [NSThread detachNewThreadSelector:@selector(threadStartAnimating) toTarget:self withObject:nil];
+
     NSLog(@"Upload");
     NSString *MY_COLLECTION = @"Product"; // indicate which collection to send
     
@@ -321,6 +330,14 @@
     // upload to MongoDB
     NSDictionary *resultUploadList = [[MongoLabSDK sharedInstance] insertCollectionItem:MY_DATABASE collectionName:MY_COLLECTION item:item];
     NSLog(@"%@",resultUploadList);
+    
+    // Activity Indicator End
+    [_spinner stopAnimating];
+
+}
+
+- (void) threadStartAnimating {
+    [_spinner startAnimating];
 }
 
 @end
