@@ -388,7 +388,7 @@
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Item" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Uv7-JH-yTu">
-                                <rect key="frame" x="13" y="340" width="72" height="39"/>
+                                <rect key="frame" x="13" y="340" width="208" height="39"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <color key="textColor" red="0.3452672075973709" green="0.39183946096006123" blue="0.49240785256153852" alpha="0.68999999999999995" colorSpace="calibratedRGB"/>
