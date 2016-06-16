@@ -12,8 +12,7 @@
 #import <coinbase-official/CoinbaseOAuth.h>
 #import <coinbase-official/CoinbaseUser.h>
 #import <coinbase-official/CoinbaseAccount.h>
-
-
+#import "GeneralData .h"
 @interface ItemDetailUIViewController()
 
 @end
@@ -27,7 +26,6 @@
     // Do any additional setup after loading the view, typically from a nib.
     self.itemImage.image = self.itemObject.image;
     self.itemNameLabel.text = self.itemObject.name;
-
 }
 
 - (void)didReceiveMemoryWarning {
@@ -46,7 +44,7 @@
         case 0:
             cell.textLabel.text = @"Price";
             cell.detailTextLabel.text = [NSNumber numberWithFloat: self.itemObject.price].stringValue;
-            break;
+            [singletonObject sharedSingletonObject]->price=self.itemObject.price;            break;
         case 1: 
             cell.textLabel.text = @"Catagory";
             cell.detailTextLabel.text = self.itemObject.catagory;
@@ -62,10 +60,12 @@
         case 4:
             cell.textLabel.text = @"Ownermail";
             cell.detailTextLabel.text = self.itemObject.ownermail;
-
+            
+            
         default:
             break;
     }
+[singletonObject sharedSingletonObject]->ownermail=self.itemObject.ownermail;
     return cell;
 }
 -(NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
@@ -178,7 +178,9 @@
  */
 -(IBAction)createOrder:(id)sender
 {
-/*    if (!amountField.text.length) {
+    [[singletonObject sharedSingletonObject]showprice ] ;
+    [[singletonObject sharedSingletonObject]showowner ] ;
+    /*    if (!amountField.text.length) {
         [[[UIAlertView alloc] initWithTitle:@"send error" message:@"Please enter amount" delegate:nil cancelButtonTitle:@"Ok" otherButtonTitles:nil] show];
         return;
     }

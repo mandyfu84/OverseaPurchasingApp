@@ -10,6 +10,7 @@
 #import "Items.h"
 #import "ItemObject.h"
 #import "ItemDetailUIViewController.h"
+#import "makeThumbnailOfSize.h"
 
 @interface ItemTableViewController ()
 
@@ -19,6 +20,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    
     
     // Uncomment the following line to preserve selection between presentations.
     // self.clearsSelectionOnViewWillAppear = NO;
@@ -38,18 +40,70 @@
     //    NSString *item9 = @"9";
     //self.items = [[NSMutableArray alloc] initWithObjects:item1, item2, item3, item4, item5, item6, item7, item8, item9, nil];
     
+    
+    
     self.items = [[NSMutableArray alloc] init];
     
     for (NSMutableDictionary *itemData in [Items allItems]){
+        NSString *URL = itemData[ITEM_IMGURL];
+        NSURL *imageURL = [NSURL URLWithString:URL];
+        
+        NSData *imageData = [NSData dataWithContentsOfURL:imageURL];
+        UIImage *image = [UIImage imageWithData:imageData];
+        ItemObject *item = [[ItemObject alloc] initWithData:itemData andImage:image];
+        
+        [self.items addObject:item];
+        
+        /*
+        // run on a background thread
+        dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_BACKGROUND, 0), ^{
+            NSData *imageData = [NSData dataWithContentsOfURL:imageURL];
+            NSLog(@"URL: %@",imageURL);
+            NSLog(@"Size of Image(bytes):%d",[imageData length]);
+            
+            dispatch_async(dispatch_get_main_queue(), ^{
+                // Update the UI
+                ItemObject *item = [[ItemObject alloc] initWithData:itemData andImage:[UIImage imageWithData:imageData]];
+                
+                [self.items addObject:item];
+            });
+        });
+         */
+        /*
         NSString *imageName = [NSString stringWithFormat:@"%@.png", itemData[ITEM_TITLE]];
         ItemObject *item = [[ItemObject alloc] initWithData:itemData andImage:[UIImage imageNamed:imageName]];
         [self.items addObject:item];
+         */
     }
-    
-    
-    
-    
+    UIRefreshControl *refreshMe = [[UIRefreshControl alloc] init];
+    refreshMe.attributedTitle = [[NSAttributedString alloc] initWithString:@"Pull Me"];
+    [refreshMe addTarget:self action:@selector(refreshTable:)
+        forControlEvents:UIControlEventValueChanged];
+    self.refreshControl = refreshMe;
 }
+
+//This is the callback method which will work when you pull the refresh control
+- (void)refreshTable:(UIRefreshControl *)refreshMe
+{
+    refreshMe.attributedTitle = [[NSAttributedString alloc] initWithString:
+                                 @"Refreshing data..."];
+    self.items = [[NSMutableArray alloc] init];
+    
+    for (NSMutableDictionary *itemData in [Items allItems]){
+        NSString *URL = itemData[ITEM_IMGURL];
+        NSURL *imageURL = [NSURL URLWithString:URL];
+        
+        NSData *imageData = [NSData dataWithContentsOfURL:imageURL];
+        UIImage *image = [UIImage imageWithData:imageData];
+        ItemObject *item = [[ItemObject alloc] initWithData:itemData andImage:image];
+        
+        [self.items addObject:item];
+    }
+    [refreshMe endRefreshing];
+    refreshMe.attributedTitle = [[NSAttributedString alloc] initWithString:
+                                 @"Refreshed"];
+}
+
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
@@ -72,13 +126,19 @@
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     static NSString *CellIdentifier = @"Cell";
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier forIndexPath:indexPath];
+
     
     // Configure the cell...
     
     ItemObject *item = [self.items objectAtIndex:indexPath.row];
     cell.textLabel.text = item.name;
     cell.detailTextLabel.text =  [NSNumber numberWithFloat:item.price].stringValue;
-    cell.imageView.image = item.image;
+    
+    
+    UIImage *bigImage = item.image;
+    UIImage *thumb = [bigImage makeThumbnailOfSize:CGSizeMake(80,80)];
+    cell.imageView.image = thumb;
+
     
     //  cell.backgroundColor = [UIColor clearColor];
     

@@ -7,12 +7,19 @@
 //
 
 #import "AddItemTableViewController.h"
+#import "MongoLabSDK.h"
+#import "GeneralData .h"
 
 @interface AddItemTableViewController ()<UINavigationControllerDelegate,UIImagePickerControllerDelegate,NSURLConnectionDelegate>
 
 @end
 
 @implementation AddItemTableViewController
+
+
+//TODO - Enter database name - you can have multiple databases being used
+#define MY_DATABASE @"tpiti_wallet"
+#define allTrim( object ) [object stringByTrimmingCharactersInSet:[NSCharacterSet whitespaceCharacterSet] ]
 
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -143,6 +150,45 @@
     [super dealloc];
 }
 
+/*
+-(int) getCurrentMaxID{
+    NSLog(@"getCurrentMaxID");
+    int id = 0;
+    
+    NSString *query = @"{\"_id\":-1}";
+    NSString *queryParams = @"";
+    queryParams = [NSString stringWithFormat:@"&s=%@", [query stringByAddingPercentEscapesUsingEncoding:NSUTF8StringEncoding]];
+    //NSString* urlString =@"https://api.mongolab.com/api/1/databases/tpiti_wallet/collections/Product?apiKey=v0KbZnCTNV1mUIziflTd2i932GHY2uAd&q={\"_id\":150}";
+    NSString *urlString = @"";
+    urlString = [NSString stringWithFormat:@"https://api.mongolab.com/api/1/databases/tpiti_wallet/collections/Product?apiKey=v0KbZnCTNV1mUIziflTd2i932GHY2uAd%@",queryParams];
+    NSLog(@"%@",urlString);
+
+    NSURL *url = [NSURL URLWithString:urlString];
+    
+    NSURLRequest *request = [NSURLRequest requestWithURL:url];
+    [NSURLConnection sendAsynchronousRequest:request
+                                       queue:[NSOperationQueue mainQueue]
+                           completionHandler:^(NSURLResponse *response,
+                                               NSData *data, NSError *connectionError)
+     {
+         if (data.length > 0 && connectionError == nil)
+         {
+             NSLog(@"below:");
+             NSDictionary *MAXdata = [NSJSONSerialization JSONObjectWithData:data
+                                                                      options:0
+                                                                        error:NULL];
+             
+             NSLog(@"%@",MAXdata);
+             //NSNumber *orderNumber =
+             //id = [orderNumber intValue];
+         }
+     }];
+    return id;
+}
+*/
+
+
+
 - (IBAction)takePhoto:(UIButton *)sender {
     NSLog(@"take a photo");
     UIAlertController *alertController = [UIAlertController alertControllerWithTitle:nil
@@ -198,7 +244,8 @@
 
 - (IBAction)Upload:(UIButton *)sender {
     NSLog(@"Upload");
-    NSString *MY_COLLECTION = @"User"; // indicate which collection to send
+    NSString *MY_COLLECTION = @"Product"; // indicate which collection to send
+    
     // Declare a dictionary and mapping key and value
     NSMutableDictionary *item = [NSMutableDictionary dictionary];
     [item setValue:self.ItemName.text forKey:@"name"];
@@ -206,12 +253,74 @@
     [item setValue:self.ItemCategory.text forKey:@"category"];
     [item setValue:self.ItemLocation.text forKey:@"location"];
     [item setValue:self.ItemDetail.text forKey:@"detail"];
+    [item setValue: [singletonObject sharedSingletonObject]->account forKey:@"seller_mail"]; // parameter passing needed
     
-    [item setValue:[NSNumber numberWithInt:2] forKey:@"id"];
-    [item setValue:@"www.google.com/img02.jpg" forKey:@"img_url"];
-    [item setValue:@"40347905S@gmail.com" forKey:@"courier_mail"];
-
-    NSLog(@"%@",item);
+    
+    
+    // get id from MongoDB
+    //https://api.mongolab.com/api/1/databases/tpiti_wallet/collections/Product?apiKey=v0KbZnCTNV1mUIziflTd2i932GHY2uAd&s={"_id":-1}&l=1
+    NSString *sort = @"{\"_id\":-1}";
+    NSArray *resultList = [[MongoLabSDK sharedInstance] getCollectionItemList:MY_DATABASE collectionName:MY_COLLECTION query:nil  sortOrder:sort limit:1];
+    
+    
+    NSLog(@"%@",resultList);
+    
+    int id = 0;
+    NSLog(@"%lu",(unsigned long)resultList.count);
+    if (resultList == nil || resultList.count == 0) {
+        NSLog(@"empty_id");
+        id = 0;
+    }else{
+        NSNumber *orderNumber = [[resultList objectAtIndex: 0 ]objectForKey:@"_id"];
+        NSLog(@"orderNumber = %@",orderNumber);
+        id = [orderNumber intValue];
+        id += 1;
+        NSLog(@"%d",id);
+    }
+    [item setValue:[NSNumber numberWithInt:id] forKey:@"_id"];
+    
+    //[self getCurrentMaxID];
+    //int id = 3;
+     //[item setValue:[NSNumber numberWithInt:id] forKey:@"_id"];
+    
+    
+    
+    
+    
+    
+    
+     
+     
+    // -----upload image------
+    NSData *imageData = UIImageJPEGRepresentation(_image.image, 0.1);
+    NSLog(@"Size of Image(bytes):%lu",(unsigned long)[imageData length]);
+    NSString *urlString = @"http://www.csie.ntnu.edu.tw/~40347905s/uploads.php";
+    NSString *imageName = [NSString stringWithFormat:@"%d", id];;
+    // setting up the request object now
+    NSMutableURLRequest *request = [[NSMutableURLRequest alloc] init];
+    [request setURL:[NSURL URLWithString:urlString]];
+    [request setHTTPMethod:@"POST"];
+    NSString *boundary = [[NSString alloc]init];
+    NSString *contentType = [NSString stringWithFormat:@"multipart/form-data; boundary=%@",boundary];
+    [request addValue:contentType forHTTPHeaderField: @"Content-Type"];
+    NSMutableData *body = [NSMutableData data];
+    [body appendData:[[NSString stringWithFormat:@"\r\n--%@\r\n",boundary] dataUsingEncoding:NSUTF8StringEncoding]];
+    [body appendData:[@"Content-Disposition: form-data; name=\"userfile\"; filename=\"test.png\"rn" dataUsingEncoding:NSUTF8StringEncoding]];
+    [body appendData:[[NSString stringWithFormat:@"Content-Type: application/%@.jpg\r\n\r\n",imageName] dataUsingEncoding:NSUTF8StringEncoding]];
+    [body appendData:[NSData dataWithData:imageData]];
+    [body appendData:[[NSString stringWithFormat:@"\r\n--%@--\r\n",boundary] dataUsingEncoding:NSUTF8StringEncoding]];
+    [request setHTTPBody:body];
+    //Using Synchronous Request. You can also use asynchronous connection and get update in delegates
+    NSData *returnData = [NSURLConnection sendSynchronousRequest:request returningResponse:nil error:nil];
+    NSString *returnString = [[NSString alloc] initWithData:returnData encoding:NSUTF8StringEncoding];
+    NSLog(@"get_image_from:\"%@\"",returnString);
+    // use semicolon to split the word and concatenate with "http"
+    NSString *imageURL = [NSString stringWithFormat: @"http:%@", [[returnString componentsSeparatedByString:@":"] objectAtIndex:1]];
+    [item setValue:imageURL forKey:@"img_url"];
+    
+    // upload to MongoDB
+    NSDictionary *resultUploadList = [[MongoLabSDK sharedInstance] insertCollectionItem:MY_DATABASE collectionName:MY_COLLECTION item:item];
+    NSLog(@"%@",resultUploadList);
 }
 
 @end

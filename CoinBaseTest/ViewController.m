@@ -11,6 +11,7 @@
 #import <coinbase-official/CoinbaseOAuth.h>
 #import <coinbase-official/CoinbaseUser.h>
 #import <coinbase-official/CoinbaseAccount.h>
+#import "GeneralData .h"
 @interface ViewController ()
 
 @end
@@ -21,6 +22,7 @@
 
 #define allTrim( object ) [object stringByTrimmingCharactersInSet:[NSCharacterSet whitespaceCharacterSet] ]
 - (void)viewDidLoad {
+    //NSLog(@"viewdidload");
     [super viewDidLoad];
 }
 
@@ -32,6 +34,22 @@
 -(void)viewDidAppear:(BOOL)animated
 {
     NSLog(@"didappear");
+    // Alert
+    NSString *msg = @"Please click log-in first and then confirm your info.";
+    UIAlertController *alertController = [UIAlertController
+                                          alertControllerWithTitle:@"Notice!"
+                                          message:msg
+                                          preferredStyle:UIAlertControllerStyleAlert];
+    UIAlertAction *okAction = [UIAlertAction
+                               actionWithTitle:NSLocalizedString(@"OK", @"OK action")
+                               style:UIAlertActionStyleDefault
+                               handler:^(UIAlertAction *action)
+                               {
+                                   NSLog(@"OK action");
+                               }];
+    [alertController addAction:okAction];
+    [self presentViewController:alertController animated:YES completion:nil];
+    // Authorize check
     [super viewDidAppear:animated];
     if ([[NSUserDefaults standardUserDefaults] objectForKey:@"access_token"]) {
         self.accessToken = [[NSUserDefaults standardUserDefaults] objectForKey:@"access_token"];
@@ -45,17 +63,7 @@
 }
 
 
--(void)viewWillAppear:(BOOL)animated{
-    NSLog(@"didWillAppear");
-    [self.client getCurrentUser:^(CoinbaseUser *user, NSError *error) {
-        if (error) {
-            NSLog(@"Could not load user: %@", error);
-        } else {
-            self.emailField.text = user.email;
-            NSLog(@"Signed in as: %@", user.email);
-        }
-    }];
-}
+
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
@@ -109,6 +117,17 @@
 
 -(IBAction)currentUserAction:(id)sender
 {
+    NSLog(@"log-in authentication");
+    // Authorize check
+    if ([[NSUserDefaults standardUserDefaults] objectForKey:@"access_token"]) {
+        self.accessToken = [[NSUserDefaults standardUserDefaults] objectForKey:@"access_token"];
+        self.client = [Coinbase coinbaseWithOAuthAccessToken:self.accessToken];
+        self.client.baseURL = SandboxAPIURL;
+    }
+    else {
+        [self reAuthorize];
+    }
+    // Get CurrentUserInfo
     [self.client getCurrentUser:^(CoinbaseUser *user, NSError *error) {
         if ([error.userInfo[@"statusCode"] intValue] == 401) {
             ///[self reAuthorize];
@@ -120,6 +139,7 @@
             NSLog(@"Signed in as: %@", user.email);
             self.emailField.text = user.email;
             self.moneyField.text = user.balance.amount;
+               [singletonObject sharedSingletonObject]->account=self.emailField.text;
             currentUser = user;
         }
     }];
@@ -198,7 +218,44 @@
     [super dealloc];
 }
 
-- (IBAction)login:(UIButton *)sender {
+
+// check the confirmSegue
+- (BOOL)shouldPerformSegueWithIdentifier:(NSString *)identifier sender:(id)sender   {
+    if([identifier isEqualToString:@"confirmSegue"])
+    {
+        return NO;
+    }
+    else
+    {
+        return YES;
+    }
+}
+
+
+
+- (IBAction)confirm:(UIButton *)sender {
+    NSLog(@"Confirm");
+    
+    if([self.emailField.text isEqual: @"unknown"]){
+        NSLog(@"Block!");
+        NSString *msg = @"Please click log-in to confirm your info.";
+        UIAlertController *alertController = [UIAlertController
+                                              alertControllerWithTitle:@"Warning!"
+                                              message:msg
+                                              preferredStyle:UIAlertControllerStyleAlert];
+        UIAlertAction *okAction = [UIAlertAction
+                                   actionWithTitle:NSLocalizedString(@"OK", @"OK action")
+                                   style:UIAlertActionStyleDefault
+                                   handler:^(UIAlertAction *action)
+                                   {
+                                       NSLog(@"OK action");
+                                   }];
+        [alertController addAction:okAction];
+        [self presentViewController:alertController animated:YES completion:nil];
+    }else{
+        [self performSegueWithIdentifier:@"confirmSegue" sender:self];
+        NSLog(@"Pass!");
+    }
     /*
     NSString *MY_COLLECTION = @"User";
     // get input from textField
@@ -228,7 +285,6 @@
         [alert addAction:errormsg];
         [self presentViewController:alert animated:YES completion:nil];
      */
-    NSLog(@"Confirm");
 }
 
 

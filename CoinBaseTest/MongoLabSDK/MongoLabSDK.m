@@ -187,9 +187,49 @@ MongoLabSDK *MongoLabSDK_INSTANCE = nil;
     return nil;
 }
 
+
+-(NSArray *) getCollectionItemList:(NSString *) databaseName collectionName:(NSString *) collectionName query:(NSString *) query sortOrder:(NSString *) sortOrder limit:(int) limit{
+    
+    NSURLResponse *response = nil;
+    NSError *error = nil;
+    // Check
+    NSString *queryParams = @"";
+    if (query != nil && [query length] > 0) {
+        queryParams = [NSString stringWithFormat:@"&q=%@", [query stringByAddingPercentEscapesUsingEncoding:NSUTF8StringEncoding]];
+    }
+    NSString *sortOrderParams = @"";
+    if (sortOrder != nil && [sortOrder length] > 0) {
+        sortOrderParams = [NSString stringWithFormat:@"&s=%@", [sortOrder stringByAddingPercentEscapesUsingEncoding:NSUTF8StringEncoding]];
+    }
+    NSString *limitParams = @"";
+    if (limit  > 0) {
+        limitParams = [NSString stringWithFormat:@"&l=%d", limit];
+    }
+    // combine
+    NSString *urlString = @"";
+    urlString = [NSString stringWithFormat:@"https://api.mongolab.com/api/1/databases/%@/collections/%@?apiKey=%@%@%@%@", databaseName, collectionName, APIKEY, queryParams,sortOrderParams,limitParams];
+    NSLog(@"%@",urlString);
+    NSURL *url = [[[NSURL alloc] initWithString:urlString] autorelease];
+    NSMutableURLRequest *urlRequest = [NSMutableURLRequest requestWithURL:url];
+    [urlRequest addValue: @"application/json;charset=utf-8" forHTTPHeaderField:@"Content-Type"];
+    [urlRequest setHTTPMethod:@"GET"];
+    NSData *receivedData = [NSURLConnection sendSynchronousRequest:urlRequest
+                                                 returningResponse:&response
+                                                             error:&error];
+    if (receivedData != nil) {
+        NSString *responseString = [[NSString alloc] initWithData:receivedData encoding:NSASCIIStringEncoding];
+        NSObject *json = [responseString JSONValue];
+        if ([json isKindOfClass:[NSArray class]]) {
+            return (NSArray*)json;
+        }
+        
+    }
+    return nil;
+}
+
 -(NSArray *) getCollectionItemList:(NSString *) databaseName collectionName:(NSString *) collectionName query:(NSString *) query countOnly:(BOOL)  countOnly fields:(NSString *) fields  findOne:(BOOL) findOne sortOrder:(NSString *) sortOrder skip:(int) skip limit:(int) limit {
     
-    NSLog(@"here");
+    //NSLog(@"here");
     
     NSString *urlString = @"";
     

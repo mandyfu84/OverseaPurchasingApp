@@ -36,7 +36,7 @@
 //@property (retain, nonatomic) IBOutlet UITextField *password;
 @property (retain, nonatomic) IBOutlet UILabel *emailField;
 @property (retain, nonatomic) IBOutlet UILabel *moneyField;
-- (IBAction)login:(UIButton *)sender;
+- (IBAction)confirm:(UIButton *)sender;
 
 @end
 
