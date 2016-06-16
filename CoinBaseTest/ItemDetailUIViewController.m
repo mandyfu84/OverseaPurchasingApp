@@ -50,15 +50,15 @@
             [singletonObject sharedSingletonObject]->price=self.itemObject.price;            break;
         case 1: 
             cell.textLabel.text = @"Catagory";
-            cell.detailTextLabel.text = self.itemObject.catagory;
+            cell.detailTextLabel.text = [self.itemObject.catagory stringByReplacingPercentEscapesUsingEncoding:NSUTF8StringEncoding];
             break;
         case 2:
             cell.textLabel.text = @"Location";
-            cell.detailTextLabel.text = self.itemObject.country;
+            cell.detailTextLabel.text = [self.itemObject.country stringByReplacingPercentEscapesUsingEncoding:NSUTF8StringEncoding];
             break;
         case 3:
             cell.textLabel.text = @"Detail";
-            cell.detailTextLabel.text = self.itemObject.detail;
+            cell.detailTextLabel.text = [self.itemObject.detail stringByReplacingPercentEscapesUsingEncoding:NSUTF8StringEncoding];
             break;
         case 4:
             cell.textLabel.text = @"Ownermail";
