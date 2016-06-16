@@ -21,6 +21,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
+    
     // Uncomment the following line to preserve selection between presentations.
     // self.clearsSelectionOnViewWillAppear = NO;
     
@@ -39,6 +40,8 @@
     //    NSString *item9 = @"9";
     //self.items = [[NSMutableArray alloc] initWithObjects:item1, item2, item3, item4, item5, item6, item7, item8, item9, nil];
     
+    
+    
     self.items = [[NSMutableArray alloc] init];
     
     for (NSMutableDictionary *itemData in [Items allItems]){
@@ -50,6 +53,7 @@
         ItemObject *item = [[ItemObject alloc] initWithData:itemData andImage:image];
         
         [self.items addObject:item];
+        
         /*
         // run on a background thread
         dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_BACKGROUND, 0), ^{
@@ -71,11 +75,35 @@
         [self.items addObject:item];
          */
     }
-    
-    
-    
-    
+    UIRefreshControl *refreshMe = [[UIRefreshControl alloc] init];
+    refreshMe.attributedTitle = [[NSAttributedString alloc] initWithString:@"Pull Me"];
+    [refreshMe addTarget:self action:@selector(refreshTable:)
+        forControlEvents:UIControlEventValueChanged];
+    self.refreshControl = refreshMe;
 }
+
+//This is the callback method which will work when you pull the refresh control
+- (void)refreshTable:(UIRefreshControl *)refreshMe
+{
+    refreshMe.attributedTitle = [[NSAttributedString alloc] initWithString:
+                                 @"Refreshing data..."];
+    self.items = [[NSMutableArray alloc] init];
+    
+    for (NSMutableDictionary *itemData in [Items allItems]){
+        NSString *URL = itemData[ITEM_IMGURL];
+        NSURL *imageURL = [NSURL URLWithString:URL];
+        
+        NSData *imageData = [NSData dataWithContentsOfURL:imageURL];
+        UIImage *image = [UIImage imageWithData:imageData];
+        ItemObject *item = [[ItemObject alloc] initWithData:itemData andImage:image];
+        
+        [self.items addObject:item];
+    }
+    [refreshMe endRefreshing];
+    refreshMe.attributedTitle = [[NSAttributedString alloc] initWithString:
+                                 @"Refreshed"];
+}
+
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
