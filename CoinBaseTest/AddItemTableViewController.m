@@ -333,6 +333,30 @@
     
     // Activity Indicator End
     [_spinner stopAnimating];
+    
+    // Suppose upload successfully, display msg and clear all textfields
+    NSString *msg = @"Upload Successfully";
+    
+    UIAlertController *alertController = [UIAlertController
+                                          alertControllerWithTitle:@"congratulations!"
+                                          message:msg
+                                          preferredStyle:UIAlertControllerStyleAlert];
+    UIAlertAction *okAction = [UIAlertAction
+                               actionWithTitle:NSLocalizedString(@"OK", @"OK action")
+                               style:UIAlertActionStyleDefault
+                               handler:^(UIAlertAction *action)
+                               {
+                                   NSLog(@"OK action");
+                                   self.ItemName.text = @"";
+                                   self.ItemPrice.text = @"";
+                                   self.ItemCategory.text = @"";
+                                   self.ItemLocation.text = @"";
+                                   self.ItemDetail.text = @"";
+                                   NSString *defaultimage = @"default-image.jpg";
+                                   self.image.image = [UIImage imageNamed:defaultimage];
+                               }];
+    [alertController addAction:okAction];
+    [self presentViewController:alertController animated:YES completion:nil];
 
 }
 
