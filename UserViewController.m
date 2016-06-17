@@ -22,7 +22,9 @@
     [super viewDidLoad];
     //[singletonObject sharedSingletonObject]->account=@"OAQQQ";
     self.useremail.text=[singletonObject sharedSingletonObject]->account;
-    self.moneyField.text =[NSString stringWithFormat:@"%8e", [singletonObject sharedSingletonObject]->balance];
+    //self.moneyField.text =[NSString stringWithFormat:@"%8e", [singletonObject sharedSingletonObject]->balance];
+    
+    self.moneyField.text =[NSString stringWithFormat:@"%f", [singletonObject sharedSingletonObject]->balance];
 }
 -(void)viewDidAppear:(BOOL)animated
 {
